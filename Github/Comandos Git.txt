@@ -1,21 +1,12 @@
 https://github.com/Unidados/teste.git
-
 git config --global user.name "Unidados"
-
 git config --global user.email "mafra@universidadedosdados.com.br"
-
 git clone https://github.com/Unidados/teste.git
-
 git add Procedure_WRK.sql
-
 git commit -m "Esse foi o primeiro commit desse arquivo" Procedure_WRK.sql
-
 git push -u origin master
-
 git status 
-
 git commit -m "Esse foi o SEGUNDO commit desse arquivo" Procedure_WRK.sql
-
 git push -u origin master
 
 
