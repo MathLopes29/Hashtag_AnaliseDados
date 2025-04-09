@@ -68,3 +68,56 @@ branding)
 a) Levantar as suas hipóteses
 b) Trazer dados para comprovar essas hipóteses
 c) Correlação x Causalidade
+
+-- 5ª CORRELAÇÃO X CAUSALIDADE
+
+CORRELAÇÃO NÃO SIGNIFICA UMA CAUSA DEFINIDA
+
+EX: FOI NOTADO QUE PAÍSES DO HEMISFÉRIO NORTE GASTAM MAIS EM ÉPOCAS DE FRIO
+*   PORÉM, NÃO É DEVIDO A TEMPERATURA E SIM POIS A ÉPOCA DE FRIO É A MESMA DAS PRÍNCIPAIS DATAS FESTIVAS (NATAL E ANO NOVO) 
+
+OU SEJA NEM TUDO IMPACTA EM OUTRA COISA
+
+
+
+-- 2ª CASE HASHTAG 2022 JAN-FEV x 2023 JAN-FEV
+"ACUMULADO DA RECEITA ESTÁ MENOR..."
+
+OBJETIVO: ENTENDER A QUEDA DE FATURAMENTO
+* QUAIS SÃO OS PRINCIPAIS INDICADORES
+    VENDAS EM EVENTOS (80%)
+    VENDAS FORA DE EVENTOS 
+    VENDAS PARA EMPRESAS
+
+    PRÍNCIPIO DE PARETO 80% - 20%
+
+    PORTANTO VAMOS ANÁLISAR OS 80%, E FOI VISTO QUE O QUE IMPACTA VENDAS EM EVENTOS SÃO
+        COMPARECIMENTO **
+        RENTENÇÃO / FIDELIDADE
+        VENDAS DURANTE OS EVENTOS
+
+COMPARECIMENTO CAIU EM %, POR QUE? DESSE MODO VAMOS VER A ANÁLISE POR EVENTOS E DEVIDO AO CARNAVAL 2023 TEVE MENOS EVENTOS E O FAT CAIU MESMO ASSIM...
+"Mas ainda ficou aquela pulga atrás da orelha “mesmo assim,
+o faturamento parece que deveria estar maior”.
+
+Por isso a importância de você entender do dia a dia do
+negócio da empresa, pra pegar esse senso crítico."
+
+- INADIMPLÊNCIA
+- FORMAS DE PAGAMENTO *
+- VENDA DE NOVOS PRODUTOS PARA CLIENTES ANTIGOS 
+
+FOI VISTO QUE AS PESSOAS COMPRARAM EM CARTÃO PARCELADO.... OU SEJA O VALOR SERÁ RECEBIDO APÓS UM PERÍODO DE TEMPO
+
+"Em resumo, pensamos que
+tínhamos entendido o problema...
+Quando na verdade nem tinha um
+problema de fato.
+O que ia acontecer na prática é que
+esse faturamento ia vir só depois, por
+conta do calendário de eventos e das
+vendas parceladas"
+
+
+-- 6ª Fazer uma análise isolada dos cenários/hipóteses levantadas (confirmar as teorias)
+FAZER UMA ANÁLISE SEGMENTADA E COMPROVADA
