@@ -41,5 +41,12 @@ CONT.VALORES
 CONT.NUM
 CONT.VAZIO
 CONT.SE
+E
 
 =CONT.SES(A:A;A1)<2
+=CONT.SES(E:E;">31/12/2018")
+=SE(SOMA($B$2:$B$8)<=$B$11; SOMA($B$2:$B$8); 0)
+=SE(OU(B2="";C2="");"";SE(E(B2<>"";C2<>"");B2*C2;""))
+=SE(E(B2<>"";C2<>"");B2*C2;"")
+=SOMASES($E:$E;$B:$B;"*Alemanha*";$D:$D;"*Puma*")
+=SOMASES($E:$E; $D:$D; I$23; $B:$B; $H24)
