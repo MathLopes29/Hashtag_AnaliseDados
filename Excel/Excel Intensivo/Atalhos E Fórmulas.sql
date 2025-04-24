@@ -43,6 +43,7 @@ CONT.VAZIO
 CONT.SE
 E
 
+=SEERRO(SE(PROCV($B$7;Base!D:D;1;0)=$B$7;"Encontrado");"Não encontrado")
 =CONT.SES(A:A;A1)<2
 =CONT.SES(E:E;">31/12/2018")
 =SE(SOMA($B$2:$B$8)<=$B$11; SOMA($B$2:$B$8); 0)
