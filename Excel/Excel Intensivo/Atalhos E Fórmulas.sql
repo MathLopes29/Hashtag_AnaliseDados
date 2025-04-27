@@ -51,7 +51,10 @@ PROCX VERSUS PROCV + CORRESP
 /***********************************/
 
 
-
+=CONT.SE(INDIRETO(B3&"!B:B");"Saída")
+=INDIRETO(B3&"!E2")
+=SOMA(INDIRETO(B3&"!C:C"))
+=DESLOC(A1;CORRESP(J2;A2:A21;0);CORRESP(J1;B1:G1;0))
 =ÍNDICE($D:$D;CORRESP($G$1;$B:$B;0))
 =PROCX(1;($B$7:$B$405=B4)*($C$7:$C$405=A4)*($A$7:$A$405=C4);$D$7:$D$405;0;0;1)
 =SEERRO(SE(PROCV($B$7;Base!D:D;1;0)=$B$7;"Encontrado");"Não encontrado")
