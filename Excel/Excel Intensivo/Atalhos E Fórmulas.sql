@@ -46,11 +46,15 @@ E
 /*******************************/
 PROCX VERSUS PROCV + CORRESP
 
-=PROCV($B16;$B$2:$H$13;CORRESP(D$15;$B$2:$H$2;0);0)
-=PROCX($B16;$B$3:$B$13;$C$3:$H$13;0;0;1)
+    =PROCV($B16;$B$2:$H$13;CORRESP(D$15;$B$2:$H$2;0);0)
+    =PROCX($B16;$B$3:$B$13;$C$3:$H$13;0;0;1)
 /***********************************/
 
 
+=ÍNDICE(B3:B13;CORRESP(L5;INDIRETO(K2))) ---- alt + U1 + P
+=ÍNDICE(C2:I2;0;CORRESP(L11;INDIRETO(K8);0))
+=SOMARPRODUTO(C2:C8*D2:D8*(B2:B8=B10))
+=SOMARPRODUTO((B2:B8=B10)*(C2:C8)*(C2:C8>B11)*(D2:D8))
 =CONT.SE(INDIRETO(B3&"!B:B");"Saída")
 =INDIRETO(B3&"!E2")
 =SOMA(INDIRETO(B3&"!C:C"))
@@ -65,3 +69,8 @@ PROCX VERSUS PROCV + CORRESP
 =SE(E(B2<>"";C2<>"");B2*C2;"")
 =SOMASES($E:$E;$B:$B;"*Alemanha*";$D:$D;"*Puma*")
 =SOMASES($E:$E; $D:$D; I$23; $B:$B; $H24)
+
+
+
+/*************************************/
+
