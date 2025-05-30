@@ -48,7 +48,7 @@ SWITCH(
 
 
 
-Preço Dia das Mães = 
+Preço Dia das Mães fvendas = 
 IF(
     RELATED(dClientes[Genero]) = "Feminino" && RELATED(dClientes[Num Filhos]) >= 1 && MONTH(fVendas[Data da Venda]) = 5,
     ROUND(0.85 * RELATED(dProdutos[Preço Unitario]),2),
@@ -63,7 +63,13 @@ IF(
     "Dia Útil"
 )
 
-Lucro = 
+Lucro fvendas = 
 (RELATED(dProdutos[Preço Unitario]) * fVendas[Qtd Vendida]) - // FATURAMENTO
 (RELATED(dProdutos[Custo Unitario]) * fVendas[Qtd Vendida]) - // CUSTO UNITÁRIO
 ((RELATED(dProdutos[Preço Unitario]) * fVendas[Qtd Vendida])*0.1) // IMPOSTO
+
+
+Lucro Total = SUM(fVendas[Lucro])
+
+Média por Transação = 
+AVERAGE(fVendas[Faturamento])
