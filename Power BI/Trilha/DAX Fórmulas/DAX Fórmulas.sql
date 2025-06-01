@@ -67,7 +67,7 @@ NOT(
 
 /*******************************************************
 
-                    FÓRMULA ITERADORAS
+                    FÓRMULA ITERADORAS - TABELAS FATOS NORMALMENTE
 
 *******************************************************/
 

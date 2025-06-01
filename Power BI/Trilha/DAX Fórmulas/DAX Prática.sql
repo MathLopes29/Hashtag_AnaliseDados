@@ -73,3 +73,59 @@ Lucro Total = SUM(fVendas[Lucro])
 
 Média por Transação = 
 AVERAGE(fVendas[Faturamento])
+
+%  Online = 
+DIVIDE(
+    CALCULATE(
+        SUM(fVendas[Qtd Vendida]),
+        dLojas[Tipo] = "Online"
+    ),
+    SUM(fVendas[Qtd Vendida])
+)
+
+%  Online = 
+DIVIDE(
+    SUM(fVendas[Qtd Vendida]),
+    CALCULATE(
+        SUM(fVendas[Qtd Vendida]),
+        ALL (fVendas)
+    ),
+)
+
+%  Produto = 
+DIVIDE(
+    [Total Vendas],
+    CALCULATE(
+        [Total Vendas],
+        ALL(dProdutos)
+    )
+)
+
+
+%  Produto Subtotal = 
+DIVIDE(
+    [Total Vendas],
+    CALCULATE(
+        [Total Vendas],
+        ALL(dProdutos[Nome Produto])
+    )
+)
+
+Fat Total = 
+SUMX(
+    fVendas,
+    fVendas[Qtd Vendida]*fVendas[Preço Unitário]
+)
+
+Fat Total = 
+SUMX(
+    fVendas,
+    fVendas[Qtd Vendida]*RELATED(dProdutos[Custo Unitario])
+)
+
+Lucro Média= 
+AVERAGEX(
+    fvendas,
+    (fvendas[Qtd Vendida] * RELATED (dProduto[Preço Unitario]))*0.9 --(desconto do imposto)
+    - (fvendas[Qtd Vendida] * RELATED (dProduto[Preço Unitario]))
+)
