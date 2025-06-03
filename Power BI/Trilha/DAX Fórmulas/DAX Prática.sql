@@ -129,3 +129,87 @@ AVERAGEX(
     (fvendas[Qtd Vendida] * RELATED (dProduto[Preço Unitario]))*0.9 --(desconto do imposto)
     - (fvendas[Qtd Vendida] * RELATED (dProduto[Preço Unitario]))
 )
+
+CALENDAR (
+    DATE(2020,1,31),
+    DATE(2025,12,31)
+)
+
+CALENDAR (
+    DATE(year(MIN(fVendas[data])),1,31),
+    DATE(year(MAX(fVendas[data])),12,31)
+)
+
+CALENDAR (
+    MIN(fVendas[data]),
+    MAX(fVendas[data])
+)
+
+YEAR (fVendas[data])
+MONTH (fVendas[data])
+DAY (fVendas[data]
+FORMAT (fVendas[data]), "mmmm") -- mês em texto
+FORMAR (fVendas[data], "YYYY-MM") -- ano mês
+
+STARTOFMONTH(fVendas[data]) -- Data inicio
+
+
+/* INTELIGÊNCIA DE TEMPO */
+
+
+/* Acumulado do Ano - Year to Date */
+CALCULATE(Medida; DATESYTD(dCalendario[data])) -- LISTA DE DATAS 
+TOTALYTD (Medida; dCalendario[data])
+
+/* Acumulado do Mês - Month to Date */
+CALCULATE(Medida; DATESMTD(dCalendario[data]))
+TOTALMTD(Medida; dCalendario[data])
+
+/* Acumulado do Trimestre - Quarter to Date */
+CALCULATE(Medida; DATESQTD(dCalendario))
+TOTALQTD(Medida; dCalendario[Date])
+
+/* Year over Year */
+/* Month over Month */
+/* Quarter over Quarter */
+
+/* Calcula o valor no mês anterior */
+CALCULATE(
+    Medida,
+    DATEADD(
+        dCalendario[Data],
+        -1;
+        MONTH
+    )
+)
+
+/* Calcula o Acumulado dos últimos 15 dias */
+CALCULATE(
+    Medida,
+    DATESINPERIOD(
+        MAX(
+            dCalendario[data]
+        ),
+        -15,
+        DAY
+    )
+)
+
+
+CALCULATE(
+    [Faturamento],
+    DATESYTD(dCalendario[Data])
+)
+
+TOTALYTD(
+    [Faturamento],
+    dCalendario[Data],
+    dLojas[Tipo] = "Online"
+)
+
+
+TOTALYTD(
+    [Faturamento],
+    dCalendario[Data],
+    "12/25"
+)
