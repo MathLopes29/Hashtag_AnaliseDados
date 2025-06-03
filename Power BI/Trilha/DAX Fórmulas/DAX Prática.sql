@@ -213,3 +213,121 @@ TOTALYTD(
     dCalendario[Data],
     "12/25"
 )
+
+Faturamento Mês Anterior =
+CALCULATE(
+    [Faturamento],
+    DATEADD(
+        dCalendario[Data],
+        -1,
+        MONTH
+    )
+)
+
+
+% Crescimento Mês Anterior MoM =
+DIVIDE(
+    ([Faturamento] -
+    CALCULATE(
+        [Faturamento],
+        DATEADD(
+            dCalendario[Data],
+            -1,
+            MONTH
+        )
+    )), 
+    CALCULATE(
+        [Faturamento],
+        DATEADD(
+            dCalendario[Data],
+            -1,
+            MONTH
+        )
+    ), 0
+)
+
+
+Faturamento Ano Anterior =
+CALCULATE(
+    [Faturamento],
+   DATEADD(
+        dCalendario[Data],
+        -1,
+        YEAR
+    )
+)
+
+% Crescimento Ano Anterior YoY =
+DIVIDE(
+    [Faturamento] - [Faturamento Ano Anterior],
+    [Faturamento Ano Anterior],
+    0
+)
+
+-- Ajuste na matriz de datas para evitar erro de divisão por zero
+IF(
+    HASONEVALUE(dCalendario[Ano]),
+    DIVIDE(
+        [Faturamento] - [Faturamento Ano Anterior],
+        [Faturamento Ano Anterior],
+        0
+    ),
+    0
+)
+
+CALENDAR (
+    DATE(year(MIN(fVendas[data])),1,31),
+    DATE(year(MAX(fVendas[data])),12,31)
+)
+
+-- Filtra as Datas Corretas para os dados onde messes não possuem registro de venda
+DATA VIGENTE =
+IF(
+    dCalendario[Datas] <= MAX(fVendas[Data da Venda]),
+    "Vigente",
+    "Data Futura"
+)
+
+
+
+Faturamento YTD Acumulado =
+TOTALYTD (Medida; dCalendario[data])
+
+Faturamento YTD LY =
+CALCULATE(
+    TOTALYTD (Medida; dCalendario[data]),
+    DATEADD(dCalendario[data], -1, YEAR)
+)
+
+IF(
+    HASONEVALUE(dCalendario[Ano]),
+    DIVIDE(
+        [Faturamento YTD Acumulado] - [Faturamento YTD LY],
+        [Faturamento YTD LY],
+        0
+    ),
+    0
+)
+
+
+--Quantidade Acumulada dos Últimos 15 Dias =
+CALCULATE(
+    [Inscricao],
+    DATESINPERIOD(
+        dCalendario[Data],
+        MAX(dCalendario[Data]),
+        -15,
+        DAY
+    )
+)
+
+--Média Móvel Diária dos Últimos 15 Dias =
+CALCULATE(
+    AVERAGE([Inscricao]),
+    DATESINPERIOD(
+        dCalendario[Data],
+        MAX(dCalendario[Data]),
+        -15,
+        DAY
+    )
+)
