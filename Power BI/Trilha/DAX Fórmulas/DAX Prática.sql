@@ -352,3 +352,65 @@ RETURN
         crescimento,
         "N/A"
     )
+
+Faturamento YTD LY = 
+VAR Cond = 
+CALCULATE(
+    [Faturamento YTD],
+    DATEADD(dCalendario[Datas],-12, MONTH)
+)
+
+RETURN 
+IF(
+    HASONEVALUE(dCalendario[Ano]),
+    Cond
+)
+
+
+
+Período Selecionado = 
+VAR qtdAnosSelecionados = CALCULATE(DISTINCTCOUNT(dCalendario[Ano]))
+VAR qtdMesesSelecionados = CALCULATE(DISTINCTCOUNT(dCalendario[Mês]))
+
+RETURN
+IF(
+    qtdAnosSelecionados = 0 && qtdMesesSelecionados = 0,
+    "Nenhum Filtro Aplicado",
+    "Ano: " &
+        IF(
+            qtdAnosSelecionados = 1,
+            SELECTEDVALUE(dCalendario[Ano]),
+            "Vários Anos"
+        ) &
+        UNICHAR(10) &
+    "Mês: " &
+        IF(
+            qtdMesesSelecionados = 1,
+            SELECTEDVALUE(dCalendario[Mês]),
+            "Vários Meses"
+        )
+)
+
+
+
+"Produção Filtrada: " &
+IF(/*CONDIÇÃO*/
+    ISBLANK(SELECTEDVALUE(Calendario[ANO])) && ISBLANK(SELECTEDVALUE(Calendario[Nome do Mês]))
+    && ISBLANK(SELECTEDVALUE(dRegionais_PontoVenda[Regional]))&& ISBLANK(SELECTEDVALUE(dRegionais_PontoVenda[NM_Tipo_Ponto_Venda])) 
+    && ISBLANK(SELECTEDVALUE(dRegionais_PontoVenda[NM_Fantasia])),
+    "Nenhum Filtro Aplicado",
+    /*ELSE*/
+    " Ano >> " & IF(
+                /* CONDIÇÃO */
+                ISBLANK(SELECTEDVALUE(Calendario[ANO])),
+                "Vários Anos " & UNICHAR(10),
+                /*ELSE*/
+                SELECTEDVALUE(Calendario[ANO])&" "
+            ) & UNICHAR(10) &
+    " Mês >> " & IF(
+                /* CONDIÇÃO */
+                ISBLANK(SELECTEDVALUE(Calendario[Nome do Mês])),
+                "Vários Meses " & UNICHAR(10),
+                /* ELSE */
+                SELECTEDVALUE(Calendario[Nome do Mês])&" "
+            ) 
