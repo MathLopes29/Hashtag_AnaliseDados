@@ -24,3 +24,23 @@ Ação
 * Gráficos de Escalas diferentes: Gráfico Combinado (Linha + Coluna)
 * Gráfico de Etapas / Funil:  Afunilamento de valores	
 -- O restante segue a mesma lógica do Excel!
+
+/* REFERÊNCIAS */
+https://dribbble.com/search/dashboard 
+https://br.pinterest.com/
+https://instant-eyedropper.com/
+https://color.adobe.com/pt/
+https://community.fabric.microsoft.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery?sortby=kudos
+
+/* Onde pegar ícones */
+https://www.flaticon.com/
+https://www.iconfinder.com/
+https://thenounproject.com/
+https://endlessicons.com/
+https://fontawesome.com/icons
+
+/* Onde pegar paletas de cores */
+https://www.colorhunt.co/
+https://www.color-hex.com/
+https://coolors.co/
+https://mycolor.space/

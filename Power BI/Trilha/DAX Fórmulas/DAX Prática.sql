@@ -331,3 +331,24 @@ CALCULATE(
         DAY
     )
 )
+
+-- Crescimento Lucro Mês Anterior MoM =
+% Crescimento Lucro YoY = 
+VAR lucroAnterior =
+    CALCULATE(
+        [Lucro Total],
+        DATEADD(dCalendario[Datas], -12, MONTH)
+    )
+
+VAR crescimento = 
+    DIVIDE(
+        [Lucro Total] - lucroAnterior,
+        lucroAnterior
+    )
+
+RETURN
+    IF(
+        HASONEVALUE(dCalendario[Ano]) && NOT ISBLANK(crescimento),
+        crescimento,
+        "N/A"
+    )
