@@ -414,6 +414,7 @@ IF(/*CONDIÇÃO*/
                 /* ELSE */
                 SELECTEDVALUE(Calendario[Nome do Mês])&" "
             ) 
+    )
 
 
 Tabela Produtos = /*ALL(dProdutos[Nome Produto])*/ TOPN(5,ALL(dProdutos[Nome Produto]),[Total Vendas])
