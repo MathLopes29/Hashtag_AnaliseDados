@@ -1,0 +1,15 @@
+SP; São Paulo; 11895893 
+RJ; Rio de Janeiro; 6453682 
+BA; Salvador; 2902927 
+DF; Brasília; 2852372 
+CE; Fortaleza; 2571896 
+MG; Belo Horizonte; 2491109 
+AM; Manaus; 2020301 
+PR; Curitiba; 1864416 
+PE; Recife; 1608488 
+RS; Porto Alegre; 1472482 
+PA; Belém; 1432844 
+GO; Goiânia; 1412364 
+SP; Guarulhos; 1312197 
+SP; Campinas; 1154617 
+

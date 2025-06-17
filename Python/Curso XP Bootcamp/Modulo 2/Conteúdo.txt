@@ -1,0 +1,36 @@
+Python para a Análise de Dados Capítulo 1. Introdução à análise de dados
+    1.1 Apresentação da disciplina
+    1.2 Introdução à análise de dados
+    
+
+Capítulo 2. Numpy para a análise de dados 
+    2.1 Introdução aos arrays 
+    2.2 Criação de arrays - Prática 
+    2.3 Indexação de arrays 
+    2.4 Indexação de arrays - Prática 
+    2.5 Operações aritméticas 
+    2.6 Operações aritméticas: soma, subtração e divisão  - Prática 
+    2.7 Operações aritméticas: multiplicação element wise e matricial  - Prática 
+    2.8 Comparações e Indexação booleana 
+    2.9 Comparações e Indexação booleana - Prática 
+    2.10 Outras operações úteis em numpy - Prática 
+    2.11 Regressão linear no numpy: conceitos básicos 
+    2.12 Regressão linear no numpy - Prática   
+    
+    Capítulo 3. Pandas para a análise de dados 
+    3.1 Introdução ao pandas 
+    3.2 Introdução ao pandas - Prática 
+    3.3 Indexação 
+    3.4 Indexação - Prática 
+    3.5 Indexação booleana - Prática 
+    3.6 Ordenação no Pandas 
+    3.7 Ordenação no Pandas − Prática 
+    3.8 Visualização de dados no pandas − Prática 
+    3.9 Dicas gerais sobre o Pandas − Prática   
+    
+    Capítulo 4. Introdução ao aprendizado de máquinas 
+    4.1 Introdução ao aprendizado de máquinas 
+    4.2 Introdução ao scikit-learn 
+    4.3 Classificação: conceitos básicos 4,4 Classificação no scikit-learn - Prática 
+    4.5 Regressão linear no scikit-learn I - Prática 
+    4.6 Regressão linear no scikit-learn II - Prática
