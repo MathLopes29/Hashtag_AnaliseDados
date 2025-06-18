@@ -66,3 +66,31 @@ df.to_csv('saida.csv', index=False) # Exportação de Dados
 
 sts.median(df['coluna']).size()  # Verifica o tamanho da mediana
 #df.loc[df['coluna'] = 123] = ''
+
+
+# LINK PARA COLOR DO MATPLOTLIB.PYPLOT: https://abrir.link/FiziS=
+# Gráfico de Linhas
+df['Coluna'].plot(kind='line', color='blue', figsize=(10, 5))
+plt.title('Título do Gráfico de Linhas')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.legend(['Legenda'])
+plt.grid(True)
+plt.show()
+
+# Gráfico de Barras 
+df['Coluna'].value_counts().plot(kind='bar', color='green', figsize=(10, 5))
+plt.title('Título do Gráfico de Barras')
+plt.xlabel('Eixo X')
+plt.ylabel('Eixo Y')
+plt.legend(['Legenda'])
+plt.grid(True)
+plt.show()
+
+# Gráfico de Linhas com Marcadores
+df['Coluna'].plot(kind='-o', color='red', figsize=(10, 5), linewidth=2.5, markersize=5, grid=True)
+plt.title('Título do Gráfico de Linhas com Marcadores')
+plt.xlabel('Eixo X')    
+plt.ylabel('Eixo Y')
+plt.legend(['Legenda'])
+plt.show()
