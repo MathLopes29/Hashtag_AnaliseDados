@@ -18,6 +18,7 @@
 =CONT.SE ... Contabiliza células em um determinado críterio
 =CONT.VALORES() ... Apresenta quantidade de células preenchidas em um intervalo
 =DATA() ... Combina três valores para formar uma data
+=DATADIF($D2;HOJE();"Y") 
 =DIA() ... Informe o dia de uma data selecionada
 =DIA.DA.SEMANA ... Apresenta um número de 1 até 7 indicando o dia da semana 
 =DIA(HOJE()) .... Apresenta o dia atual do mês
