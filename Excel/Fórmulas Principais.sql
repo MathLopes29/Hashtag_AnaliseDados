@@ -63,3 +63,4 @@ SUBSTITUIR -- Substitui parte de um texto por outro texto
 PRI.MAIÚSCULA -- Converte o primeiro caractere de cada palavra em maiúscula
 ARRUMAR -- Remove espaços extras de um texto
 TEXTO -- Formata um número e converte em texto (https://support.microsoft.com/pt-br/office/texto-fun%C3%A7%C3%A3o-texto-20d5ac4d-7b94-49fd-bb38-93d29371225c)
+SOLVER -- Função do Excel Capaz de Prever dados
