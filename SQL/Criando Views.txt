@@ -1,0 +1,39 @@
+
+
+Tabela Lojas:
+
+select
+Lojas.StoreKey,
+Lojas.StoreName,
+lojas.StoreType,
+lojas.[Status],
+Geografia.RegionCountryName as 'Country',
+geografia.ContinentName as 'Continent'
+from DimStore Lojas
+left join DimGeography Geografia on Lojas.GeographyKey=Geografia.GeographyKey
+
+Tabela Cotações:
+
+select
+cotacoes.ExchangeRateKey,
+Cotacoes.CurrencyKey,
+convert(varchar(10),cotacoes.DateKey, 103) as 'DateKey',
+Cotacoes.AverageRate,
+Moedas.CurrencyName,
+CONCAT(convert(varchar(10), cotacoes.datekey, 103),cotacoes.CurrencyKey) as 'DateCurrencyKey'
+from factexchangerate Cotacoes
+left join DimCurrency Moedas on Cotacoes.CurrencyKey=Moedas.CurrencyKey
+
+Tabela Produtos:
+
+select
+produto.ProductKey,
+produto.ProductName,
+produto.BrandName,
+produto.UnitCost,
+produto.UnitPrice,
+subcategoria.ProductSubcategoryName,
+categoria.ProductCategoryName
+from DimProduct produto
+left join DimProductSubcategory subcategoria on produto.ProductSubcategoryKey = subcategoria.ProductSubcategoryKey
+left join DimProductCategory categoria on subcategoria.ProductCategoryKey=categoria.ProductCategoryKey
