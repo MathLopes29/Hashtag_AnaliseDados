@@ -477,3 +477,10 @@ CALCULATE(
     'Cadastro Prod' [Tipo] = "Luxo"
     )
 )
+
+CALCULATE(
+    [Total Fat],
+    FILTER ( 'Cadastro Prod.',
+        CONSTAINSSTRING('Cadastro Prod.'[Nome], "Bluetooth")
+    )
+)
