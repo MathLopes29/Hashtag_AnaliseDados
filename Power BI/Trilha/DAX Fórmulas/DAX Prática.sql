@@ -467,3 +467,13 @@ MAXX(
     ),
     [FAT TOTAL]
 )
+
+
+
+CALCULATE(
+    [Total Fat],
+    FILTER ( 'Cadastro Prod.',
+    'Cadastro Prod' [Nome da Marca] = "1234Zap",
+    'Cadastro Prod' [Tipo] = "Luxo"
+    )
+)
