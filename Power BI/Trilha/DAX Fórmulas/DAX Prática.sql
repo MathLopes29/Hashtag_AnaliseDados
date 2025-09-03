@@ -434,7 +434,36 @@ IF(
 
 -- TOPN Produto Mais Vendido
 Produtos mais Vendido = CALCULATE(MAX(dProdutos[Nome Produto]),TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas]))
-
 Produtos mais Vendido % = DIVIDE(CALCULATE([Total Vendas],TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])),[Total Vendas],0)
-
 Produtos mais Vendido QTD = CALCULATE([Total Vendas],TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas]))
+
+
+
+
+-- FILTER & VALUES
+
+COUNTROWS(
+    FILTER(
+        VALUES('Produtos'[Marca]),
+        [% Devoluções] <= 0.0115 
+    )
+)
+
+
+
+
+-- CROSSJOIN -> LISTA OS VALORES (VALUES) COM BASE EM CONEXÕES PRÉVIAS
+TABELA:
+CROSSJOIN (
+    VALUES('Base Vendas'[ID_Cliente]),
+    VALUES('Calendário'[Ano])
+)
+
+
+MAXX(
+    CROSSJOIN (
+        VALUES('Base Vendas'[ID_Cliente]),
+        VALUES('Calendário'[Ano])
+    ),
+    [FAT TOTAL]
+)
