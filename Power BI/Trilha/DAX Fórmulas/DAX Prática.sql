@@ -484,3 +484,21 @@ CALCULATE(
         CONSTAINSSTRING('Cadastro Prod.'[Nome], "Bluetooth")
     )
 )
+
+
+CALCULATE(
+    [Total de Vendas],
+    FILTER(
+        'Cadastro Promocoes',
+        CONSTAINSSTRING('Cadastro Promocoes'[Nome], "Férias")
+    )
+)
+
+
+CALCULATE (
+    [Faturamento Total],
+    FILTER(
+        ALL(CALENDARIO),
+        Calendario[Datas] <= MAX (Calendario [Datas])
+    )
+)
