@@ -156,7 +156,6 @@ STARTOFMONTH(fVendas[data]) -- Data inicio
 
 /* INTELIGÊNCIA DE TEMPO */
 
-
 /* Acumulado do Ano - Year to Date */
 CALCULATE(Medida; DATESYTD(dCalendario[data])) -- LISTA DE DATAS 
 TOTALYTD (Medida; dCalendario[data])
@@ -170,6 +169,11 @@ CALCULATE(Medida; DATESQTD(dCalendario))
 TOTALQTD(Medida; dCalendario[Date])
 
 /* Year over Year */
+CALCULATE(
+    Medida,
+    PARALLELPERIOD(Calendario[Datas], -12; MONTH )
+)
+    
 /* Month over Month */
 /* Quarter over Quarter */
 
