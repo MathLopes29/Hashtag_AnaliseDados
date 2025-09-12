@@ -453,6 +453,17 @@ IF(
 )
 
 
+IF(
+    HASONEVALUE(dEquipe[NM_Comissionado]),
+    RANKX(
+    ALL(dEquipe[NM_Comissionado]),
+    [Fat_Total],
+    ,
+    DESC,
+    Dense),
+    BLANK()
+)
+    
 -- TOPN Produto Mais Vendido
 Produtos mais Vendido = CALCULATE(MAX(dProdutos[Nome Produto]),TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas]))
 Produtos mais Vendido % = DIVIDE(CALCULATE([Total Vendas],TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])),[Total Vendas],0)
