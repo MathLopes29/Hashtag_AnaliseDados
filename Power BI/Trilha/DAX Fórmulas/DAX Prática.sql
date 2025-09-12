@@ -533,3 +533,58 @@ SUMMARIZE(
     fPedidos [marca],
     "TOTAL PAGO", SUM(fPedidos [faturamento])
 )
+
+/* Tabela Filtrada */
+SUMMARIZE(
+    FILTER(
+        fBase,
+        DATEDIFF(
+            fBase[Data_Venda],
+            TODAY(),
+            MONTH
+        ) > fBase[Total_Parcelas]
+    ),
+    fPedidos [id_pedido],
+    fPedidos [cliente],
+    fPedidos [marca],
+    "TOTAL PAGO", SUM(fPedidos [faturamento])
+)
+
+/* Valor Médio */
+AVERAGEX(
+    SUMMARIZE(
+        FILTER(
+            fBase,
+            DATEDIFF(
+                fBase[Data_Venda],
+                TODAY(),
+                MONTH
+            ) > fBase[Total_Parcelas]
+        ),
+        fPedidos [id_pedido],
+        fPedidos [cliente],
+        fPedidos [marca],
+        "TOTAL PAGO", SUM(fPedidos [faturamento])
+    ),
+    [TOTAL PAGO]
+)
+
+
+/* Valor a Ser Pago */
+Fat * Total de Parcelas
+
+VAR faltante = CALCULATE ([TOTAL A SER PAGO] - [TOTAL PAGO])
+VAR pago = SUM(fPedidos [faturamento])
+VAR a_ser_pago = Fat * Total de Parcelas
+VAR inadimplência = DIVIDE([FALTANTE],[TOTAL A SER PAGO],0)
+
+RETURN
+
+SUMMARIZE( 
+    fPedidos, 
+    fPedidos [cliente],
+    "TOTAL PAGO", pago,
+    "TOTAL A SER PAGO", a_ser_pago,
+    "FALTANTE", faltante,
+    "% INADIMPLÊNCIA", inadimplência
+)
