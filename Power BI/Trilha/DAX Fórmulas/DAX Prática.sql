@@ -175,7 +175,24 @@ CALCULATE(
 )
     
 /* Month over Month */
-/* Quarter over Quarter */
+CALCULATE(
+    Medida,
+    PARALLELPERIOD(Calendario[Datas], -1; MONTH )
+)
+
+/* Calcular dias úteis - Parecido com Excel / DIAS DA SEMANA*/
+NETWORKDAYS (fBase [ínicio], fBase[fim], 1, dCalendário - uma tabela com apenas uma coluna!)
+
+1-Sáb.Dom
+2-Dom.Segu
+3-Seg.Terça
+4-Ter-Qua
+    até
+7-Sex.Sáb
+    ...
+11-Somente Domingo
+    ...
+17-Somente Sábado
 
 /* Calcula o valor no mês anterior */
 CALCULATE(
@@ -505,4 +522,14 @@ CALCULATE (
         ALL(CALENDARIO),
         Calendario[Datas] <= MAX (Calendario [Datas])
     )
+)
+
+
+/* Agrupar Tabelas - Ele resume os dados exemplo temos vários pedidos de um cliente.... com essa fórmula eu consigo reumir e obter o total! */
+SUMMARIZE( 
+    fPedidos, 
+    fPedidos [id_pedido],
+    fPedidos [cliente],
+    fPedidos [marca],
+    "TOTAL PAGO", SUM(fPedidos [faturamento])
 )
