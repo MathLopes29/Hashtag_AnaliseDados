@@ -452,11 +452,31 @@ IF(
     BLANK()
 )
 
+IF(
+    ISINSCOPE(dCalendario[Ano]),
+    RANKX(
+    ALLSELECTED(dCalendario[Ano]),
+    [Fat_Total],
+    ,
+    DESC,
+    Dense),
+    
+    RANKX(
+    ALLSELECTED(dCalendario[Mês]),
+    [Fat_Total],
+    ,
+    DESC,
+    Dense
+)    
 
+    
+
+OBS: Vendas * 1.000.000 + Fat * 1 -> Critério de Desempate 
+    
 IF(
     HASONEVALUE(dEquipe[NM_Comissionado]),
     RANKX(
-    ALL(dEquipe[NM_Comissionado]),
+    ALL(dEquipe[NM_Comissionado]), /*ALLSELECTED(dEquipe[NM_Comissionado])*/
     [Fat_Total],
     ,
     DESC,
