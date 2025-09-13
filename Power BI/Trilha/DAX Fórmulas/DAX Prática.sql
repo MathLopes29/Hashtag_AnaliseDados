@@ -514,6 +514,18 @@ ADDCOLUMMS(
 )
 
 
+SUMX(
+    TOPN(5, ALL(dClientes[Marcas]),[Fat]),
+    [Fat]
+)
+
+    OU
+    
+CALCULATE(
+    [Total Vendas],
+    TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])
+)
+
 
 
 -- FILTER & VALUES
