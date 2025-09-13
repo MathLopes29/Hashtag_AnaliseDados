@@ -440,7 +440,7 @@ IF(/*CONDIÇÃO*/
 
 Tabela Produtos = /*ALL(dProdutos[Nome Produto])*/ TOPN(5,ALL(dProdutos[Nome Produto]),[Total Vendas])
 
---Ranking Equipe =
+--Ranking Equipe por Hierarquia =
 IF(
     ISINSCOPE(dEquipe[NM_Comissionado]),
     RANKX(
@@ -453,24 +453,26 @@ IF(
 )
 
 IF(
-    ISINSCOPE(dCalendario[Ano]),
-    RANKX(
-    ALLSELECTED(dCalendario[Ano]),
-    [Fat_Total],
-    ,
-    DESC,
-    Dense),
+    ISINSCOPE(dCalendario[Mês]),
+        RANKX(
+            ALLSELECTED(dCalendario[Mês]),
+            [Fat_Total],
+            ,
+            DESC,
+            Dense
+    ),
     
     RANKX(
-    ALLSELECTED(dCalendario[Mês]),
-    [Fat_Total],
-    ,
-    DESC,
-    Dense
+        ALLSELECTED(dCalendario[Ano]),
+        [Fat_Total],
+        ,
+        DESC,
+        Dense
+    )
 )    
 
     
-
+/* Modelo Normal */
 OBS: Vendas * 1.000.000 + Fat * 1 -> Critério de Desempate 
     
 IF(
@@ -485,9 +487,31 @@ IF(
 )
     
 -- TOPN Produto Mais Vendido
-Produtos mais Vendido = CALCULATE(MAX(dProdutos[Nome Produto]),TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas]))
-Produtos mais Vendido % = DIVIDE(CALCULATE([Total Vendas],TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])),[Total Vendas],0)
-Produtos mais Vendido QTD = CALCULATE([Total Vendas],TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas]))
+Produtos mais Vendido = CALCULATE(
+    MAX(dProdutos[Nome Produto]),
+    TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])
+)
+
+Produtos mais Vendido % = DIVIDE(
+    CALCULATE(
+        [Total Vendas],
+        TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])
+    ),
+    [Total Vendas],
+    0
+)
+
+Produtos mais Vendido QTD = CALCULATE(
+    [Total Vendas],
+    TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])
+)
+
+
+ADDCOLUMMS(
+    TOPN(15, ALL(dClientes[Nome]),[Fat]),
+    "Total",
+    [Fat]
+)
 
 
 
