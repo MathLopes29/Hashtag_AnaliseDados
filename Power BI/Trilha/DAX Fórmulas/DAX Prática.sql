@@ -506,6 +506,20 @@ Produtos mais Vendido QTD = CALCULATE(
     TOPN(1,ALL(dProdutos[Nome Produto]),[Total Vendas])
 )
 
+Acumulado por Marca = CALCULATE(
+    [Fat_Total],
+    TOPN([Posição], ALL('dProdutos'[Marca]),[Total Vendas])
+)
+
+% Acumulado por Marca = 
+var total_vendas_fixo = CALCULATE([Fat_Total], ALL('dProdutos'[Marca]))
+
+RETURN
+
+DIVIDE(
+    [Acumulado por Marca], total_vendas_fixo,0
+)
+
 
 ADDCOLUMMS(
     TOPN(15, ALL(dClientes[Nome]),[Fat]),
