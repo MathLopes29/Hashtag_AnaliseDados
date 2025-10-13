@@ -345,3 +345,23 @@ print("****************************************************************")
 Cadastro = [0, 0, 0, 0]
 Cadastro.insert(0,145)
 print(Cadastro)
+
+
+
+lista = [
+    ['Maça', 5.00],
+    ['Banana', 3.00],
+]
+
+while True:
+    resposta = input("Digite S para sair ou qualquer outra tecla para continuar: ")
+    if resposta.upper() == "S":
+        break
+    else:
+        nome_produto = input("Digite o nome do produto: ")
+        if not nome_produto:
+            print("Nome do produto não pode ser vazio.")
+            break
+        vendas = float(input("Digite o valor das vendas: "))
+        lista.append([nome_produto, vendas])
+        print(lista)
