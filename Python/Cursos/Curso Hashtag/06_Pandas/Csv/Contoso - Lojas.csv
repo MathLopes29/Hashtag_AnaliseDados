@@ -1,4 +1,4 @@
-ÿID Loja;Nome da Loja;Quantidade Colaboradores;País
+ID Loja;Nome da Loja;Quantidade Colaboradores;Pais
 1;Loja Contoso Seattle No.1 ;17;Estados Unidos
 2;Loja Contoso Seattle No.2 ;25;Estados Unidos
 3;Loja Contoso Kennewick ;26;Estados Unidos
@@ -18,7 +18,7 @@
 18;Loja Contoso Veradale ;26;Estados Unidos
 20;Loja Contoso Englewood ;33;Estados Unidos
 21;Loja Contoso Wheat Ridge ;47;Estados Unidos
-22;Loja Contoso Westminster ;22;Canadá
+22;Loja Contoso Westminster ;22;Canadï¿½
 23;Loja Contoso Grand Junction ;17;Estados Unidos
 24;Loja Contoso New Castle ;25;Estados Unidos
 25;Loja Contoso Greeley  No.1 ;25;Estados Unidos
@@ -197,18 +197,18 @@
 212;Loja Contoso Liverpool ;64;Reino Unido
 213;Loja Contoso Knotty Ash ;24;Reino Unido
 214;Loja Contoso Leeds ;25;Reino Unido
-215;Loja Contoso Paris ;12;França
-216;Loja Contoso Marseille ;13;França
-217;Loja Contoso Lyon ;15;França
-218;Loja Contoso Toulouse ;23;França
-219;Loja Contoso Nice ;32;França
-220;Loja Contoso Nantes ;11;França
-221;Loja Contoso Strasbourg ;10;França
-222;Loja Contoso Roma ;43;Itália
-223;Loja Contoso Venezia ;11;Itália
-224;Loja Contoso Firenze ;45;Itália
-225;Loja Contoso Torino ;24;Itália
-226;Loja Contoso Milan ;23;Itália
+215;Loja Contoso Paris ;12;Franï¿½a
+216;Loja Contoso Marseille ;13;Franï¿½a
+217;Loja Contoso Lyon ;15;Franï¿½a
+218;Loja Contoso Toulouse ;23;Franï¿½a
+219;Loja Contoso Nice ;32;Franï¿½a
+220;Loja Contoso Nantes ;11;Franï¿½a
+221;Loja Contoso Strasbourg ;10;Franï¿½a
+222;Loja Contoso Roma ;43;Itï¿½lia
+223;Loja Contoso Venezia ;11;Itï¿½lia
+224;Loja Contoso Firenze ;45;Itï¿½lia
+225;Loja Contoso Torino ;24;Itï¿½lia
+226;Loja Contoso Milan ;23;Itï¿½lia
 227;Loja Contoso Naples ;13;Estados Unidos
 228;Loja Contoso Berlin ;13;Alemanha
 230;Loja Contoso koln No.2 ;25;Alemanha
@@ -223,69 +223,69 @@
 239;Loja Contoso Munich ;18;Alemanha
 240;Loja Contoso Amsterdam ;26;Holanda
 241;Loja Contoso Copenhagen ;25;Dinamarca
-242;Loja Contoso Stockholm ;33;Suécia
+242;Loja Contoso Stockholm ;33;Suï¿½cia
 243;Loja Contoso Madrid ;35;Espanha
-244;Loja Contoso Ljubljana ;36;Eslovênia
-245;Loja Contoso Bucharest ;25;Romênia
-246;Loja Contoso Berne ;53;Suíça
-247;Loja Contoso Warsaw ;15;Polônia
+244;Loja Contoso Ljubljana ;36;Eslovï¿½nia
+245;Loja Contoso Bucharest ;25;Romï¿½nia
+246;Loja Contoso Berne ;53;Suï¿½ï¿½a
+247;Loja Contoso Warsaw ;15;Polï¿½nia
 248;Loja Contoso Valletta ;42;Malta
 249;Loja Contoso Dublin ;55;Irlanda
-250;Loja Contoso Athens ;15;Grécia
+250;Loja Contoso Athens ;15;Grï¿½cia
 251;Loja Contoso Singapore ;27;Singapura
-252;Loja Contoso Canberra ;28;Austrália
-253;Loja Contoso Sydney No.1 ;20;Austrália
-254;Loja Contoso Yerevan ;15;Armênia
-255;Loja Contoso New Delhi ;29;Índia
-256;Loja Contoso Mumbai ;35;Índia
-257;Loja Contoso Kolkata ;35;Índia
-258;Loja Contoso Thimphu No.1 ;35;Butão
+252;Loja Contoso Canberra ;28;Austrï¿½lia
+253;Loja Contoso Sydney No.1 ;20;Austrï¿½lia
+254;Loja Contoso Yerevan ;15;Armï¿½nia
+255;Loja Contoso New Delhi ;29;ï¿½ndia
+256;Loja Contoso Mumbai ;35;ï¿½ndia
+257;Loja Contoso Kolkata ;35;ï¿½ndia
+258;Loja Contoso Thimphu No.1 ;35;Butï¿½o
 259;Loja Contoso Hong Kong No.1 ;35;China
-260;Loja Contoso Tehran No.1 ;35;Irã
-261;Loja Contoso Damascus No.1 ;35;Síria
-262;Loja Contoso Bangkok No.1 ;62;Tailândia
-263;Loja Contoso Moscow  No.1 ;65;Rússia
-264;Loja Contoso Ashgabat No.1 ;68;Turquemenistão
-265;Loja Contoso Islamabad No.1 ;71;Paquistão
-267;Loja Contoso Tokyo No.1 ;68;Japão
-268;Loja Contoso Tokyo No.2 ;68;Japão
-269;Loja Contoso Yokohama ;77;Japão
-270;Loja Contoso Osaka No.1 ;80;Japão
-271;Loja Contoso Nagoya ;50;Japão
-272;Loja Contoso Sapporo ;50;Japão
-273;Loja Contoso Kyoto ;50;Japão
+260;Loja Contoso Tehran No.1 ;35;Irï¿½
+261;Loja Contoso Damascus No.1 ;35;Sï¿½ria
+262;Loja Contoso Bangkok No.1 ;62;Tailï¿½ndia
+263;Loja Contoso Moscow  No.1 ;65;Rï¿½ssia
+264;Loja Contoso Ashgabat No.1 ;68;Turquemenistï¿½o
+265;Loja Contoso Islamabad No.1 ;71;Paquistï¿½o
+267;Loja Contoso Tokyo No.1 ;68;Japï¿½o
+268;Loja Contoso Tokyo No.2 ;68;Japï¿½o
+269;Loja Contoso Yokohama ;77;Japï¿½o
+270;Loja Contoso Osaka No.1 ;80;Japï¿½o
+271;Loja Contoso Nagoya ;50;Japï¿½o
+272;Loja Contoso Sapporo ;50;Japï¿½o
+273;Loja Contoso Kyoto ;50;Japï¿½o
 274;Loja Contoso Seoul ;50;Coreia do Sul
 275;Loja Contoso Busan ;50;Coreia do Sul
-276;Loja Contoso Bishkek ;50;Quirguistão
+276;Loja Contoso Bishkek ;50;Quirguistï¿½o
 277;Loja Contoso Shanghai No.1 ;95;China
 278;Loja Contoso Urumqi ;50;China
 279;Loja Contoso Beijing ;86;China
 280;Loja Contoso Guangzhou ;131;China
 281;Loja Contoso Shanghai No.2 ;95;China
-282;Loja Contoso Ottawa No.1 ;95;Canadá
-283;Loja Contoso Ottawa No.2 ;95;Canadá
-284;Loja Contoso Toronto No.1 ;95;Canadá
-285;Loja Contoso Toronto No.2 ;95;Canadá
-286;Loja Contoso Toronto No.3 ;95;Canadá
-287;Loja Contoso Montreal No.1 ;95;Canadá
-288;Loja Contoso Montreal No.2 ;95;Canadá
-289;Loja Contoso Vancouver  No.1 ;95;Canadá
-290;Loja Contoso Vancouver  No.2 ;95;Canadá
-291;Loja Contoso Calgary  ;95;Canadá
-292;Loja Contoso Thimphu No.2 ;95;Butão
+282;Loja Contoso Ottawa No.1 ;95;Canadï¿½
+283;Loja Contoso Ottawa No.2 ;95;Canadï¿½
+284;Loja Contoso Toronto No.1 ;95;Canadï¿½
+285;Loja Contoso Toronto No.2 ;95;Canadï¿½
+286;Loja Contoso Toronto No.3 ;95;Canadï¿½
+287;Loja Contoso Montreal No.1 ;95;Canadï¿½
+288;Loja Contoso Montreal No.2 ;95;Canadï¿½
+289;Loja Contoso Vancouver  No.1 ;95;Canadï¿½
+290;Loja Contoso Vancouver  No.2 ;95;Canadï¿½
+291;Loja Contoso Calgary  ;95;Canadï¿½
+292;Loja Contoso Thimphu No.2 ;95;Butï¿½o
 293;Loja Contoso Hong Kong No.2 ;95;China
-294;Loja Contoso Tehran No.2 ;95;Irã
-295;Loja Contoso Damascus No.2 ;95;Síria
-296;Loja Contoso Bangkok No.2 ;95;Tailândia
-297;Loja Contoso Moscow  No.2 ;95;Rússia
-298;Loja Contoso Ashgabat  No.2 ;95;Turquemenistão
-299;Loja Contoso Islamabad  No.2 ;95;Paquistão
-300;Loja Contoso Sydney  No.2 ;95;Austrália
-301;Loja Contoso Osaka No.2 ;95;Japão
+294;Loja Contoso Tehran No.2 ;95;Irï¿½
+295;Loja Contoso Damascus No.2 ;95;Sï¿½ria
+296;Loja Contoso Bangkok No.2 ;95;Tailï¿½ndia
+297;Loja Contoso Moscow  No.2 ;95;Rï¿½ssia
+298;Loja Contoso Ashgabat  No.2 ;95;Turquemenistï¿½o
+299;Loja Contoso Islamabad  No.2 ;95;Paquistï¿½o
+300;Loja Contoso Sydney  No.2 ;95;Austrï¿½lia
+301;Loja Contoso Osaka No.2 ;95;Japï¿½o
 302;Loja Contoso Taipei  ;95;Taiwan
 303;Loja Contoso Lisbon ;95;Portugal
-304;Loja Contoso Saint Petersburg ;95;Rússia
-305;Loja Contoso Nizhny Novgorod ;95;Rússia
+304;Loja Contoso Saint Petersburg ;95;Rï¿½ssia
+305;Loja Contoso Nizhny Novgorod ;95;Rï¿½ssia
 12;Loja Contoso North Bend ;19;Estados Unidos
 19;Loja Contoso Cheney ;19;Estados Unidos
 29;Loja Contoso Sedalia ;47;Estados Unidos
@@ -303,5 +303,5 @@
 306;Loja Contoso Europe Online ;7;Alemanha
 307;Loja Contoso Asia Online ;8;China
 308;Loja Contoso North America Reseller;15;Estados Unidos
-309;Loja Contoso Europe Reseller;12;França
+309;Loja Contoso Europe Reseller;12;Franï¿½a
 310;Loja Contoso Asia Reseller;17;China

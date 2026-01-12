@@ -1,4 +1,4 @@
-ÿID Cliente;Primeiro Nome;Sobrenome;E-mail;Genero;Numero de Filhos;Data de Nascimento;;;;
+ID Cliente;Primeiro Nome;Sobrenome;E-mail;Genero;Numero de Filhos;Data de Nascimento;;;;
 1;Garnet;Lanfranchi;glanfranchi0@mayoclinic.com;Feminino;2;12/05/1995;;;;
 2;Lurette;Roseblade;lroseblade1@bigcartel.com;Feminino;2;30/06/1943;;;;
 3;Glenden;Ishchenko;gishchenko2@moonfruit.com;Masculino;5;09/04/1989;;;;
@@ -21876,7 +21876,7 @@
 21875;Robert;Robinson;robert78@adventure-works.com;Masculino;0;11/03/1975;;;;
 21876;Noah;Jones;noah60@adventure-works.com;Masculino;5;05/10/2007;;;;
 21877;Krystal;Yang;krystal5@adventure-works.com;Feminino;2;07/04/1999;;;;
-21878;José;Rodriguez;josé81@adventure-works.com;Masculino;0;18/07/1982;;;;
+21878;Josï¿½;Rodriguez;josï¿½81@adventure-works.com;Masculino;0;18/07/1982;;;;
 21879;Hunter;Hall;hunter58@adventure-works.com;Masculino;0;20/02/1947;;;;
 21880;Cameron;Harris;cameron32@adventure-works.com;Masculino;5;01/01/1975;;;;
 21881;Gabriel;Hall;gabriel52@adventure-works.com;Masculino;0;12/12/2004;;;;
@@ -22568,7 +22568,7 @@
 22567;Sarah;Clark;sarah21@adventure-works.com;Feminino;5;10/05/2002;;;;
 22568;Elizabeth;West;elizabeth42@adventure-works.com;Feminino;1;15/02/2000;;;;
 22569;Kayla;Henderson;kayla29@adventure-works.com;Feminino;1;18/08/1966;;;;
-22570;Francisco;Javier Castrejón;francisco0@adventure-works.com;Masculino;3;12/09/1971;;;;
+22570;Francisco;Javier Castrejï¿½n;francisco0@adventure-works.com;Masculino;3;12/09/1971;;;;
 22571;Tristan;Ross;tristan4@adventure-works.com;Masculino;5;24/06/1980;;;;
 22572;Emily;Jenkins;emily31@adventure-works.com;Feminino;1;05/07/1977;;;;
 22573;Louis;Zhao;louis4@adventure-works.com;Masculino;2;07/12/1965;;;;
@@ -22614,7 +22614,7 @@
 22613;Ethan;Anderson;ethan43@adventure-works.com;Masculino;1;12/05/1984;;;;
 22614;Ryan;Jones;ryan42@adventure-works.com;Masculino;0;27/12/1999;;;;
 22615;Ryan;Brown;ryan43@adventure-works.com;Masculino;0;01/06/2013;;;;
-22616;Jésus;Suarez;jésus18@adventure-works.com;Masculino;0;22/05/1954;;;;
+22616;Jï¿½sus;Suarez;jï¿½sus18@adventure-works.com;Masculino;0;22/05/1954;;;;
 22617;Jacob;Brown;jacob4@adventure-works.com;Masculino;1;02/01/1963;;;;
 22618;Lauren;Sanders;lauren46@adventure-works.com;Feminino;1;31/12/1975;;;;
 22619;Grace;Jenkins;grace54@adventure-works.com;Feminino;4;01/03/1986;;;;
@@ -22785,7 +22785,7 @@
 22784;Samuel;Williams;samuel60@adventure-works.com;Masculino;4;05/04/1973;;;;
 22785;Dennis;Huang;dennis7@adventure-works.com;Masculino;3;03/05/1964;;;;
 22786;Hunter;Anderson;hunter68@adventure-works.com;Masculino;3;01/07/1976;;;;
-22787;Jorge;Leitão;jorge0@adventure-works.com;Masculino;0;22/10/1995;;;;
+22787;Jorge;Leitï¿½o;jorge0@adventure-works.com;Masculino;0;22/10/1995;;;;
 22788;William;Harris;william9@adventure-works.com;Masculino;0;24/10/1954;;;;
 22789;Jorge;Hu;jorge23@adventure-works.com;Masculino;5;18/05/1996;;;;
 22790;Brandon;Davis;brandon43@adventure-works.com;Masculino;1;28/10/2001;;;;
@@ -23096,7 +23096,7 @@
 23095;Rebekah;Blanco;rebekah35@adventure-works.com;Feminino;3;25/01/2011;;;;
 23096;Marie;Garcia;marie16@adventure-works.com;Feminino;3;25/08/1995;;;;
 23097;Marie;Lopez;marie18@adventure-works.com;Feminino;1;19/09/1974;;;;
-23098;Kari;Muñoz;kari27@adventure-works.com;Feminino;4;09/02/1981;;;;
+23098;Kari;Muï¿½oz;kari27@adventure-works.com;Feminino;4;09/02/1981;;;;
 23099;Courtney;Lopez;courtney17@adventure-works.com;Feminino;2;24/01/2001;;;;
 23100;Bruce;Sara;bruce9@adventure-works.com;Masculino;0;08/07/2004;;;;
 23101;Jasmine;Smith;jasmine0@adventure-works.com;Feminino;0;12/03/1952;;;;
@@ -23120,7 +23120,7 @@
 23119;Terry;Xie;terry6@adventure-works.com;Masculino;1;06/01/1996;;;;
 23120;Terry;Nara;terry19@adventure-works.com;Masculino;2;04/02/1990;;;;
 23121;Stacey;Guo;stacey19@adventure-works.com;Feminino;5;07/12/2008;;;;
-23122;Jésus;Dominguez;jésus11@adventure-works.com;Masculino;0;13/03/1960;;;;
+23122;Jï¿½sus;Dominguez;jï¿½sus11@adventure-works.com;Masculino;0;13/03/1960;;;;
 23123;Larry;Serrano;larry19@adventure-works.com;Feminino;5;31/01/1959;;;;
 23124;Janelle;Rodriguez;janelle16@adventure-works.com;Feminino;1;27/05/1978;;;;
 23125;Kathleen;Gutierrez;kathleen13@adventure-works.com;Feminino;2;24/10/1998;;;;
@@ -23391,7 +23391,7 @@
 23390;Janelle;Sai;janelle5@adventure-works.com;Feminino;0;18/05/1970;;;;
 23391;Brandi;Dominguez;brandi12@adventure-works.com;Feminino;4;31/12/1980;;;;
 23392;Zachary;White;zachary43@adventure-works.com;Masculino;0;28/01/1974;;;;
-23393;Craig;Jiménez;craig6@adventure-works.com;Masculino;0;22/06/2008;;;;
+23393;Craig;Jimï¿½nez;craig6@adventure-works.com;Masculino;0;22/06/2008;;;;
 23394;Douglas;Perez;douglas25@adventure-works.com;Masculino;3;12/01/1994;;;;
 23395;Kelvin;Hu;kelvin39@adventure-works.com;Masculino;0;08/08/1983;;;;
 23396;Donald;Srini;donald10@adventure-works.com;Masculino;0;28/04/1993;;;;
@@ -23584,7 +23584,7 @@
 23583;Melinda;Moreno;melinda3@adventure-works.com;Feminino;0;01/03/1952;;;;
 23584;Sabrina;Serrano;sabrina10@adventure-works.com;Feminino;2;28/03/1947;;;;
 23585;Cole;Sanders;cole4@adventure-works.com;Masculino;0;18/06/1998;;;;
-23586;Gina;Jiménez;gina6@adventure-works.com;Feminino;0;18/07/1979;;;;
+23586;Gina;Jimï¿½nez;gina6@adventure-works.com;Feminino;0;18/07/1979;;;;
 23587;Kendra;Navarro;kendra10@adventure-works.com;Feminino;3;05/05/1965;;;;
 23588;Teresa;Blanco;teresa16@adventure-works.com;Feminino;0;07/11/1978;;;;
 23589;Nancy;Garcia;nancy18@adventure-works.com;Feminino;5;21/01/1995;;;;
@@ -23597,14 +23597,14 @@
 23596;Krystal;Xu;krystal12@adventure-works.com;Feminino;0;07/07/2006;;;;
 23597;Leah;Huang;leah4@adventure-works.com;Feminino;0;09/03/1960;;;;
 23598;Thomas;Hall;thomas84@adventure-works.com;Masculino;0;07/08/1972;;;;
-23599;Carrie;Jiménez;carrie5@adventure-works.com;Feminino;4;15/11/1956;;;;
+23599;Carrie;Jimï¿½nez;carrie5@adventure-works.com;Feminino;4;15/11/1956;;;;
 23600;Carrie;Vazquez;carrie13@adventure-works.com;Feminino;0;25/10/1977;;;;
 23601;Brent;Zhao;brent10@adventure-works.com;Masculino;0;26/04/2000;;;;
 23602;Janelle;Suri;janelle0@adventure-works.com;Feminino;0;18/12/1969;;;;
 23603;Curtis;She;curtis20@adventure-works.com;Masculino;2;16/02/1997;;;;
 23604;Stacy;Carlson;stacy19@adventure-works.com;Feminino;0;11/02/1965;;;;
 23605;Brandy;Subram;brandy9@adventure-works.com;Masculino;0;22/07/1998;;;;
-23606;Casey;Jiménez;casey29@adventure-works.com;Masculino;0;13/12/1966;;;;
+23606;Casey;Jimï¿½nez;casey29@adventure-works.com;Masculino;0;13/12/1966;;;;
 23607;Cory;Perez;cory17@adventure-works.com;Feminino;2;21/03/1996;;;;
 23608;Dustin;Pal;dustin12@adventure-works.com;Masculino;4;17/10/1987;;;;
 23609;Cedric;Zhou;cedric9@adventure-works.com;Masculino;3;04/01/2001;;;;
@@ -23891,7 +23891,7 @@
 23890;Leslie;Gill;leslie14@adventure-works.com;Feminino;5;07/10/1943;;;;
 23891;Cory;Weber;cory2@adventure-works.com;Feminino;2;11/09/1995;;;;
 23892;Nelson;Suarez;nelson18@adventure-works.com;Masculino;3;21/09/2001;;;;
-23893;Byron;Jiménez;byron4@adventure-works.com;Masculino;0;31/07/1948;;;;
+23893;Byron;Jimï¿½nez;byron4@adventure-works.com;Masculino;0;31/07/1948;;;;
 23894;Cassandra;Raman;cassandra13@adventure-works.com;Feminino;2;08/10/1975;;;;
 23895;Kristina;Kapoor;kristina1@adventure-works.com;Feminino;0;16/11/1960;;;;
 23896;Tara;Xu;tara5@adventure-works.com;Feminino;1;22/12/1971;;;;
@@ -23900,7 +23900,7 @@
 23899;Amy;Wu;amy14@adventure-works.com;Feminino;5;28/04/1997;;;;
 23900;Gregory;Andersen;gregory16@adventure-works.com;Masculino;0;20/10/1963;;;;
 23901;Max;Gomez;max2@adventure-works.com;Masculino;4;12/03/1957;;;;
-23902;Andy;Jiménez;andy10@adventure-works.com;Masculino;1;17/09/1981;;;;
+23902;Andy;Jimï¿½nez;andy10@adventure-works.com;Masculino;1;17/09/1981;;;;
 23903;Alfredo;Moreno;alfredo7@adventure-works.com;Masculino;0;13/10/1950;;;;
 23904;Jaime;Gomez;jaime0@adventure-works.com;Masculino;2;13/12/1987;;;;
 23905;Evelyn;Prasad;evelyn10@adventure-works.com;Feminino;1;24/08/1955;;;;
@@ -24147,7 +24147,7 @@
 24146;Melissa;Kelly;melissa25@adventure-works.com;Feminino;2;22/07/1981;;;;
 24147;Dominic;Chandra;dominic3@adventure-works.com;Feminino;0;12/01/1997;;;;
 24148;Dominic;Mehta;dominic14@adventure-works.com;Feminino;2;12/04/2001;;;;
-24149;Geoffrey;Kovár;geoffrey4@adventure-works.com;Masculino;2;13/05/2001;;;;
+24149;Geoffrey;Kovï¿½r;geoffrey4@adventure-works.com;Masculino;2;13/05/2001;;;;
 24150;Riley;Ward;riley32@adventure-works.com;Feminino;0;30/11/1997;;;;
 24151;Sheena;Andersen;sheena11@adventure-works.com;Feminino;2;21/04/1968;;;;
 24152;Katelyn;Bell;katelyn13@adventure-works.com;Feminino;0;11/04/1979;;;;
@@ -24241,7 +24241,7 @@
 24240;Diana;Ortega;diana21@adventure-works.com;Feminino;0;19/12/1978;;;;
 24241;Natasha;Ramos;natasha17@adventure-works.com;Feminino;3;16/04/1955;;;;
 24242;Joshua;Miller;joshua8@adventure-works.com;Masculino;4;15/10/1959;;;;
-24243;Dana;Jiménez;dana21@adventure-works.com;Feminino;0;27/08/1972;;;;
+24243;Dana;Jimï¿½nez;dana21@adventure-works.com;Feminino;0;27/08/1972;;;;
 24244;Craig;Romero;craig10@adventure-works.com;Masculino;3;26/01/2000;;;;
 24245;Nelson;Martin;nelson0@adventure-works.com;Masculino;4;11/04/2000;;;;
 24246;Casey;Gomez;casey24@adventure-works.com;Masculino;3;02/11/1965;;;;
@@ -24611,7 +24611,7 @@
 24610;Wesley;Zeng;wesley22@adventure-works.com;Masculino;0;27/11/1956;;;;
 24611;Curtis;Ma;curtis12@adventure-works.com;Masculino;0;15/02/1990;;;;
 24612;Alan;Wang;alan29@adventure-works.com;Masculino;0;28/07/2005;;;;
-24613;Jésus;Martin;jésus1@adventure-works.com;Masculino;2;05/08/1961;;;;
+24613;Jï¿½sus;Martin;jï¿½sus1@adventure-works.com;Masculino;2;05/08/1961;;;;
 24614;Kathleen;Alonso;kathleen10@adventure-works.com;Feminino;0;07/10/1960;;;;
 24615;Erika;Romero;erika6@adventure-works.com;Feminino;2;23/12/1964;;;;
 24616;Chelsea;Weber;chelsea4@adventure-works.com;Feminino;3;04/03/1955;;;;
@@ -25073,13 +25073,13 @@
 25072;Benjamin;Thompson;benjamin52@adventure-works.com;Masculino;0;07/08/1958;;;;
 25073;Todd;She;todd20@adventure-works.com;Masculino;0;26/04/1969;;;;
 25074;Curtis;Zhou;curtis8@adventure-works.com;Masculino;0;19/10/1960;;;;
-25075;Jésus;Gomez;jésus2@adventure-works.com;Masculino;0;03/08/2000;;;;
+25075;Jï¿½sus;Gomez;jï¿½sus2@adventure-works.com;Masculino;0;03/08/2000;;;;
 25076;Janelle;Sanchez;janelle17@adventure-works.com;Feminino;1;28/02/1991;;;;
 25077;Jacob;Lee;jacob18@adventure-works.com;Masculino;0;14/04/1955;;;;
 25078;Erika;Carlson;erika15@adventure-works.com;Feminino;0;15/04/1952;;;;
 25079;Michael;Taylor;michael41@adventure-works.com;Masculino;4;06/10/1982;;;;
 25080;Natasha;Sanz;natasha20@adventure-works.com;Feminino;2;18/01/1982;;;;
-25081;Dana;Muñoz;dana23@adventure-works.com;Feminino;5;29/01/1996;;;;
+25081;Dana;Muï¿½oz;dana23@adventure-works.com;Feminino;5;29/01/1996;;;;
 25082;Whitney;Chandra;whitney2@adventure-works.com;Feminino;0;01/09/2005;;;;
 25083;Craig;Gutierrez;craig12@adventure-works.com;Masculino;1;11/06/1984;;;;
 25084;Nelson;Ruiz;nelson2@adventure-works.com;Masculino;0;16/05/1950;;;;
@@ -25410,7 +25410,7 @@
 25409;Beth;Dominguez;beth15@adventure-works.com;Feminino;3;26/11/1964;;;;
 25410;Latasha;Alvarez;latasha4@adventure-works.com;Feminino;3;18/04/1998;;;;
 25411;Latasha;Rubio;latasha21@adventure-works.com;Feminino;0;15/05/1972;;;;
-25412;Cheryl;Jiménez;cheryl7@adventure-works.com;Feminino;3;29/10/1964;;;;
+25412;Cheryl;Jimï¿½nez;cheryl7@adventure-works.com;Feminino;3;29/10/1964;;;;
 25413;Raquel;Torres;raquel8@adventure-works.com;Feminino;0;27/08/1985;;;;
 25414;Marissa;Gonzales;marissa14@adventure-works.com;Feminino;3;23/10/1986;;;;
 25415;Clarence;Kumar;clarence22@adventure-works.com;Feminino;4;11/03/1979;;;;
@@ -25449,7 +25449,7 @@
 25448;Edwin;Shan;edwin33@adventure-works.com;Masculino;5;14/01/2001;;;;
 25449;Brian;Lauer;brian10@adventure-works.com;Masculino;0;09/02/1980;;;;
 25450;Colin;Xie;colin26@adventure-works.com;Masculino;3;26/01/2013;;;;
-25451;Javier;Muñoz;javier3@adventure-works.com;Masculino;0;27/06/2000;;;;
+25451;Javier;Muï¿½oz;javier3@adventure-works.com;Masculino;0;27/06/2000;;;;
 25452;Robin;Hernandez;robin1@adventure-works.com;Masculino;2;27/01/1954;;;;
 25453;Linda;Jimenez;linda20@adventure-works.com;Feminino;1;27/07/1981;;;;
 25454;Desiree;Gill;desiree10@adventure-works.com;Feminino;1;31/03/1997;;;;
@@ -25482,7 +25482,7 @@
 25481;Jorge;Zhang;jorge1@adventure-works.com;Masculino;0;20/10/1997;;;;
 25482;Jorge;Zheng;jorge22@adventure-works.com;Masculino;0;23/02/2000;;;;
 25483;Alan;Zhang;alan28@adventure-works.com;Masculino;0;06/11/1996;;;;
-25484;Jésus;Carlson;jésus17@adventure-works.com;Masculino;1;01/07/1951;;;;
+25484;Jï¿½sus;Carlson;jï¿½sus17@adventure-works.com;Masculino;1;01/07/1951;;;;
 25485;Brandon;Williams;brandon40@adventure-works.com;Masculino;2;19/06/1998;;;;
 25486;Dylan;Lewis;dylan51@adventure-works.com;Masculino;5;12/04/1996;;;;
 25487;Jacob;Miller;jacob6@adventure-works.com;Masculino;0;28/04/2003;;;;
@@ -25743,8 +25743,8 @@
 25742;Ian;Kelly;ian67@adventure-works.com;Masculino;0;01/01/1964;;;;
 25743;Felicia;Vazquez;felicia14@adventure-works.com;Feminino;0;13/09/1955;;;;
 25744;Isaiah;Richardson;isaiah8@adventure-works.com;Masculino;3;12/02/1990;;;;
-25745;Hector;Muñoz;hector5@adventure-works.com;Masculino;0;19/03/1951;;;;
-25746;Danny;Jiménez;danny6@adventure-works.com;Feminino;4;30/06/1983;;;;
+25745;Hector;Muï¿½oz;hector5@adventure-works.com;Masculino;0;19/03/1951;;;;
+25746;Danny;Jimï¿½nez;danny6@adventure-works.com;Feminino;4;30/06/1983;;;;
 25747;Danny;Romero;danny10@adventure-works.com;Feminino;3;28/06/1996;;;;
 25748;Danny;Blanco;danny16@adventure-works.com;Feminino;0;21/08/1967;;;;
 25749;Kendra;Blanco;kendra15@adventure-works.com;Feminino;0;22/09/1994;;;;
@@ -26383,7 +26383,7 @@
 26382;Cody;Kelly;cody2@adventure-works.com;Feminino;4;13/08/1973;;;;
 26383;Carlos;Sanders;carlos5@adventure-works.com;Masculino;0;07/12/1996;;;;
 26384;Eduardo;Sanders;eduardo70@adventure-works.com;Masculino;4;20/04/1972;;;;
-26385;Anne;Jiménez;anne6@adventure-works.com;Feminino;0;27/09/2006;;;;
+26385;Anne;Jimï¿½nez;anne6@adventure-works.com;Feminino;0;27/09/2006;;;;
 26386;Cole;Gray;cole8@adventure-works.com;Masculino;4;15/12/2001;;;;
 26387;Jeremy;Cooper;jeremy38@adventure-works.com;Masculino;0;07/11/2009;;;;
 26388;Timothy;Cox;timothy11@adventure-works.com;Masculino;1;27/08/2000;;;;
@@ -27018,7 +27018,7 @@
 27017;Cara;Li;cara2@adventure-works.com;Feminino;3;02/01/1974;;;;
 27018;Devin;Allen;devin22@adventure-works.com;Masculino;0;11/03/1976;;;;
 27019;Luke;Foster;luke5@adventure-works.com;Masculino;5;19/06/1987;;;;
-27020;Andrés;Anand;andrés18@adventure-works.com;Masculino;4;27/01/1961;;;;
+27020;Andrï¿½s;Anand;andrï¿½s18@adventure-works.com;Masculino;4;27/01/1961;;;;
 27021;Karl;Raji;karl21@adventure-works.com;Masculino;4;25/01/1965;;;;
 27022;Leonard;Anand;leonard24@adventure-works.com;Masculino;0;23/10/1972;;;;
 27023;Darryl;Zheng;darryl19@adventure-works.com;Masculino;4;20/07/2000;;;;
@@ -27124,10 +27124,10 @@
 27123;Jorge;Lin;jorge9@adventure-works.com;Masculino;0;28/12/1998;;;;
 27124;Jorge;Cai;jorge24@adventure-works.com;Masculino;4;09/06/1977;;;;
 27125;Zachary;Wilson;zachary36@adventure-works.com;Masculino;2;14/03/1998;;;;
-27126;Jésus;Vazquez;jésus13@adventure-works.com;Masculino;0;13/03/1997;;;;
+27126;Jï¿½sus;Vazquez;jï¿½sus13@adventure-works.com;Masculino;0;13/03/1997;;;;
 27127;Larry;Martin;larry1@adventure-works.com;Feminino;0;02/08/1970;;;;
 27128;Larry;Ramos;larry20@adventure-works.com;Feminino;0;12/06/1958;;;;
-27129;Brandi;Jiménez;brandi6@adventure-works.com;Feminino;0;13/06/1968;;;;
+27129;Brandi;Jimï¿½nez;brandi6@adventure-works.com;Feminino;0;13/06/1968;;;;
 27130;Brandi;Suarez;brandi18@adventure-works.com;Feminino;3;09/07/1960;;;;
 27131;Stacy;Gill;stacy14@adventure-works.com;Feminino;1;18/02/2005;;;;
 27132;Diana;Gill;diana13@adventure-works.com;Feminino;4;17/09/1952;;;;
@@ -27263,7 +27263,7 @@
 27262;Kathleen;Jimenez;kathleen7@adventure-works.com;Feminino;1;01/03/1980;;;;
 27263;Stacy;Serrano;stacy17@adventure-works.com;Feminino;0;30/09/1995;;;;
 27264;Natasha;Ruiz;natasha2@adventure-works.com;Feminino;2;01/08/1974;;;;
-27265;Whitney;Kovár;whitney4@adventure-works.com;Feminino;2;24/08/1956;;;;
+27265;Whitney;Kovï¿½r;whitney4@adventure-works.com;Feminino;2;24/08/1956;;;;
 27266;Orlando;Blanco;orlando15@adventure-works.com;Masculino;0;07/01/1988;;;;
 27267;Brett;Van;brett3@adventure-works.com;Masculino;0;28/03/1996;;;;
 27268;Cynthia;Kapoor;cynthia5@adventure-works.com;Feminino;0;26/07/1994;;;;
@@ -27497,7 +27497,7 @@
 27496;Priscilla;Nara;priscilla15@adventure-works.com;Feminino;0;31/12/2002;;;;
 27497;Deborah;Shan;deborah15@adventure-works.com;Feminino;3;24/02/1999;;;;
 27498;Mariah;Rivera;mariah41@adventure-works.com;Feminino;0;19/02/1965;;;;
-27499;Deanna;Jiménez;deanna31@adventure-works.com;Feminino;4;23/07/1970;;;;
+27499;Deanna;Jimï¿½nez;deanna31@adventure-works.com;Feminino;4;23/07/1970;;;;
 27500;Carolyn;Garcia;carolyn14@adventure-works.com;Feminino;0;26/09/1951;;;;
 27501;Darren;Townsend;darren34@adventure-works.com;Masculino;2;03/07/1999;;;;
 27502;Darren;Serrano;darren39@adventure-works.com;Masculino;0;15/06/1965;;;;
@@ -27640,7 +27640,7 @@
 27639;Stacey;Yang;stacey5@adventure-works.com;Feminino;3;24/02/1974;;;;
 27640;Wesley;Li;wesley3@adventure-works.com;Masculino;0;18/09/1970;;;;
 27641;Jorge;Yang;jorge6@adventure-works.com;Masculino;0;04/09/2007;;;;
-27642;Jésus;Sanz;jésus19@adventure-works.com;Masculino;0;22/02/2004;;;;
+27642;Jï¿½sus;Sanz;jï¿½sus19@adventure-works.com;Masculino;0;22/02/2004;;;;
 27643;Larry;Dominguez;larry15@adventure-works.com;Feminino;0;01/11/1969;;;;
 27644;Larry;Rubio;larry23@adventure-works.com;Feminino;0;20/03/1956;;;;
 27645;Chelsea;Mehta;chelsea15@adventure-works.com;Feminino;3;07/05/1958;;;;
@@ -27941,7 +27941,7 @@
 27940;Benjamin;Anderson;benjamin44@adventure-works.com;Masculino;2;15/05/1986;;;;
 27941;Wesley;Guo;wesley17@adventure-works.com;Masculino;1;25/11/1959;;;;
 27942;Todd;Huang;todd7@adventure-works.com;Masculino;0;21/12/1982;;;;
-27943;Jésus;Rubio;jésus20@adventure-works.com;Masculino;0;06/09/2001;;;;
+27943;Jï¿½sus;Rubio;jï¿½sus20@adventure-works.com;Masculino;0;06/09/2001;;;;
 27944;Larry;Hernandez;larry5@adventure-works.com;Feminino;0;26/04/1988;;;;
 27945;Leslie;Ortega;leslie22@adventure-works.com;Feminino;0;30/01/2006;;;;
 27946;Kathleen;Gill;kathleen15@adventure-works.com;Feminino;0;02/04/1987;;;;
@@ -28094,7 +28094,7 @@
 28093;Natalie;Flores;natalie35@adventure-works.com;Feminino;0;16/04/1954;;;;
 28094;Alexandra;Murphy;alexandra9@adventure-works.com;Feminino;5;28/06/1953;;;;
 28095;Alexandra;Gray;alexandra17@adventure-works.com;Feminino;0;06/05/1993;;;;
-28096;Alfredo;Jiménez;alfredo6@adventure-works.com;Masculino;5;01/04/1958;;;;
+28096;Alfredo;Jimï¿½nez;alfredo6@adventure-works.com;Masculino;5;01/04/1958;;;;
 28097;Alexandra;Powell;alexandra32@adventure-works.com;Feminino;0;19/04/1960;;;;
 28098;Sydney;Stewart;sydney0@adventure-works.com;Masculino;4;05/11/1997;;;;
 28099;Sydney;Reed;sydney4@adventure-works.com;Masculino;4;21/11/1956;;;;
@@ -28107,7 +28107,7 @@
 28106;Stephanie;Perry;stephanie35@adventure-works.com;Feminino;1;05/11/2000;;;;
 28107;Hailey;Cooper;hailey9@adventure-works.com;Feminino;1;30/12/1997;;;;
 28108;Maria;Morgan;maria6@adventure-works.com;Feminino;5;06/01/1967;;;;
-28109;María;Flores;maría35@adventure-works.com;Feminino;3;28/02/1976;;;;
+28109;Marï¿½a;Flores;marï¿½a35@adventure-works.com;Feminino;3;28/02/1976;;;;
 28110;Maria;Butler;maria36@adventure-works.com;Feminino;3;11/04/1953;;;;
 28111;Gabrielle;Price;gabrielle22@adventure-works.com;Feminino;0;19/02/1983;;;;
 28112;Gabrielle;Bennett;gabrielle23@adventure-works.com;Feminino;4;03/11/1975;;;;
@@ -28854,7 +28854,7 @@
 28853;Gabriel;King;gabriel50@adventure-works.com;Masculino;0;29/04/1998;;;;
 28854;Robert;Moore;robert66@adventure-works.com;Masculino;0;16/09/1962;;;;
 28855;Robert;Lewis;robert81@adventure-works.com;Masculino;0;23/04/1981;;;;
-28856;José;Miller;josé64@adventure-works.com;Masculino;5;20/12/1956;;;;
+28856;Josï¿½;Miller;josï¿½64@adventure-works.com;Masculino;5;20/12/1956;;;;
 28857;Connor;Hall;connor49@adventure-works.com;Masculino;0;13/11/1977;;;;
 28858;Elijah;Hall;elijah48@adventure-works.com;Feminino;0;13/05/1979;;;;
 28859;Cameron;Walker;cameron41@adventure-works.com;Masculino;5;28/01/1969;;;;
@@ -28938,7 +28938,7 @@
 28937;Karla;Becker;karla21@adventure-works.com;Feminino;0;27/12/1996;;;;
 28938;Karla;Raji;karla22@adventure-works.com;Feminino;3;03/12/2000;;;;
 28939;Bonnie;Tang;bonnie9@adventure-works.com;Masculino;0;11/02/1988;;;;
-28940;Cesar;Sánchez;cesar20@adventure-works.com;Masculino;0;30/10/1999;;;;
+28940;Cesar;Sï¿½nchez;cesar20@adventure-works.com;Masculino;0;30/10/1999;;;;
 28941;Bryant;Raman;bryant11@adventure-works.com;Masculino;0;06/12/1948;;;;
 28942;Cedric;Shan;cedric31@adventure-works.com;Masculino;1;11/08/1986;;;;
 28943;Preston;Sanchez;preston18@adventure-works.com;Masculino;2;02/09/1969;;;;
@@ -28979,7 +28979,7 @@
 28978;Neil;Diaz;neil4@adventure-works.com;Masculino;1;08/10/1974;;;;
 28979;Marvin;Torres;marvin12@adventure-works.com;Masculino;4;28/08/1977;;;;
 28980;Marvin;Gill;marvin14@adventure-works.com;Masculino;1;24/01/1995;;;;
-28981;Armando;Muñoz;armando7@adventure-works.com;Masculino;3;23/08/1973;;;;
+28981;Armando;Muï¿½oz;armando7@adventure-works.com;Masculino;3;23/08/1973;;;;
 28982;Marissa;Bryant;marissa15@adventure-works.com;Feminino;0;30/05/1976;;;;
 28983;Jaime;Suarez;jaime21@adventure-works.com;Masculino;3;08/10/1991;;;;
 28984;Clarence;Yuan;clarence21@adventure-works.com;Feminino;0;15/08/1979;;;;
@@ -29067,7 +29067,7 @@
 29066;Colin;Chander;colin39@adventure-works.com;Masculino;0;10/11/1996;;;;
 29067;Colin;Rai;colin40@adventure-works.com;Masculino;4;02/05/1966;;;;
 29068;Colin;Nath;colin41@adventure-works.com;Masculino;2;26/09/1999;;;;
-29069;Javier;Jiménez;javier2@adventure-works.com;Masculino;4;14/07/1976;;;;
+29069;Javier;Jimï¿½nez;javier2@adventure-works.com;Masculino;4;14/07/1976;;;;
 29070;Blake;Diaz;blake69@adventure-works.com;Masculino;1;26/11/2000;;;;
 29071;Rodney;Jimenez;rodney1@adventure-works.com;Masculino;0;16/02/1981;;;;
 29072;Eduardo;Butler;eduardo58@adventure-works.com;Masculino;4;25/08/1984;;;;
@@ -29324,7 +29324,7 @@
 29323;Jada;Morgan;jada14@adventure-works.com;Feminino;0;02/04/2005;;;;
 29324;Brendan;Anand;brendan20@adventure-works.com;Masculino;0;22/02/1952;;;;
 29325;Trinity;Sanchez;trinity20@adventure-works.com;Feminino;2;07/05/1998;;;;
-29326;Angela;Sánchez;angela49@adventure-works.com;Feminino;3;26/08/2012;;;;
+29326;Angela;Sï¿½nchez;angela49@adventure-works.com;Feminino;3;26/08/2012;;;;
 29327;Madeline;Gonzalez;madeline8@adventure-works.com;Feminino;3;27/02/1952;;;;
 29328;Sydney;Perez;sydney53@adventure-works.com;Masculino;3;05/09/1989;;;;
 29329;Savannah;Perez;savannah34@adventure-works.com;Feminino;0;24/06/1967;;;;
@@ -29439,7 +29439,7 @@
 29438;Bailey;Richardson;bailey7@adventure-works.com;Feminino;5;07/12/1992;;;;
 29439;Gabriella;Morris;gabriella17@adventure-works.com;Feminino;5;13/01/1996;;;;
 29440;Mary;Evans;mary14@adventure-works.com;Feminino;0;27/11/1954;;;;
-29441;Rebekah;Kovár;rebekah4@adventure-works.com;Feminino;2;04/05/1963;;;;
+29441;Rebekah;Kovï¿½r;rebekah4@adventure-works.com;Feminino;2;04/05/1963;;;;
 29442;Jennifer;Carter;jennifer12@adventure-works.com;Feminino;1;30/06/1977;;;;
 29443;Gabriella;Scott;gabriella37@adventure-works.com;Feminino;5;24/04/1963;;;;
 29444;Natalie;Adams;natalie58@adventure-works.com;Feminino;3;30/04/1970;;;;
@@ -29553,7 +29553,7 @@
 29552;Angel;Gonzalez;angel31@adventure-works.com;Feminino;0;23/12/1978;;;;
 29553;Angel;Scott;angel38@adventure-works.com;Feminino;0;28/08/1960;;;;
 29554;Johnny;Kumar;johnny8@adventure-works.com;Masculino;0;28/12/1980;;;;
-29555;José;Jackson;josé73@adventure-works.com;Masculino;3;01/07/1994;;;;
+29555;Josï¿½;Jackson;josï¿½73@adventure-works.com;Masculino;3;01/07/1994;;;;
 29556;Austin;Rodriguez;austin35@adventure-works.com;Masculino;0;09/11/1989;;;;
 29557;Cameron;Taylor;cameron49@adventure-works.com;Masculino;2;19/09/1960;;;;
 29558;Matthew;Williams;matthew8@adventure-works.com;Masculino;4;10/03/1992;;;;
@@ -29950,7 +29950,7 @@
 29949;Anne;Ruiz;anne3@adventure-works.com;Feminino;2;27/07/2001;;;;
 29950;Anne;Torres;anne13@adventure-works.com;Feminino;2;17/03/1998;;;;
 29951;Micheal;Ramos;micheal13@adventure-works.com;Masculino;2;20/03/1996;;;;
-29952;Clinton;Jiménez;clinton2@adventure-works.com;Masculino;0;25/07/2005;;;;
+29952;Clinton;Jimï¿½nez;clinton2@adventure-works.com;Masculino;0;25/07/2005;;;;
 29953;Hector;Romero;hector7@adventure-works.com;Masculino;1;09/08/1980;;;;
 29954;Marcus;Richardson;marcus85@adventure-works.com;Masculino;0;23/10/2000;;;;
 29955;Albert;Sanz;albert20@adventure-works.com;Masculino;1;11/09/1998;;;;
@@ -29997,7 +29997,7 @@
 29996;Curtis;Liu;curtis4@adventure-works.com;Masculino;3;18/12/1999;;;;
 29997;Christopher;Clark;christopher19@adventure-works.com;Masculino;0;25/11/1952;;;;
 29998;Jorge;Ye;jorge11@adventure-works.com;Masculino;4;30/06/2004;;;;
-29999;Jésus;Ramos;jésus16@adventure-works.com;Masculino;2;29/02/1988;;;;
+29999;Jï¿½sus;Ramos;jï¿½sus16@adventure-works.com;Masculino;2;29/02/1988;;;;
 30000;Brandi;Munoz;brandi7@adventure-works.com;Feminino;2;01/11/1992;;;;
 30001;Meghan;Jimenez;meghan5@adventure-works.com;Feminino;0;19/07/1969;;;;
 30002;Brandy;Rana;brandy7@adventure-works.com;Masculino;0;07/03/1998;;;;
@@ -30423,7 +30423,7 @@
 30422;Devon;Lal;devon6@adventure-works.com;Masculino;1;12/01/1950;;;;
 30423;Melvin;Jai;melvin9@adventure-works.com;Masculino;0;27/06/1953;;;;
 30424;Melvin;Chander;melvin14@adventure-works.com;Masculino;0;01/12/1977;;;;
-30425;Niñia;Anand;niñia0@adventure-works.com;Feminino;4;27/02/1993;;;;
+30425;Niï¿½ia;Anand;niï¿½ia0@adventure-works.com;Feminino;4;27/02/1993;;;;
 30426;Donna;Raje;donna12@adventure-works.com;Feminino;0;02/10/1964;;;;
 30427;Warren;Raji;warren12@adventure-works.com;Masculino;4;27/09/1977;;;;
 30428;Rosa;Guo;rosa17@adventure-works.com;Feminino;0;28/05/1998;;;;
@@ -30445,7 +30445,7 @@
 30444;Jessie;Rubio;jessie40@adventure-works.com;Feminino;0;25/07/1973;;;;
 30445;Autumn;Lin;autumn7@adventure-works.com;Feminino;3;03/09/1980;;;;
 30446;Autumn;Cai;autumn20@adventure-works.com;Feminino;0;22/11/1969;;;;
-30447;Beth;Jiménez;beth8@adventure-works.com;Feminino;0;13/01/1968;;;;
+30447;Beth;Jimï¿½nez;beth8@adventure-works.com;Feminino;0;13/01/1968;;;;
 30448;Latasha;Gutierrez;latasha11@adventure-works.com;Feminino;0;09/11/1950;;;;
 30449;Eddie;Torres;eddie12@adventure-works.com;Masculino;4;10/10/1988;;;;
 30450;Theodore;Sanz;theodore21@adventure-works.com;Masculino;3;11/03/1994;;;;
@@ -30484,7 +30484,7 @@
 30483;Ebony;Dominguez;ebony34@adventure-works.com;Feminino;4;15/08/1970;;;;
 30484;Carolyn;Ruiz;carolyn24@adventure-works.com;Feminino;0;03/02/1982;;;;
 30485;Marie;Arun;marie11@adventure-works.com;Feminino;4;30/12/1998;;;;
-30486;Darren;Jiménez;darren27@adventure-works.com;Masculino;3;19/09/2001;;;;
+30486;Darren;Jimï¿½nez;darren27@adventure-works.com;Masculino;3;19/09/2001;;;;
 30487;Darren;Gutierrez;darren33@adventure-works.com;Masculino;3;05/10/1965;;;;
 30488;Arturo;Deng;arturo25@adventure-works.com;Masculino;0;19/07/2003;;;;
 30489;Jay;Arthur;jay13@adventure-works.com;Masculino;5;21/03/1954;;;;
@@ -30494,7 +30494,7 @@
 30493;Meredith;Romero;meredith32@adventure-works.com;Feminino;4;06/06/2000;;;;
 30494;Meredith;Gill;meredith37@adventure-works.com;Feminino;0;12/01/1971;;;;
 30495;Roy;Suri;roy0@adventure-works.com;Masculino;1;03/06/1987;;;;
-30496;Ruben;Muñoz;ruben30@adventure-works.com;Masculino;3;09/06/1997;;;;
+30496;Ruben;Muï¿½oz;ruben30@adventure-works.com;Masculino;3;09/06/1997;;;;
 30497;Ruben;Vazquez;ruben38@adventure-works.com;Masculino;3;26/09/1995;;;;
 30498;Lacey;Goel;lacey8@adventure-works.com;Feminino;3;29/04/1990;;;;
 30499;Jenny;Liang;jenny18@adventure-works.com;Feminino;3;02/12/1977;;;;
@@ -30533,7 +30533,7 @@
 30532;Mathew;Ramos;mathew13@adventure-works.com;Masculino;2;30/05/1985;;;;
 30533;Mathew;Carlson;mathew14@adventure-works.com;Masculino;1;23/09/1955;;;;
 30534;Micheal;Gutierrez;micheal6@adventure-works.com;Masculino;2;04/09/1986;;;;
-30535;Jamie;Muñoz;jamie31@adventure-works.com;Masculino;0;14/04/1949;;;;
+30535;Jamie;Muï¿½oz;jamie31@adventure-works.com;Masculino;0;14/04/1949;;;;
 30536;Sheila;Blanco;sheila14@adventure-works.com;Feminino;3;15/11/1972;;;;
 30537;Lance;Alonso;lance8@adventure-works.com;Feminino;2;26/10/1962;;;;
 30538;Lance;Ramos;lance17@adventure-works.com;Feminino;0;08/08/1974;;;;
@@ -30612,7 +30612,7 @@
 30611;Katie;She;katie3@adventure-works.com;Feminino;1;11/07/1972;;;;
 30612;Katie;Shen;katie5@adventure-works.com;Feminino;0;10/11/1986;;;;
 30613;Tiffany;Zeng;tiffany23@adventure-works.com;Feminino;0;31/01/2003;;;;
-30614;José;Miller;josé64@adventure-works.com;Masculino;1;24/11/1998;;;;
+30614;Josï¿½;Miller;josï¿½64@adventure-works.com;Masculino;1;24/11/1998;;;;
 30615;Nathan;Chen;nathan22@adventure-works.com;Masculino;0;16/04/1975;;;;
 30616;Calvin;Raji;calvin20@adventure-works.com;Masculino;0;17/03/1964;;;;
 30617;Sydney;Martinez;sydney79@adventure-works.com;Masculino;0;08/09/1990;;;;
@@ -30675,7 +30675,7 @@
 30674;Jill;Ashe;jill12@adventure-works.com;Masculino;0;02/08/1966;;;;
 30675;Lucas;Morris;lucas89@adventure-works.com;Masculino;0;07/08/1997;;;;
 30676;Brenda;Martinez;brenda21@adventure-works.com;Feminino;5;26/10/2009;;;;
-30677;Billy;Jiménez;billy7@adventure-works.com;Masculino;3;03/02/1983;;;;
+30677;Billy;Jimï¿½nez;billy7@adventure-works.com;Masculino;3;03/02/1983;;;;
 30678;Johnathan;Gonzalez;johnathan17@adventure-works.com;Masculino;1;21/12/1998;;;;
 30679;Tracy;Chapman;tracy15@adventure-works.com;Feminino;0;15/04/1987;;;;
 30680;Misty;She;misty1@adventure-works.com;Feminino;0;05/04/1970;;;;
@@ -30782,7 +30782,7 @@
 30781;Isaac;Gray;isaac5@adventure-works.com;Masculino;3;12/11/1989;;;;
 30782;Jonathon;Gill;jonathon10@adventure-works.com;Masculino;0;15/04/1982;;;;
 30783;Clinton;Moreno;clinton3@adventure-works.com;Masculino;0;25/09/1954;;;;
-30784;Roberto;Jiménez;roberto5@adventure-works.com;Masculino;2;17/01/1965;;;;
+30784;Roberto;Jimï¿½nez;roberto5@adventure-works.com;Masculino;2;17/01/1965;;;;
 30785;Roberto;Suarez;roberto17@adventure-works.com;Masculino;4;13/05/1992;;;;
 30786;Brian;Rivera;brian28@adventure-works.com;Masculino;2;15/10/1965;;;;
 30787;Brenda;Sai;brenda9@adventure-works.com;Feminino;0;22/06/1980;;;;
@@ -30943,7 +30943,7 @@
 30942;Troy;Perez;troy23@adventure-works.com;Masculino;2;19/01/1981;;;;
 30943;Eric;Turner;eric47@adventure-works.com;Masculino;0;21/06/1962;;;;
 30944;Angel;Turner;angel27@adventure-works.com;Feminino;0;14/09/1988;;;;
-30945;Andre;Kovár;andre4@adventure-works.com;Masculino;2;24/10/1962;;;;
+30945;Andre;Kovï¿½r;andre4@adventure-works.com;Masculino;2;24/10/1962;;;;
 30946;Kellie;Vazquez;kellie13@adventure-works.com;Feminino;0;21/03/1999;;;;
 30947;Molly;Kapoor;molly2@adventure-works.com;Feminino;1;20/03/1983;;;;
 30948;Luke;Gonzalez;luke40@adventure-works.com;Masculino;2;15/06/1993;;;;
@@ -31190,7 +31190,7 @@
 31189;Kara;Chavez;kara13@adventure-works.com;Feminino;5;07/12/1999;;;;
 31190;Jordan;Hill;jordan67@adventure-works.com;Masculino;0;19/11/1955;;;;
 31191;Mason;Adams;mason35@adventure-works.com;Masculino;0;23/03/2013;;;;
-31192;José;Hernandez;josé54@adventure-works.com;Masculino;0;22/08/2007;;;;
+31192;Josï¿½;Hernandez;josï¿½54@adventure-works.com;Masculino;0;22/08/2007;;;;
 31193;Aaron;Allen;aaron55@adventure-works.com;Masculino;0;03/12/1991;;;;
 31194;Jack;Allen;jack58@adventure-works.com;Masculino;5;23/09/1970;;;;
 31195;James;Miller;james81@adventure-works.com;Masculino;4;21/02/1980;;;;
@@ -31453,7 +31453,7 @@
 31452;Sandra;Hu;sandra28@adventure-works.com;Feminino;0;22/12/1963;;;;
 31453;Jonathan;White;jonathan66@adventure-works.com;Masculino;3;14/12/1976;;;;
 31454;Margaret;Zeng;margaret27@adventure-works.com;Feminino;2;20/05/1975;;;;
-31455;Abby;Kovár;abby3@adventure-works.com;Feminino;0;30/10/1946;;;;
+31455;Abby;Kovï¿½r;abby3@adventure-works.com;Feminino;0;30/10/1946;;;;
 31456;Candice;Zhang;candice8@adventure-works.com;Feminino;3;01/01/1961;;;;
 31457;Candice;Lin;candice13@adventure-works.com;Feminino;5;06/03/1950;;;;
 31458;Carrie;Moreno;carrie6@adventure-works.com;Feminino;2;17/07/1980;;;;
@@ -31647,7 +31647,7 @@
 31646;Vincent;Zhu;vincent13@adventure-works.com;Masculino;0;30/11/1966;;;;
 31647;Abby;Sanchez;abby17@adventure-works.com;Feminino;0;02/01/1973;;;;
 31648;Randy;Zhao;randy12@adventure-works.com;Masculino;3;07/11/1951;;;;
-31649;Jésus;Blanco;jésus14@adventure-works.com;Masculino;4;22/12/1995;;;;
+31649;Jï¿½sus;Blanco;jï¿½sus14@adventure-works.com;Masculino;4;22/12/1995;;;;
 31650;Brandi;Hernandez;brandi4@adventure-works.com;Feminino;2;22/04/1997;;;;
 31651;Leslie;Blanco;leslie16@adventure-works.com;Feminino;1;27/12/1965;;;;
 31652;Veronica;Raman;veronica13@adventure-works.com;Feminino;2;06/05/1967;;;;
@@ -31663,7 +31663,7 @@
 31662;Nicole;Coleman;nicole54@adventure-works.com;Feminino;3;06/10/1970;;;;
 31663;Julie;Chander;julie20@adventure-works.com;Feminino;3;25/10/1974;;;;
 31664;Tara;Lal;tara8@adventure-works.com;Feminino;4;10/11/1961;;;;
-31665;Donald;Kovár;donald6@adventure-works.com;Masculino;4;14/04/1998;;;;
+31665;Donald;Kovï¿½r;donald6@adventure-works.com;Masculino;4;14/04/1998;;;;
 31666;Ronald;Raman;ronald14@adventure-works.com;Masculino;2;03/09/1964;;;;
 31667;Phillip;Malhotra;phillip5@adventure-works.com;Masculino;0;31/03/1970;;;;
 31668;Shannon;Serrano;shannon37@adventure-works.com;Feminino;2;29/10/1997;;;;
@@ -31682,7 +31682,7 @@
 31681;Kevin;Yang;kevin30@adventure-works.com;Masculino;5;15/10/1990;;;;
 31682;Noah;Griffin;noah18@adventure-works.com;Masculino;0;05/02/1989;;;;
 31683;Zachary;Jai;zachary1@adventure-works.com;Masculino;0;24/06/2003;;;;
-31684;Alberto;Jiménez;alberto7@adventure-works.com;Masculino;0;23/06/1993;;;;
+31684;Alberto;Jimï¿½nez;alberto7@adventure-works.com;Masculino;0;23/06/1993;;;;
 31685;Adrienne;Alvarez;adrienne4@adventure-works.com;Feminino;3;22/01/1965;;;;
 31686;Arianna;Ross;arianna4@adventure-works.com;Feminino;5;12/12/1977;;;;
 31687;Arianna;Sanders;arianna24@adventure-works.com;Feminino;0;07/06/2005;;;;
@@ -31809,7 +31809,7 @@
 31808;Edwin;Sun;edwin14@adventure-works.com;Masculino;2;25/03/1995;;;;
 31809;Roger;Goel;roger47@adventure-works.com;Masculino;0;06/02/1973;;;;
 31810;Willie;Pal;willie31@adventure-works.com;Masculino;0;15/09/1999;;;;
-31811;Briana;Jiménez;briana5@adventure-works.com;Feminino;4;10/01/2002;;;;
+31811;Briana;Jimï¿½nez;briana5@adventure-works.com;Feminino;4;10/01/2002;;;;
 31812;Joanna;Alonso;joanna7@adventure-works.com;Feminino;4;22/02/1989;;;;
 31813;Tanya;Jimenez;tanya1@adventure-works.com;Feminino;0;30/12/1977;;;;
 31814;Krista;Moreno;krista7@adventure-works.com;Feminino;4;06/04/2001;;;;
@@ -31837,7 +31837,7 @@
 31836;Dennis;Sun;dennis14@adventure-works.com;Masculino;4;08/02/1958;;;;
 31837;Vincent;Huang;vincent6@adventure-works.com;Masculino;3;25/09/1975;;;;
 31838;Curtis;Zeng;curtis19@adventure-works.com;Masculino;3;08/09/1967;;;;
-31839;Jésus;Hernandez;jésus4@adventure-works.com;Masculino;0;03/01/1995;;;;
+31839;Jï¿½sus;Hernandez;jï¿½sus4@adventure-works.com;Masculino;0;03/01/1995;;;;
 31840;Anthony;Walker;anthony9@adventure-works.com;Masculino;0;22/09/1973;;;;
 31841;Brandi;Blanco;brandi15@adventure-works.com;Feminino;3;04/12/1999;;;;
 31842;Nelson;Diaz;nelson3@adventure-works.com;Masculino;0;07/03/2011;;;;
@@ -31857,7 +31857,7 @@
 31856;Michele;Xie;michele3@adventure-works.com;Feminino;5;05/02/1995;;;;
 31857;Wayne;Black;wayne22@adventure-works.com;Masculino;1;09/01/1951;;;;
 31858;Arturo;Chande;arturo40@adventure-works.com;Masculino;2;02/11/1978;;;;
-31859;Pedro;Muñoz;pedro28@adventure-works.com;Masculino;0;21/06/1982;;;;
+31859;Pedro;Muï¿½oz;pedro28@adventure-works.com;Masculino;0;21/06/1982;;;;
 31860;Gerald;Prasad;gerald39@adventure-works.com;Masculino;0;05/01/2007;;;;
 31861;Ashley;White;ashley13@adventure-works.com;Feminino;0;29/11/1984;;;;
 31862;Clayton;Chen;clayton2@adventure-works.com;Masculino;2;01/11/1964;;;;
@@ -32190,7 +32190,7 @@
 32189;Margaret;Chen;margaret9@adventure-works.com;Feminino;3;08/08/1960;;;;
 32190;Susan;Yang;susan14@adventure-works.com;Feminino;0;31/01/1982;;;;
 32191;Benjamin;Jackson;benjamin48@adventure-works.com;Masculino;0;27/05/1995;;;;
-32192;Jésus;Diaz;jésus3@adventure-works.com;Masculino;1;13/03/2000;;;;
+32192;Jï¿½sus;Diaz;jï¿½sus3@adventure-works.com;Masculino;1;13/03/2000;;;;
 32193;Larry;Rowe;larry3@adventure-works.com;Feminino;0;17/03/1959;;;;
 32194;Stacy;Torres;stacy12@adventure-works.com;Feminino;4;03/04/1954;;;;
 32195;Diana;Ruiz;diana1@adventure-works.com;Feminino;0;15/04/1982;;;;
@@ -32274,7 +32274,7 @@
 32273;Randy;Zhou;randy10@adventure-works.com;Masculino;3;25/10/2000;;;;
 32274;Janelle;Kapoor;janelle1@adventure-works.com;Feminino;1;25/06/1969;;;;
 32275;Jorge;Liang;jorge19@adventure-works.com;Masculino;2;11/07/1947;;;;
-32276;Jésus;Romero;jésus8@adventure-works.com;Masculino;0;02/10/1983;;;;
+32276;Jï¿½sus;Romero;jï¿½sus8@adventure-works.com;Masculino;0;02/10/1983;;;;
 32277;Stacy;Martin;stacy1@adventure-works.com;Feminino;1;02/04/1966;;;;
 32278;Casey;Rowe;casey25@adventure-works.com;Masculino;4;08/01/1976;;;;
 32279;Casey;Ramos;casey41@adventure-works.com;Masculino;3;17/08/1962;;;;
@@ -32612,7 +32612,7 @@
 32611;Jamie;Suarez;jamie41@adventure-works.com;Masculino;0;16/01/1953;;;;
 32612;Roberto;Ortega;roberto20@adventure-works.com;Masculino;0;10/09/1979;;;;
 32613;Lance;Blanco;lance15@adventure-works.com;Feminino;4;13/12/1996;;;;
-32614;Renée;Alvarez;renée4@adventure-works.com;Masculino;0;09/01/1984;;;;
+32614;Renï¿½e;Alvarez;renï¿½e4@adventure-works.com;Masculino;0;09/01/1984;;;;
 32615;Teresa;Carlson;teresa19@adventure-works.com;Feminino;0;26/10/1998;;;;
 32616;Brenda;Subram;brenda16@adventure-works.com;Feminino;0;20/04/1994;;;;
 32617;Jared;Reed;jared22@adventure-works.com;Masculino;0;28/10/1986;;;;
@@ -32639,7 +32639,7 @@
 32638;Dennis;Wang;dennis2@adventure-works.com;Masculino;1;06/07/1999;;;;
 32639;Vincent;Yang;vincent5@adventure-works.com;Masculino;3;12/09/1968;;;;
 32640;Frank;Torres;frank19@adventure-works.com;Masculino;2;07/03/2001;;;;
-32641;Jésus;Munoz;jésus6@adventure-works.com;Masculino;0;01/03/1951;;;;
+32641;Jï¿½sus;Munoz;jï¿½sus6@adventure-works.com;Masculino;0;01/03/1951;;;;
 32642;Leslie;Vazquez;leslie15@adventure-works.com;Feminino;0;05/10/1970;;;;
 32643;Kathleen;Vazquez;kathleen16@adventure-works.com;Feminino;3;12/06/1951;;;;
 32644;Kathleen;Ortega;kathleen21@adventure-works.com;Feminino;2;14/03/1975;;;;
@@ -32796,7 +32796,7 @@
 32795;Barbara;Ye;barbara19@adventure-works.com;Feminino;1;03/06/1980;;;;
 32796;Emma;Miller;emma5@adventure-works.com;Feminino;1;01/08/1991;;;;
 32797;Dawn;Yang;dawn6@adventure-works.com;Masculino;3;21/05/1959;;;;
-32798;Jose;Muñoz;jose35@adventure-works.com;Masculino;4;29/09/1985;;;;
+32798;Jose;Muï¿½oz;jose35@adventure-works.com;Masculino;4;29/09/1985;;;;
 32799;Ashley;Simmons;ashley42@adventure-works.com;Feminino;0;01/05/1985;;;;
 32800;Cole;Kelly;cole3@adventure-works.com;Masculino;3;12/06/1975;;;;
 32801;Krista;Gutierrez;krista11@adventure-works.com;Feminino;2;24/07/2003;;;;
@@ -32864,7 +32864,7 @@
 32863;Dave;Natsuhara;dave2@adventure-works.com;Masculino;1;11/02/1993;;;;
 32864;Louis;Huang;louis44@adventure-works.com;Masculino;0;06/01/1986;;;;
 32865;Jonathon;Alvarez;jonathon1@adventure-works.com;Masculino;5;18/11/2001;;;;
-32866;Albert;Jiménez;albert8@adventure-works.com;Masculino;3;29/07/1980;;;;
+32866;Albert;Jimï¿½nez;albert8@adventure-works.com;Masculino;3;29/07/1980;;;;
 32867;Ricky;Moreno;ricky6@adventure-works.com;Masculino;1;01/01/2006;;;;
 32868;Kelvin;Li;kelvin23@adventure-works.com;Masculino;0;23/07/1991;;;;
 32869;Misty;Yuan;misty8@adventure-works.com;Feminino;0;08/09/1951;;;;
@@ -32878,7 +32878,7 @@
 32877;Susan;Lin;susan17@adventure-works.com;Feminino;2;11/04/1993;;;;
 32878;Jeffery;Zhang;jeffery0@adventure-works.com;Masculino;3;03/06/1967;;;;
 32879;Wesley;Wu;wesley7@adventure-works.com;Masculino;0;07/08/1992;;;;
-32880;Jésus;Navarro;jésus9@adventure-works.com;Masculino;0;28/02/1954;;;;
+32880;Jï¿½sus;Navarro;jï¿½sus9@adventure-works.com;Masculino;0;28/02/1954;;;;
 32881;Erika;Torres;erika9@adventure-works.com;Feminino;0;29/04/1952;;;;
 32882;Natasha;Diaz;natasha3@adventure-works.com;Feminino;0;23/12/1972;;;;
 32883;Meghan;Carlson;meghan17@adventure-works.com;Feminino;0;23/12/1972;;;;
@@ -32962,7 +32962,7 @@
 32961;Dominique;Prasad;dominique7@adventure-works.com;Feminino;0;21/07/1986;;;;
 32962;Franklin;Huang;franklin6@adventure-works.com;Masculino;0;23/01/1996;;;;
 32963;Sergio;Suri;sergio0@adventure-works.com;Masculino;0;31/08/1982;;;;
-32964;Sergio;Sánchez;sergio21@adventure-works.com;Masculino;2;03/10/1967;;;;
+32964;Sergio;Sï¿½nchez;sergio21@adventure-works.com;Masculino;2;03/10/1967;;;;
 32965;Levi;Rodriguez;levi17@adventure-works.com;Masculino;1;27/11/1976;;;;
 32966;Emmanuel;Kapoor;emmanuel1@adventure-works.com;Masculino;0;28/05/1986;;;;
 32967;Savannah;Kelly;savannah1@adventure-works.com;Feminino;3;04/06/1956;;;;
@@ -33077,9 +33077,9 @@
 33076;David;Martin;david73@adventure-works.com;Masculino;0;14/03/2003;;;;
 33077;John;Garcia;john35@adventure-works.com;Masculino;5;04/04/1977;;;;
 33078;John;Johnson;john38@adventure-works.com;Masculino;0;02/12/2000;;;;
-33079;Jésus;Alvarez;jésus5@adventure-works.com;Masculino;4;25/12/1996;;;;
+33079;Jï¿½sus;Alvarez;jï¿½sus5@adventure-works.com;Masculino;4;25/12/1996;;;;
 33080;Diana;Suarez;diana18@adventure-works.com;Feminino;0;07/05/1950;;;;
-33081;Orlando;Muñoz;orlando7@adventure-works.com;Masculino;0;26/05/1975;;;;
+33081;Orlando;Muï¿½oz;orlando7@adventure-works.com;Masculino;0;26/05/1975;;;;
 33082;Meghan;Diaz;meghan2@adventure-works.com;Feminino;4;02/08/1990;;;;
 33083;Brandy;Sai;brandy1@adventure-works.com;Masculino;4;17/06/2009;;;;
 33084;Chelsea;Chandra;chelsea2@adventure-works.com;Feminino;4;02/09/2000;;;;
@@ -33234,7 +33234,7 @@
 33233;Jeffery;Hu;jeffery20@adventure-works.com;Masculino;2;02/07/1949;;;;
 33234;Wesley;Cai;wesley21@adventure-works.com;Masculino;0;12/07/1960;;;;
 33235;Todd;Lin;todd8@adventure-works.com;Masculino;0;12/08/1990;;;;
-33236;Jésus;Gill;jésus12@adventure-works.com;Masculino;0;03/02/1989;;;;
+33236;Jï¿½sus;Gill;jï¿½sus12@adventure-works.com;Masculino;0;03/02/1989;;;;
 33237;Leslie;Romero;leslie10@adventure-works.com;Feminino;0;22/07/1988;;;;
 33238;Michael;Miller;michael38@adventure-works.com;Masculino;2;22/10/1985;;;;
 33239;Kathryn;Xie;kathryn3@adventure-works.com;Feminino;0;27/04/1998;;;;
@@ -33300,7 +33300,7 @@
 33299;Matthew;Clark;matthew24@adventure-works.com;Masculino;3;16/09/2005;;;;
 33300;Chelsea;Raman;chelsea13@adventure-works.com;Feminino;1;24/01/1967;;;;
 33301;Megan;Bennett;megan51@adventure-works.com;Feminino;0;02/05/1955;;;;
-33302;Victor;Muñoz;victor9@adventure-works.com;Masculino;0;23/11/2004;;;;
+33302;Victor;Muï¿½oz;victor9@adventure-works.com;Masculino;0;23/11/2004;;;;
 33303;Holly;Mehta;holly13@adventure-works.com;Feminino;4;06/12/1988;;;;
 33304;Grace;Russell;grace66@adventure-works.com;Feminino;1;10/05/1965;;;;
 33305;Chad;Sharma;chad11@adventure-works.com;Feminino;3;10/06/1996;;;;
@@ -33516,7 +33516,7 @@
 33515;Jackson;Parker;jackson29@adventure-works.com;Masculino;1;21/05/1987;;;;
 33516;Noah;Edwards;noah28@adventure-works.com;Masculino;0;02/05/1979;;;;
 33517;Timothy;Edwards;timothy26@adventure-works.com;Masculino;0;24/02/1982;;;;
-33518;José;Perez;josé41@adventure-works.com;Masculino;3;06/10/1974;;;;
+33518;Josï¿½;Perez;josï¿½41@adventure-works.com;Masculino;3;06/10/1974;;;;
 33519;Adam;Roberts;adam34@adventure-works.com;Masculino;1;21/10/1955;;;;
 33520;Isaiah;Roberts;isaiah27@adventure-works.com;Masculino;0;01/11/1976;;;;
 33521;Alex;Roberts;alex32@adventure-works.com;Masculino;1;26/11/1957;;;;
@@ -34083,10 +34083,10 @@
 34082;Cedric;Guo;cedric17@adventure-works.com;Masculino;0;23/04/2001;;;;
 34083;Shawna;Kumar;shawna8@adventure-works.com;Feminino;3;15/12/2001;;;;
 34084;Yolanda;She;yolanda0@adventure-works.com;Feminino;0;25/11/2001;;;;
-34085;Barry;Kovár;barry4@adventure-works.com;Masculino;4;05/11/1987;;;;
+34085;Barry;Kovï¿½r;barry4@adventure-works.com;Masculino;4;05/11/1987;;;;
 34086;Cesar;Kapoor;cesar1@adventure-works.com;Masculino;1;28/05/2004;;;;
 34087;Cesar;Sara;cesar9@adventure-works.com;Masculino;2;13/02/1996;;;;
-34088;César;Raman;césar11@adventure-works.com;Masculino;1;10/05/1999;;;;
+34088;Cï¿½sar;Raman;cï¿½sar11@adventure-works.com;Masculino;1;10/05/1999;;;;
 34089;Cesar;Mehta;cesar13@adventure-works.com;Masculino;0;08/08/2000;;;;
 34090;Marco;Patel;marco3@adventure-works.com;Masculino;1;13/06/2002;;;;
 34091;Bryant;Perez;bryant20@adventure-works.com;Masculino;0;08/11/1998;;;;
@@ -34262,7 +34262,7 @@
 34261;Gerald;Martin;gerald8@adventure-works.com;Masculino;3;07/09/1961;;;;
 34262;Gerald;Gill;gerald22@adventure-works.com;Masculino;0;03/12/1959;;;;
 34263;Bruce;Madan;bruce6@adventure-works.com;Masculino;0;05/05/1955;;;;
-34264;Bruce;Jiménez;bruce28@adventure-works.com;Masculino;0;30/11/1998;;;;
+34264;Bruce;Jimï¿½nez;bruce28@adventure-works.com;Masculino;0;30/11/1998;;;;
 34265;Arthur;Chandra;arthur4@adventure-works.com;Masculino;5;28/02/1963;;;;
 34266;Arthur;Malhotra;arthur7@adventure-works.com;Masculino;0;25/08/1997;;;;
 34267;Arthur;Fernandez;arthur18@adventure-works.com;Masculino;1;11/04/1983;;;;
@@ -34361,7 +34361,7 @@
 34360;Monique;Sanz;monique16@adventure-works.com;Feminino;2;08/02/2010;;;;
 34361;Monique;Ortega;monique18@adventure-works.com;Feminino;3;07/11/2001;;;;
 34362;Linda;Sanz;linda35@adventure-works.com;Feminino;0;09/01/1990;;;;
-34363;Desirée;Moreno;desirée2@adventure-works.com;Feminino;1;04/04/1964;;;;
+34363;Desirï¿½e;Moreno;desirï¿½e2@adventure-works.com;Feminino;1;04/04/1964;;;;
 34364;Theresa;Ramos;theresa13@adventure-works.com;Feminino;0;06/01/1985;;;;
 34365;Joanna;Ashe;joanna3@adventure-works.com;Feminino;2;23/09/2004;;;;
 34366;Joanna;Torres;joanna10@adventure-works.com;Feminino;0;24/08/1971;;;;
@@ -34479,7 +34479,7 @@
 34478;Christopher;Thomas;christopher11@adventure-works.com;Masculino;1;16/05/1968;;;;
 34479;Randy;Guo;randy20@adventure-works.com;Masculino;5;29/07/1981;;;;
 34480;Randy;Zheng;randy22@adventure-works.com;Masculino;0;29/09/1971;;;;
-34481;Jésus;Serrano;jésus15@adventure-works.com;Masculino;0;22/12/1973;;;;
+34481;Jï¿½sus;Serrano;jï¿½sus15@adventure-works.com;Masculino;0;22/12/1973;;;;
 34482;Larry;Alvarez;larry6@adventure-works.com;Feminino;0;07/02/1966;;;;
 34483;Cindy;Ramos;cindy22@adventure-works.com;Feminino;5;04/11/1992;;;;
 34484;Leslie;Moreno;leslie7@adventure-works.com;Feminino;3;10/09/1945;;;;
@@ -34619,12 +34619,12 @@
 34618;Ernest;Zhao;ernest10@adventure-works.com;Masculino;1;03/04/1992;;;;
 34619;Steve;Chen;steve6@adventure-works.com;Masculino;2;26/08/1958;;;;
 34620;Steve;Cai;steve24@adventure-works.com;Masculino;0;21/05/1972;;;;
-34621;Alberto;Muñoz;alberto8@adventure-works.com;Masculino;4;23/12/1996;;;;
+34621;Alberto;Muï¿½oz;alberto8@adventure-works.com;Masculino;4;23/12/1996;;;;
 34622;Eddie;Gill;eddie14@adventure-works.com;Masculino;5;01/01/1946;;;;
 34623;Clarence;Zhu;clarence7@adventure-works.com;Feminino;0;04/06/1981;;;;
 34624;Neil;Serrano;neil15@adventure-works.com;Masculino;0;23/08/1971;;;;
 34625;Marvin;Vazquez;marvin15@adventure-works.com;Masculino;1;28/01/1995;;;;
-34626;Jaime;Muñoz;jaime8@adventure-works.com;Masculino;2;13/04/1985;;;;
+34626;Jaime;Muï¿½oz;jaime8@adventure-works.com;Masculino;2;13/04/1985;;;;
 34627;Stefanie;Garcia;stefanie12@adventure-works.com;Feminino;0;06/08/1976;;;;
 34628;Vanessa;Price;vanessa1@adventure-works.com;Feminino;0;30/12/1979;;;;
 34629;Clarence;Rai;clarence32@adventure-works.com;Feminino;0;18/12/1975;;;;
@@ -34825,7 +34825,7 @@
 34824;Patricia;Raman;patricia15@adventure-works.com;Feminino;0;12/08/1989;;;;
 34825;Cynthia;Patel;cynthia7@adventure-works.com;Feminino;2;20/07/1984;;;;
 34826;Jill;Murphy;jill31@adventure-works.com;Masculino;5;21/05/1975;;;;
-34827;Alícia;Anand;alícia18@adventure-works.com;Feminino;2;29/03/1970;;;;
+34827;Alï¿½cia;Anand;alï¿½cia18@adventure-works.com;Feminino;2;29/03/1970;;;;
 34828;Lindsay;Chander;lindsay16@adventure-works.com;Feminino;0;13/09/1946;;;;
 34829;Nicole;Long;nicole58@adventure-works.com;Feminino;4;06/01/2008;;;;
 34830;Tara;Andersen;tara13@adventure-works.com;Feminino;3;09/05/2003;;;;
@@ -35054,7 +35054,7 @@
 35053;Orlando;Hernandez;orlando4@adventure-works.com;Masculino;2;06/12/2001;;;;
 35054;Erika;Gill;erika11@adventure-works.com;Feminino;3;19/08/2005;;;;
 35055;Erika;Rubio;erika18@adventure-works.com;Feminino;2;13/04/1958;;;;
-35056;Orlando;Jiménez;orlando6@adventure-works.com;Masculino;0;13/06/1996;;;;
+35056;Orlando;Jimï¿½nez;orlando6@adventure-works.com;Masculino;0;13/06/1996;;;;
 35057;Joshua;Clark;joshua21@adventure-works.com;Masculino;4;11/11/1960;;;;
 35058;Gary;Alonso;gary19@adventure-works.com;Masculino;0;11/06/1989;;;;
 35059;Casey;Munoz;casey31@adventure-works.com;Masculino;2;12/11/1990;;;;
@@ -35421,7 +35421,7 @@
 35420;Arthur;Sara;arthur12@adventure-works.com;Masculino;4;15/08/1959;;;;
 35421;Arthur;Rana;arthur13@adventure-works.com;Masculino;3;12/06/2001;;;;
 35422;Arthur;Gonzalez;arthur19@adventure-works.com;Masculino;5;05/10/1964;;;;
-35423;Arthur;Jiménez;arthur29@adventure-works.com;Masculino;0;28/01/2011;;;;
+35423;Arthur;Jimï¿½nez;arthur29@adventure-works.com;Masculino;0;28/01/2011;;;;
 35424;Arthur;Munoz;arthur31@adventure-works.com;Masculino;2;10/09/1953;;;;
 35425;Arthur;Gutierrez;arthur35@adventure-works.com;Masculino;0;08/06/1994;;;;
 35426;Joe;Raman;joe15@adventure-works.com;Masculino;0;20/06/1996;;;;
@@ -35626,7 +35626,7 @@
 35625;Alexander;Martin;alexander18@adventure-works.com;Masculino;2;21/11/2001;;;;
 35626;Jorge;Xu;jorge14@adventure-works.com;Masculino;0;03/05/1999;;;;
 35627;Zachary;Davis;zachary34@adventure-works.com;Masculino;2;02/11/1968;;;;
-35628;Jésus;Ortega;jésus21@adventure-works.com;Masculino;0;11/04/1987;;;;
+35628;Jï¿½sus;Ortega;jï¿½sus21@adventure-works.com;Masculino;0;11/04/1987;;;;
 35629;Larry;Diaz;larry4@adventure-works.com;Feminino;0;01/12/1949;;;;
 35630;Larry;Alonso;larry10@adventure-works.com;Feminino;4;12/04/1998;;;;
 35631;Larry;Ortega;larry24@adventure-works.com;Feminino;0;07/02/2006;;;;
@@ -35646,7 +35646,7 @@
 35645;Veronica;Suri;veronica0@adventure-works.com;Feminino;4;24/10/1951;;;;
 35646;Gary;Carlson;gary29@adventure-works.com;Masculino;4;19/06/1999;;;;
 35647;Megan;Stewart;megan27@adventure-works.com;Feminino;5;27/12/1979;;;;
-35648;Derrick;Jiménez;derrick5@adventure-works.com;Masculino;1;03/12/1949;;;;
+35648;Derrick;Jimï¿½nez;derrick5@adventure-works.com;Masculino;1;03/12/1949;;;;
 35649;Derrick;Schmidt;derrick18@adventure-works.com;Masculino;2;30/07/1950;;;;
 35650;Casey;Alvarez;casey28@adventure-works.com;Masculino;2;17/03/1959;;;;
 35651;Philip;Diaz;philip2@adventure-works.com;Masculino;0;17/07/1971;;;;
@@ -35811,7 +35811,7 @@
 35810;Curtis;Lin;curtis7@adventure-works.com;Masculino;3;13/02/1994;;;;
 35811;Jorge;Li;jorge4@adventure-works.com;Masculino;3;08/04/1996;;;;
 35812;Jorge;Liu;jorge5@adventure-works.com;Masculino;5;29/03/1991;;;;
-35813;Jésus;Gutierrez;jésus10@adventure-works.com;Masculino;2;02/04/1997;;;;
+35813;Jï¿½sus;Gutierrez;jï¿½sus10@adventure-works.com;Masculino;2;02/04/1997;;;;
 35814;Kathleen;Diaz;kathleen4@adventure-works.com;Feminino;0;24/01/1992;;;;
 35815;Kathleen;Munoz;kathleen9@adventure-works.com;Feminino;4;20/06/2001;;;;
 35816;Diana;Jimenez;diana4@adventure-works.com;Feminino;2;10/11/1966;;;;
@@ -36360,7 +36360,7 @@
 36359;Noah;Davis;noah62@adventure-works.com;Masculino;2;08/08/2000;;;;
 36360;Thomas;Clark;thomas59@adventure-works.com;Masculino;0;15/09/2004;;;;
 36361;Jose;Garcia;jose78@adventure-works.com;Masculino;2;01/01/1963;;;;
-36362;José;Martinez;josé79@adventure-works.com;Masculino;5;18/08/1973;;;;
+36362;Josï¿½;Martinez;josï¿½79@adventure-works.com;Masculino;5;18/08/1973;;;;
 36363;Thomas;Wilson;thomas67@adventure-works.com;Masculino;2;25/09/1966;;;;
 36364;Cameron;Thomas;cameron29@adventure-works.com;Masculino;0;12/03/1999;;;;
 36365;Leah;She;leah19@adventure-works.com;Feminino;3;23/02/1976;;;;
@@ -38691,7 +38691,7 @@
 38690;Jaime;Carlson;jaime20@adventure-works.com;Masculino;4;03/02/2001;;;;
 38691;Alexia;Price;alexia0@adventure-works.com;Feminino;0;08/07/1976;;;;
 38692;Alexia;Perry;alexia7@adventure-works.com;Feminino;1;28/12/2001;;;;
-38693;Adrienne;Jiménez;adrienne5@adventure-works.com;Feminino;0;19/11/1985;;;;
+38693;Adrienne;Jimï¿½nez;adrienne5@adventure-works.com;Feminino;0;19/11/1985;;;;
 38694;Alexia;Flores;alexia10@adventure-works.com;Feminino;4;19/02/1983;;;;
 38695;Angelica;Hughes;angelica11@adventure-works.com;Feminino;0;22/09/1983;;;;
 38696;Mya;Simmons;mya15@adventure-works.com;Feminino;0;24/05/1991;;;;
@@ -39060,7 +39060,7 @@
 39059;Madison;Thomas;madison11@adventure-works.com;Masculino;0;09/10/1979;;;;
 39060;Rafael;Liu;rafael4@adventure-works.com;Masculino;3;27/07/1999;;;;
 39061;Fernando;Flores;fernando55@adventure-works.com;Masculino;4;03/07/1944;;;;
-39062;Begoña;Hurtado;begoña0@adventure-works.com;Feminino;0;16/06/1974;;;;
+39062;Begoï¿½a;Hurtado;begoï¿½a0@adventure-works.com;Feminino;0;16/06/1974;;;;
 39063;Dalton;Ross;dalton49@adventure-works.com;Masculino;4;31/05/1949;;;;
 39064;Desiree;Torres;desiree8@adventure-works.com;Feminino;0;21/10/1988;;;;
 39065;Joanna;Dominguez;joanna11@adventure-works.com;Feminino;4;18/02/1951;;;;
@@ -39114,11 +39114,11 @@
 39113;John;Sandstone;john27@adventure-works.com;Masculino;0;14/03/1966;;;;
 39114;Madalena;Sanchez;madalena0@adventure-works.com;Feminino;3;24/05/1974;;;;
 39115;Thomas;Sanchez;thomas4@adventure-works.com;Masculino;1;15/05/2001;;;;
-39116;Ken;Sánchez;ken3@adventure-works.com;Masculino;4;16/02/1974;;;;
+39116;Ken;Sï¿½nchez;ken3@adventure-works.com;Masculino;4;16/02/1974;;;;
 39117;Mikael;Sandberg;mikael1@adventure-works.com;Masculino;2;23/08/1986;;;;
 39118;Mary;Sandidge;mary9@adventure-works.com;Feminino;0;27/06/2002;;;;
 39119;Patrick;Sands;patrick4@adventure-works.com;Masculino;0;06/06/1993;;;;
-39120;José;Saraiva;josé5@adventure-works.com;Masculino;0;03/02/1993;;;;
+39120;Josï¿½;Saraiva;josï¿½5@adventure-works.com;Masculino;0;03/02/1993;;;;
 39121;Lloyd;Saunders;lloyd0@adventure-works.com;Masculino;2;22/01/1998;;;;
 39122;Vadim;Sazanovich;vadim0@adventure-works.com;Masculino;0;01/02/1958;;;;
 39123;K.;Saravan;k0@adventure-works.com;Masculino;0;09/12/2005;;;;
@@ -39150,7 +39150,7 @@
 39149;Mircea;Singer;mircea0@adventure-works.com;Masculino;0;28/10/1962;;;;
 39150;Paul;Singh;paul5@adventure-works.com;Masculino;2;27/06/1959;;;;
 39151;Bonnie;Skelly;bonnie3@adventure-works.com;Masculino;3;16/06/1967;;;;
-39152;Anders;Skjønaa;anders0@adventure-works.com;Masculino;0;19/06/2000;;;;
+39152;Anders;Skjï¿½naa;anders0@adventure-works.com;Masculino;0;19/06/2000;;;;
 39153;Dianne;Slattengren;dianne0@adventure-works.com;Feminino;0;08/11/1972;;;;
 39154;Lanna;Slaven;lanna0@adventure-works.com;Feminino;0;29/11/1991;;;;
 39155;Cathy;Sloan;cathy0@adventure-works.com;Feminino;0;02/05/1988;;;;
@@ -39174,7 +39174,7 @@
 39173;Phil;Spencer;phil0@adventure-works.com;Masculino;5;11/07/2000;;;;
 39174;Blake;Lee;blake22@adventure-works.com;Masculino;3;07/02/1995;;;;
 39175;Autumn;Zhang;autumn0@adventure-works.com;Feminino;2;09/02/1950;;;;
-39176;Ramón;Cai;ramón19@adventure-works.com;Masculino;3;09/02/1991;;;;
+39176;Ramï¿½n;Cai;ramï¿½n19@adventure-works.com;Masculino;3;09/02/1991;;;;
 39177;Andrea;Ward;andrea13@adventure-works.com;Feminino;2;27/04/1967;;;;
 39178;Amber;King;amber19@adventure-works.com;Feminino;4;06/09/1997;;;;
 39179;Amanda;Wright;amanda63@adventure-works.com;Feminino;2;02/04/2000;;;;
@@ -39183,9 +39183,9 @@
 39182;Abigail;Coleman;abigail74@adventure-works.com;Feminino;4;06/02/1968;;;;
 39183;Blake;Henderson;blake52@adventure-works.com;Masculino;4;06/04/1947;;;;
 39184;Angel;Gray;angel5@adventure-works.com;Feminino;4;15/03/1957;;;;
-39185;José;Lopez;josé60@adventure-works.com;Masculino;1;08/12/2001;;;;
+39185;Josï¿½;Lopez;josï¿½60@adventure-works.com;Masculino;1;08/12/2001;;;;
 39186;Austin;Thompson;austin31@adventure-works.com;Masculino;0;31/05/1982;;;;
-39187;Jésus;Alonso;jésus7@adventure-works.com;Masculino;2;01/02/1967;;;;
+39187;Jï¿½sus;Alonso;jï¿½sus7@adventure-works.com;Masculino;2;01/02/1967;;;;
 39188;Ram;Thirunavukkarasu;ram1@adventure-works.com;Masculino;2;20/02/1972;;;;
 39189;Alyssa;West;alyssa59@adventure-works.com;Feminino;0;07/03/1984;;;;
 39190;Amy;Li;amy11@adventure-works.com;Feminino;0;10/03/1964;;;;
@@ -39204,7 +39204,7 @@
 39203;Stephanie;Wood;stephanie29@adventure-works.com;Feminino;4;23/02/1996;;;;
 39204;Hailey;Murphy;hailey6@adventure-works.com;Feminino;0;29/04/1976;;;;
 39205;Hailey;Patterson;hailey30@adventure-works.com;Feminino;0;07/11/1980;;;;
-39206;María;Rivera;maría10@adventure-works.com;Feminino;0;10/12/1957;;;;
+39206;Marï¿½a;Rivera;marï¿½a10@adventure-works.com;Feminino;0;10/12/1957;;;;
 39207;Gabrielle;Henderson;gabrielle27@adventure-works.com;Feminino;3;26/01/2007;;;;
 39208;Haley;Morgan;haley4@adventure-works.com;Feminino;4;15/09/1960;;;;
 39209;Lydia;Gonzalez;lydia17@adventure-works.com;Feminino;1;10/09/1962;;;;
@@ -39398,7 +39398,7 @@
 39397;Caleb;Alexander;caleb15@adventure-works.com;Masculino;1;26/12/1959;;;;
 39398;Glenn;Liu;glenn5@adventure-works.com;Masculino;2;21/05/1979;;;;
 39399;Kevin;Perry;kevin10@adventure-works.com;Masculino;0;14/02/1984;;;;
-39400;Daisy;Jiménez;daisy2@adventure-works.com;Feminino;1;25/10/1998;;;;
+39400;Daisy;Jimï¿½nez;daisy2@adventure-works.com;Feminino;1;25/10/1998;;;;
 39401;Autumn;Wu;autumn6@adventure-works.com;Feminino;1;18/05/1998;;;;
 39402;Logan;Kumar;logan1@adventure-works.com;Feminino;0;12/05/1997;;;;
 39403;Nathan;Bryant;nathan14@adventure-works.com;Masculino;0;29/10/2007;;;;
