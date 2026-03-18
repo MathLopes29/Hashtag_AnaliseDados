@@ -149,7 +149,7 @@ YEAR (fVendas[data])
 MONTH (fVendas[data])
 DAY (fVendas[data]
 FORMAT (fVendas[data]), "mmmm") -- mês em texto
-FORMAR (fVendas[data], "YYYY-MM") -- ano mês
+FORMAT (fVendas[data], "YYYY-MM") -- ano mês
 
 STARTOFMONTH(fVendas[data]) -- Data inicio
 
