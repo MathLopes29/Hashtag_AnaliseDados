@@ -675,3 +675,13 @@ DEFINE
     MEASURE fPedidos[Total a Ser Pago] = SUMX(fPedidos, fPedidos[Fat] * fPedidos[Total de Parcelas])
     MEASURE fPedidos[Faltante] = [Total a Ser Pago] - [Total Pago]
     MEASURE fPedidos[Inadimplência %] = DIVIDE([Faltante], [Total a Ser Pago], 0)
+    MEASURE CONDIÇÃO = IF(
+        [Inadimplência %] > 0.5,
+        "Alto Risco",
+        IF(
+            [Inadimplência %] > 0.2,
+            "Médio Risco",
+            "Baixo Risco"
+        )
+    )
+EVALUATE
