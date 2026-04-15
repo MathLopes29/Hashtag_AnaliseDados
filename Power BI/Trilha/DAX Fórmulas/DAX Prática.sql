@@ -669,3 +669,67 @@ SUMMARIZE(
     "FALTANTE", faltante,
     "% INADIMPLÊNCIA", inadimplência
 )
+
+
+DEFINE
+    MEASURE fPedidos[Total a Ser Pago] = SUMX(fPedidos, fPedidos[Fat] * fPedidos[Total de Parcelas])
+    MEASURE fPedidos[Faltante] = [Total a Ser Pago] - [Total Pago]
+    MEASURE fPedidos[Inadimplência %] = DIVIDE([Faltante], [Total a Ser Pago], 0)
+    MEASURE CONDIÇÃO = IF(
+        [Inadimplência %] > 0.5,
+        "Alto Risco",
+        IF(
+            [Inadimplência %] > 0.2,
+            "Médio Risco",
+            "Baixo Risco"
+        )
+    )
+EVALUATE
+
+DEFINE
+    ---- MEDIDAS DE REALIZADO ----
+    MEASURE 'Metricas'[INVESTMENT] = SUM('retail_realizado'[totalcost])
+    MEASURE 'Metricas'[IMPRESSIONS] = SUM('retail_realizado'[impressions])
+    MEASURE 'Metricas'[CLICKS] = SUM('retail_realizado'[clicks])
+    MEASURE 'Metricas'[REVENUE] = SUM('retail_realizado'[revenue])
+    MEASURE 'Metricas'[ORDERS] = DISTINCTCOUNT('retail_realizado'[orders])
+
+
+    -- Cálculos Derivados (Realizado)
+    MEASURE 'Metricas'[CTR] = DIVIDE([CLICKS], [IMPRESSIONS])
+    MEASURE 'Metricas'[CPM] = DIVIDE([INVESTMENT], [IMPRESSIONS]) * 1000
+    MEASURE 'Metricas'[CPC] = DIVIDE([INVESTMENT], [CLICKS])
+    MEASURE 'Metricas'[ROAS] = DIVIDE([REVENUE], [INVESTMENT])
+    MEASURE 'Metricas'[AVERAGE TICKET] = DIVIDE([REVENUE], [ORDERS])
+    MEASURE 'Metricas'[CVR] = DIVIDE([ORDERS], [CLICKS])
+
+
+    ---- MEDIDAS DE PLANO (PLAN) ----
+    MEASURE 'Metricas'[INVESTMENT Plan] = SUM('retail_planejado'[Investimento Líquido])
+    MEASURE 'Metricas'[IMPRESSIONS Plan] = SUM('retail_planejado'[Impressões])
+    MEASURE 'Metricas'[CLICKS Plan] = SUM('retail_planejado'[Clicks])
+    MEASURE 'Metricas'[REVENUE Plan] = SUM('retail_planejado'[Receita])
+    MEASURE 'Metricas'[ORDERS Plan] = SUM('retail_planejado'[Pedidos])
+
+
+    -- Cálculos Derivados (Plano)
+    MEASURE 'Metricas'[CTR Plan] = DIVIDE([CLICKS Plan], [IMPRESSIONS Plan])
+    MEASURE 'Metricas'[CPM Plan] = DIVIDE([INVESTMENT Plan], [IMPRESSIONS Plan]) * 1000
+    MEASURE 'Metricas'[CPC Plan] = DIVIDE([INVESTMENT Plan], [CLICKS Plan])
+    MEASURE 'Metricas'[ROAS Plan] = DIVIDE([REVENUE Plan], [INVESTMENT Plan])
+    MEASURE 'Metricas'[AVERAGE TICKET Plan] = DIVIDE([REVENUE Plan], [ORDERS Plan])
+    MEASURE 'Metricas'[CVR Plan] = DIVIDE([ORDERS Plan], [CLICKS Plan])
+
+    -- Cálculos Variações (Plano x Real)
+    MEASURE 'Metricas'[INVESTMENT %] = DIVIDE([INVESTMENT], [INVESTMENT Plan],0)
+    MEASURE 'Metricas'[IMPRESSIONS %] = DIVIDE([IMPRESSIONS],[IMPRESSIONS Plan],0)
+    MEASURE 'Metricas'[CLICKS %] = DIVIDE([CLICKS],[CLICKS Plan],0)
+    MEASURE 'Metricas'[REVENUE %] = DIVIDE([REVENUE],[REVENUE Plan],0)
+    MEASURE 'Metricas'[ORDERS %] = DIVIDE([ORDERS],[ORDERS Plan],0)
+    MEASURE 'Metricas'[CTR %] = DIVIDE([CTR],[CTR Plan],0)
+    MEASURE 'Metricas'[CPM %] = DIVIDE([CPM],[CPM Plan],0)
+    MEASURE 'Metricas'[CPC %] = DIVIDE([CPC],[CPC Plan],0)
+    MEASURE 'Metricas'[ROAS %] = DIVIDE([ROAS],[ROAS Plan],0)
+    MEASURE 'Metricas'[AVERAGE TICKET %] = DIVIDE([AVERAGE TICKET],[AVERAGE TICKET Plan],0)
+    MEASURE 'Metricas'[CVR %] = DIVIDE([CVR],[CVR Plan],0)
+    MEASURE 'Metricas'[TOTAL PACING] = DIVIDE([INVESTMENT],[INVESTMENT Plan],0)-1
