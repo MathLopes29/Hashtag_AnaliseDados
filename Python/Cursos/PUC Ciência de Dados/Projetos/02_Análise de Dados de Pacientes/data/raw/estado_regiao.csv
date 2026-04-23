@@ -1,0 +1,37 @@
+id_estado;sigla;estado;regiao;pais
+1;AC;Acre;Norte;Brasil
+2;AL;Alagoas;Nordeste;Brasil
+3;AP;Amapá;Norte;Brasil
+4;AM;Amazonas;Norte;Brasil
+5;BA;Bahia;Nordeste;Brasil
+6;CE;Ceará;Nordeste;Brasil
+7;DF;Distrito Federal;Centro-Oeste;Brasil
+8;ES;Espírito Santo;Sudeste;Brasil
+9;GO;Goiás;Centro-Oeste;Brasil
+10;MA;Maranhão;Nordeste;Brasil
+11;MT;Mato Grosso;Centro-Oeste;Brasil
+12;MS;Mato Grosso do Sul;Centro-Oeste;Brasil
+13;MG;Minas Gerais;Sudeste;Brasil
+14;PA;Pará;Norte;Brasil
+15;PB;Paraíba;Nordeste;Brasil
+16;PR;Paraná;Sul;Brasil
+17;PE;Pernambuco;Nordeste;Brasil
+18;PI;Piauí;Nordeste;Brasil
+10;MA;Maranhão;Nordeste;Brasil
+11;MT;Mato Grosso;Centro-Oeste;Brasil
+12;MS;Mato Grosso do Sul;Centro-Oeste;Brasil
+13;MG;Minas Gerais;Sudeste;Brasil
+14;PA;Pará;Norte;Brasil
+15;PB;Paraíba;Nordeste;Brasil
+16;PR;Paraná;Sul;Brasil
+17;PE;Pernambuco;Nordeste;Brasil
+18;PI;Piauí;Nordeste;Brasil
+19;RJ;Rio de Janeiro;Sudeste;Brasil
+20;RN;Rio Grande do Norte;Nordeste;Brasil
+21;RS;Rio Grande do Sul;Sul;Brasil
+22;RO;Rondônia;Norte;Brasil
+23;RR;Roraima;Norte;Brasil
+24;SC;Santa Catarina;Sul;Brasil
+25;SP;São Paulo;Sudeste;Brasil
+26;SE;Sergipe;Nordeste;Brasil
+27;TO;Tocantins;Norte;Brasil
