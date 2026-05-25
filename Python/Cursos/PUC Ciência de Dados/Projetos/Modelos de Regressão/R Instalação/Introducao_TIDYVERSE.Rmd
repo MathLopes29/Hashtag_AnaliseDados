@@ -1,0 +1,400 @@
+---
+Introdução ao Tidyverse
+---
+
+```{r}
+install.packages('tidyverse')
+library(tidyverse)
+```
+
+```{r}
+mais_tres <- function(x) {x+3}
+sobre_dois <- function(x) {x/2}
+
+x <- 1:3
+
+sobre_dois(mais_tres(x))
+```
+
+Dificil comprrencao A linha relevante começa com a divisão por 2, depois
+vem a soma com 3 e, por fim, os valores de entrada.
+
+Isso pode ser realizado se tivermos uma função que passa o resultado do
+que está à sua esquerda para a função que está à sua direita...
+
+```{r}
+x %>%
+  mais_tres() %>%
+  sobre_dois()
+```
+
+################ Leitura de dados com readr
+
+Salvar url de download no objeto link
+
+```{r}
+link <- "https://transparencia.al.gov.br/media/arquivo/comparativo_despesas-2022.zip"
+```
+
+Criar pasta chamada data para armazenar o arquivo
+
+```{r}
+dir.create("data/")
+getwd()
+```
+
+Realizar o download do arquivo
+
+```{r}
+download.file(link, destfile = "data/desp_al_2022.zip")
+```
+
+Descompactar o arquivo na pasta data
+
+```{r}
+unzip("data/desp_al_2022.zip", exdir = "data/")
+```
+
+Importando o arquivo
+
+Usamos a função read_delim porque o arquivo vem separado por barras
+verticais (\|) alem disso, precisamos especificar o locale para
+caracteres especiais serem importados corretamente para o R
+
+```{r}
+df_despesas <- read_delim("data/comparativo_despesas-2022.txt",
+                          delim = "|",
+                          locale = locale(encoding = "ISO-8859-1"),
+                          # progress = FALSE, para nao mostrar a barra de progresso
+                          progress = FALSE)
+```
+
+Exibir as 6 primeiras linhas do arquivo importado
+
+```{r}
+head(df_despesas)
+str(df_despesas)
+
+```
+
+Na função read_delim acima, precisamos especificar três argumentos: \* o
+nome do arquivo a ser importado \* o caracter usado para separar colunas
+(normalmente é ponto-e-vírgula) \* o locale (encoding)
+
+```{r}
+colnames(df_despesas)
+
+df_despesas %>% 
+  mutate(ANO = as.numeric(ANO),
+         MES = as.numeric(MES),
+         UG = as.factor(UG),
+         #DESCRICAO_UG
+         GESTAO = as.factor(GESTAO),
+         PT = as.factor(PT),
+         #PT_DESCRICAO
+         FONTE_MAE = as.factor(FONTE_MAE),
+         #DESCRICAO_FONTE_MAE
+         FONTE = as.factor(FONTE),
+         #DESCRICAO_FONTE
+         PI = as.factor(PI),
+         CODIGO_FAVORECIDO = as.factor(CODIGO_FAVORECIDO),
+         #NOME_FAVORECIDO
+         NATUREZA1 = as.factor(NATUREZA1),
+         #DESCRICAO_NATUREZA1
+         NATUREZA2 = as.factor(NATUREZA2),
+         #DESCRICAO_NATUREZA2
+         NATUREZA3 = as.factor(NATUREZA3),       
+         #DESCRICAO_NATUREZA3  
+         NATUREZA4 = as.factor(NATUREZA4),      
+         #DESCRICAO_NATUREZA4  
+         NATUREZA5 = as.factor(NATUREZA5),     
+         #DESCRICAO_NATUREZA5 
+         NATUREZA6 = as.factor(NATUREZA6),   
+         #DESCRICAO_NATUREZA6  
+         NATUREZA = as.factor(NATUREZA),
+         #DESCRICAO_NATUREZA   
+         DATA_REGISTRO = as.Date(DATA_REGISTRO),     
+         PROJETO_ATIVIDADE_ID = as.factor(PROJETO_ATIVIDADE_ID),
+         PROGRAMA_ID = as.factor(PROGRAMA_ID),         
+         SUB_FUNCAO_ID = as.factor(SUB_FUNCAO_ID),       
+         PT_FUNCAO_ID = as.factor(PT_FUNCAO_ID),        
+         FONTE_MAE_ID  = as.factor(FONTE_MAE_ID),      
+         FONTE_ID  = as.factor(FONTE_ID), 
+         FL_DIARIA  = as.factor(FL_DIARIA),
+         FL_FAVORECIDO = as.factor(FL_FAVORECIDO),   
+         SUBTITULO = as.factor(SUBTITULO),
+         #DESCRICAO_SUBTITULO  
+         ORGAO = as.factor(ORGAO),
+         #ORGAO_DESCRICAO     
+         VALOR_EMPENHADO = as.numeric(VALOR_EMPENHADO),   
+         VALOR_LIQUIDADO = as.numeric(VALOR_LIQUIDADO) ,    
+         VALOR_PAGO = as.numeric(VALOR_PAGO)) -> df_despesas
+```
+
+#Manuseio de dados com dplyr
+
+#SELECT() 
+Select é uma função muito simples: serve para selecionar ou
+remover colunas.
+
+Selecionando colunas ANO, UG e GESTAO, mudando o nome da última
+
+```{r}
+df_despesas %>% 
+  select(ANO = ANO, UG, CODIGO_GESTAO = GESTAO) %>% 
+  head()
+```
+
+Remover a coluna ANO
+
+```{r}
+df_despesas %>% 
+  select(-ANO) %>% 
+  head()
+```
+
+Selecionar todas as colunas numéricas
+
+```{r}
+df_despesas %>% 
+  select_if(is.numeric) %>% 
+  head()
+```
+
+Selecionar apenas as colunas cujo nome começa com VALOR
+
+```{r}
+df_despesas %>% 
+  select(starts_with("VALOR")) %>% 
+  head()
+```
+
+#FILTER() 
+permite que você crie filtros de observações baseado em um ou mais critérios. Os critérios podem ser construídos com os operadores lógicos \>, \>=, \<, \<=, != e ==, ou com funções que retornam uma booleana (resultado lógico, TRUE ou FALSE).
+
+Filtrando as linhas onde o valor da coluna VALOR_EMPENHADO é maior que
+100000
+
+```{r}
+df_despesas %>% 
+  filter(VALOR_EMPENHADO > 100000) %>%
+  head()
+```
+
+Filtrar as linhas onde o ANO é o mesmo do atual
+
+```{r}
+df_despesas %>% 
+  filter(ANO == lubridate::year(today()))
+
+```
+
+Filtrar as com registro a partir linhas de Junho/2022
+
+```{r}
+df_despesas %>% 
+  filter(ANO == 2022, MES > 6) %>% head()
+```
+
+Filtrar as linhas dentro de um intervalo de datas (inclusivo)
+
+```{r}
+df_despesas %>%
+  filter(between(DATA_REGISTRO,
+                 as.Date("2022-08-24"),
+                 as.Date("2022-12-15"))) %>% 
+  head()
+```
+
+Em outras palavras: filtrar os dados que não são de dezembro
+
+```{r}
+df_despesas %>% 
+  filter(MES != 8)
+```
+
+filtros baseados em multiplas colunas
+
+```{r}
+df_despesas %>% 
+  filter(str_detect(DESCRICAO_UG, "SECRETARIA"),
+                       MES == 1,
+                       VALOR_EMPENHADO > 0)
+```
+
+#MUTATE()
+
+mutate() serve para criar novas colunas que são funções de colunas já
+existentes no dataframe
+
+criar dataset menor para servir de exemplo
+
+```{r}
+df_menor <- df_despesas %>% 
+  select(DESCRICAO_UG, CODIGO_FAVORECIDO, NOME_FAVORECIDO, DATA_REGISTRO,
+         VALOR_EMPENHADO, VALOR_LIQUIDADO, VALOR_PAGO) %>% 
+  head(10)
+```
+
+```{r}
+df_menor
+```
+
+Criar varias colunas de resultados de equações simples
+
+```{r}
+df_menor %>% 
+  mutate(VALOR_PAGO_RAIZ_2 = sqrt(VALOR_PAGO),
+         valor_pago_quadrado = VALOR_PAGO^2,
+         valor_pago_dobro = VALOR_PAGO*2,
+         valor_pago_arredondado = round(VALOR_PAGO),
+         valor_pago_soma = VALOR_PAGO + VALOR_EMPENHADO + VALOR_LIQUIDADO) %>% 
+  select(contains("valor_pago", ignore.case = TRUE))
+```
+
+Extrair primeiro nome da coluna NOME_FAVORECIDO
+
+```{r}
+df_menor %>% 
+  mutate(primeiro_nome = stringr::word(NOME_FAVORECIDO, 1)) %>% 
+  select(NOME_FAVORECIDO, primeiro_nome)
+```
+
+Converter coluna NOME_FAVORECIDO para minusculo, com exceção da primeira
+letra de cada palavra
+
+```{r}
+df_menor %>% 
+  mutate(NOME_FAVORECIDO = stringr::str_to_title(NOME_FAVORECIDO)) %>% 
+  select(NOME_FAVORECIDO)
+```
+
+#ARRANGE()
+
+arrange() muda a posição das linhas do dataframe baseado em uma ou mais
+colunas, em ordem crescente ou decrescente É como o classificar do
+Excel.
+
+classificar tabela de acordo com a ordem crescente da coluna NOME_FAVORECIDO
+
+```{r}
+df_menor %>% 
+  arrange(NOME_FAVORECIDO)
+```
+
+fazer o mesmo que acima, mas usando ordem decrescente
+
+```{r}
+df_menor %>% 
+  arrange(desc(NOME_FAVORECIDO))
+```
+
+mostrar datas onde houve os maiores valores de despesa com folha de
+pagamento
+
+```{r}
+df_despesas %>% 
+  filter(NOME_FAVORECIDO == "FOLHA PAGTOPESSOAL") %>% 
+  select(DATA_REGISTRO, VALOR_PAGO) %>% 
+  arrange(desc(VALOR_PAGO))
+```
+
+classificar dados pelo NOME_FAVORECIDO, mostrando os maiores valores pagos para cada
+
+```{r}
+df_despesas %>% 
+  select(DATA_REGISTRO, NOME_FAVORECIDO, VALOR_PAGO) %>% 
+  arrange(NOME_FAVORECIDO, desc(VALOR_PAGO))
+```
+
+#GROUP_BY() e SUMMARISE() 
+
+group_by() e summarise() - agregar e resumir dados. Com group_by(), aplica funcoes, como summarise(), mutate() ,filter() em cada grupo da variável especificada na função group_by
+
+calcular o valor medio pago agrupado por DESCRICAO_UG
+
+```{r}
+df_despesas %>% 
+  group_by(DESCRICAO_UG) %>% 
+  summarise(VALOR_PAGO_MEDIO = mean(VALOR_PAGO))
+```
+
+Calcular a soma do valor pago, a quantidade de registros e a
+quantidade de favorecidos disintos para cada UG. Classificar pela qtd de
+favorecidos distintos em ordem decrescente
+
+```{r}
+df_despesas %>% 
+  group_by(DESCRICAO_UG) %>% 
+  summarise(VALOR_PAGO_TOTAL = sum(VALOR_PAGO),
+            QTD_OBSERVACOES = n(),
+            QTD_FAVORECIDOS_DIFERENTES = n_distinct(CODIGO_FAVORECIDO)) %>% 
+  arrange(desc(QTD_FAVORECIDOS_DIFERENTES))
+```
+
+Calcular a soma de todas as variáveis que começam com valor por ano e
+mês, apenas para o UG "AGABINETE CIVIL"
+
+```{r}
+df_despesas %>% 
+  filter(DESCRICAO_UG == "GABINETE CIVIL") %>% 
+  group_by(ANO, MES) %>% 
+  summarise_at(vars(contains("VALOR_")), sum)
+```
+
+#COUNT() 
+é uma alternativa a group_by() + summarise(n())
+
+```{r}
+df_despesas %>% 
+  count(CODIGO_FAVORECIDO, NOME_FAVORECIDO) %>% 
+  filter(n > 100) %>% 
+  arrange(desc(n))
+```
+#JOIN
+
+JOIN () - juntar tabelas
+
+criando base de dados
+
+```{r}
+  vendedor <- tibble(
+    id = c("A12", "A13", "A14", "A15"),
+    regiao = c("Sul", "Sudeste", "Oeste", "Norte"),
+    experiencia = c(5, 2, 12, 8))
+
+vendas = tibble(
+  id = c("A13", "A14", "A12", "A11"),
+  vendas = c(1200, 2500, 350, 1000)
+)
+
+vendedor
+vendas
+```
+
+
+#LEFT_JOIN
+
+left_join(x, y): retorna todas as observações em x, independentemente se
+existem correspondentes (de acordo com as especificações em by) ou não.
+
+```{r}
+left_join(vendedor, vendas, by = "id")
+```
+
+#INNER_JOIN
+
+inner_join(x, y): retornar apenas observações que correspondem tanto em
+x como em y.
+
+```{r}
+inner_join(vendedor, vendas, by = "id")
+```
+
+#FULL_JOIN
+full_join(x, y) é mais completo e retorna todas as observações presentes
+em x e y:
+
+```{r}
+full_join(vendedor, vendas, by = "id")
+```

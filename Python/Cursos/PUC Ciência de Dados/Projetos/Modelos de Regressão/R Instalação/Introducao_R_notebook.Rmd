@@ -1,0 +1,355 @@
+---
+
+---
+
+Criar bloco ctrl + alt + i Executar linha a linha ctrl + enter Executar bloco inteiro ctrl + shift + enter
+
+Exemplos saída
+
+```{r}
+iris = iris
+plot(iris[,1:4])
+```
+
+Instalando pacotes
+
+```{r}
+install.packages("e1071")
+library(e1071)
+```
+
+Descarregar pacote do ambiente de execução
+
+```{r}
+detach("package:e1071", unload=TRUE)
+```
+
+Remover pacote do diretório
+
+```{r}
+remove.packages("e1071")
+```
+
+Diretório de Trabalho
+
+```{r}
+getwd()
+setwd("C:/Users/anail/OneDrive/Desktop")
+```
+
+Indicando novo diretorio
+
+```{r}
+setwd("C:/Users/anail/OneDrive/Desktop")
+```
+
+Dataset padrão do R
+
+```{r}
+iris
+```
+
+Plotando um grafico com função padrão de plotagem
+
+```{r}
+plot(iris[,1:4])
+```
+
+Tipo do objeto
+
+```{r}
+class(iris)
+class(iris$Sepal.Length)
+```
+
+Declaração implicita numérico
+
+```{r}
+A = 80
+B <- 70.5
+class(B)
+```
+
+L declara como inteiro
+
+```{r}
+int = 80000L
+class(int)
+```
+
+Outros tipos
+
+Tipo lógico
+
+```{r}
+logic = TRUE
+logic 
+class(logic)
+```
+
+```{r}
+logic = F
+logic 
+```
+
+```{r}
+class(logic)
+```
+
+Caractere
+
+```{r}
+caractere = "Texto"
+caractere
+```
+
+```{r}
+class(caractere)
+```
+
+```{r}
+caractere = 'Texto1'
+```
+
+```{r}
+class(caractere)
+```
+
+Operações Matemáticas
+
+```{r}
+c <- 50
+d = 40
+(c + d) * d
+e = (c + d) * d
+e
+c * (d + d)
+```
+
+Testes lógicos
+
+```{r}
+a = 10
+b = 22
+a < b
+a == b
+```
+
+Raiz Quadrada
+
+```{r}
+sqrt(2500)
+```
+
+Vetores
+
+```{r}
+X  = c(10,20,30,40,50,60)  
+X 
+X[1]
+X[1] = 100
+X
+```
+
+Vetores de outros tipos
+
+```{r}
+Y = c("a","b","c","d")
+Y
+Z = c(1L,2L,3L)
+Z
+class(Z)
+```
+
+Matrizes
+
+```{r}
+VADeaths
+colnames(VADeaths)
+rownames(VADeaths)
+```
+
+Matrizes seleção de linhas e colunas Coluna 1
+
+```{r}
+VADeaths[,1]
+
+```
+
+Linha 1
+
+```{r}
+VADeaths[1,]
+```
+
+Seleção de intervalo e linhas específicas
+
+```{r}
+VADeaths[1:3,]
+VADeaths[c(1,3,5),]
+```
+
+Data Frame - suporta diferente tipos de dados
+
+```{r}
+longley
+```
+
+A seleção funciona como a matriz
+
+```{r}
+longley[,1:3]
+
+```
+
+Acessar coluna com \$
+
+```{r}
+longley$Unemployed
+```
+
+Acessar com nome da coluna
+
+```{r}
+longley['Unemployed']
+```
+
+Funções Diretório padrão do R sem parâmentro
+
+```{r}
+getwd()
+
+```
+
+A função sem parenteses retorna o codigo
+
+```{r}
+sd()
+```
+
+Retorna as priemiras linhas do conjunto de dados
+
+```{r}
+head(x=iris, n=2)
+head(iris)
+head(iris,2)
+head(n=22)
+```
+
+Ajuda
+
+```{r}
+help(sd)
+head
+```
+
+Head e Tail Por default o r mostra 6 linhas
+
+```{r}
+esoph -> base
+
+head(esoph)
+tail(esoph)
+#10 linhas
+head(esoph, n=10)
+```
+
+Dimensões Linhas x colunas
+
+```{r}
+dim(esoph)
+dim(esoph)[1]
+```
+
+Nomes de Colunas
+
+```{r}
+colnames(esoph)
+```
+
+Nome de Linhas
+
+```{r}
+rownames(esoph)
+```
+
+Resumo
+
+```{r}
+summary(esoph)
+```
+
+Intalação de pacotes
+
+```{r}
+install.packages("openxlsx")
+library(openxlsx)
+```
+
+Texto
+
+```{r}
+#texto
+x = read.csv("Credit.csv",header = TRUE, sep = ",")
+x
+```
+
+Excel
+
+```{r}
+dados = read.xlsx("Credit.xlsx",sheet= 1)
+dados
+```
+
+If
+
+```{r}
+a <- 10
+b = 20
+if (a > b)
+{
+  print("Verdadeiro")
+}else
+{
+  print("Falso") 
+}
+```
+
+Ifelse
+
+```{r}
+x = ifelse(a > 10,"A é maior","A não é maior")
+x
+```
+
+For
+
+```{r}
+for (i in 1:10) {
+  print(i)
+  }
+```
+
+While
+
+```{r}
+a = 1
+while(a <= 10)
+{
+  print(a)
+  a = a+1
+}
+```
+
+Função
+
+```{r}
+parouimpar <- function(x) {
+  
+  return(ifelse(x%%2==0,"Par","impar"))
+  
+}
+
+parouimpar(51)
+parouimpar(120)
+```
