@@ -733,3 +733,52 @@ DEFINE
     MEASURE 'Metricas'[AVERAGE TICKET %] = DIVIDE([AVERAGE TICKET],[AVERAGE TICKET Plan],0)
     MEASURE 'Metricas'[CVR %] = DIVIDE([CVR],[CVR Plan],0)
     MEASURE 'Metricas'[TOTAL PACING] = DIVIDE([INVESTMENT],[INVESTMENT Plan],0)-1
+
+    
+/* Calculo YoY Custo*/
+%YoY Custo = 
+VAR ano_passado =
+CALCULATE(
+    [Custo],
+    DATEADD('dCalendário'[Date],-12,MONTH)
+)
+
+VAR ano_atual = [Custo]
+VAR valor = (DIVIDE(ano_atual,ano_passado,0)-1)
+
+RETURN
+SWITCH( 
+    TRUE(),
+    valor > 0, "▲ " & FORMAT(valor,"0.00%"),
+    valor < 0, "▼ " & FORMAT(valor,"0.00%"),
+    FORMAT(valor,"0.0%")
+)
+
+
+
+CPL = 
+VAR __Leads =
+    CALCULATE (
+        [Leads GA4],
+
+        -- Campanhas iniciadas com C ou A
+        FILTER (
+            ALL ( 'dCampanha'[Nome da Campanha] ),
+            LEFT ( 'dCampanha'[Nome da Campanha], 1 ) IN { "C", "A" }
+        ),
+
+        -- Landing page contém "passengercar"
+        FILTER (
+            ALL ( 'GA4 One Web'[Página de destino + string de consulta] ),
+            CONTAINSSTRING (
+                'GA4 One Web'[Página de destino + string de consulta],
+                "passengercar"
+            )
+        ),
+
+        -- Mídia
+        'dCampanha'[Mídia] = "GA4"
+    )
+
+RETURN
+    DIVIDE([Custo],__Leads,0)
