@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Avaliação de Modelos de ML</title>
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .control-panel {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .control-group label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="range"] {
+            width: 100%;
+        }
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .chart-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .explanation {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .control-panel, .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Simulador: Curvas de Avaliação de Modelos</h1>
+        <p>Ajuste os parâmetros abaixo para ver como a separabilidade do modelo e o desbalanceamento das classes afetam a ROC, Precision-Recall, Cumulative Gains e Lift.</p>
+    </div>
+
+    <div class="control-panel">
+        <div class="control-group">
+            <label for="skillSlider">Poder de Separação do Modelo: <span id="skillValue">Moderado</span></label>
+            <input type="range" id="skillSlider" min="0" max="3" step="0.1" value="1.5">
+            <small>Controla a sobreposição entre as distribuições das classes Positiva e Negativa.</small>
+        </div>
+        <div class="control-group">
+            <label for="imbalanceSlider">Taxa Base (Desbalanceamento): <span id="imbalanceValue">50% Positivos</span></label>
+            <input type="range" id="imbalanceSlider" min="0.01" max="0.99" step="0.01" value="0.50">
+            <small>Controla a proporção da classe positiva no dataset total.</small>
+        </div>
+    </div>
+
+    <div class="charts-grid">
+        <div class="chart-card">
+            <div id="rocChart"></div>
+            <div class="explanation"><strong>Curva ROC:</strong> Mostra o trade-off entre a Taxa de Verdadeiros Positivos (Recall) e a Taxa de Falsos Positivos. Note como ela é "otimista" em cenários de alto desbalanceamento.</div>
+        </div>
+        <div class="chart-card">
+            <div id="prChart"></div>
+            <div class="explanation"><strong>Precision-Recall:</strong> Foca apenas na classe positiva. Ideal para dados desbalanceados. A linha base representa a taxa base da classe positiva.</div>
+        </div>
+        <div class="chart-card">
+            <div id="gainsChart"></div>
+            <div class="explanation"><strong>Cumulative Gains:</strong> Qual percentual de todos os positivos reais encontramos ao focar em um percentual X da população total ordenada pelo modelo?</div>
+        </div>
+        <div class="chart-card">
+            <div id="liftChart"></div>
+            <div class="explanation"><strong>Lift Curve:</strong> Quantas vezes o modelo é melhor do que uma escolha aleatória ao selecionarmos uma fração X da população?</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const N = 2000; // Tamanho do dataset
+
+    // Função para gerar números aleatórios com distribuição normal (Box-Muller)
+    function randn_bm() {
+        let u = 0, v = 0;
+        while(u === 0) u = Math.random();
+        while(v === 0) v = Math.random();
+        return Math.sqrt( -2.0 * Math.log( u ) ) * Math.cos( 2.0 * Math.PI * v );
+    }
+
+    function generateData(skill, positiveRatio) {
+        let data = [];
+        let numPositives = Math.round(N * positiveRatio);
+        let numNegatives = N - numPositives;
+
+        // Gerar scores (simulando logits e convertendo para probabilidade com sigmoid)
+        for(let i=0; i<numPositives; i++) {
+            let logit = (skill / 2) + randn_bm();
+            let prob = 1 / (1 + Math.exp(-logit));
+            data.push({ true_label: 1, prob: prob });
+        }
+        for(let i=0; i<numNegatives; i++) {
+            let logit = -(skill / 2) + randn_bm();
+            let prob = 1 / (1 + Math.exp(-logit));
+            data.push({ true_label: 0, prob: prob });
+        }
+
+        // Ordenar por probabilidade decrescente
+        data.sort((a, b) => b.prob - a.prob);
+        return { data, numPositives, numNegatives };
+    }
+
+    function calculateCurves(simData) {
+        let { data, numPositives, numNegatives } = simData;
+        
+        let roc_fpr = [0], roc_tpr = [0];
+        let pr_rec = [0], pr_prec = [1]; 
+        let gain_pop = [0], gain_tpr = [0];
+        let lift_pop = [], lift_val = [];
+
+        let tp = 0;
+        let fp = 0;
+
+        for (let i = 0; i < N; i++) {
+            if (data[i].true_label === 1) tp++;
+            else fp++;
+
+            let tpr = tp / numPositives; // Recall
+            let fpr = fp / numNegatives;
+            let precision = tp / (tp + fp);
+            let pop_fraction = (i + 1) / N;
+            
+            // Tratamento para a curva Lift (evitar divisão por zero e ruído excessivo no início)
+            let base_rate = numPositives / N;
+            let lift = precision / base_rate;
+
+            // Amostrar pontos para não sobrecarregar o Plotly
+            if (i % 10 === 0 || i === N - 1) {
+                roc_fpr.push(fpr);
+                roc_tpr.push(tpr);
+                
+                pr_rec.push(tpr);
+                pr_prec.push(precision);
+
+                gain_pop.push(pop_fraction);
+                gain_tpr.push(tpr);
+
+                lift_pop.push(pop_fraction);
+                lift_val.push(lift);
+            }
+        }
+        
+        // Ajuste no início da curva PR
+        pr_rec[0] = 0;
+        pr_prec[0] = pr_prec[1];
+
+        return { roc_fpr, roc_tpr, pr_rec, pr_prec, gain_pop, gain_tpr, lift_pop, lift_val, base_rate: numPositives/N };
+    }
+
+    function renderCharts() {
+        let skill = parseFloat(document.getElementById('skillSlider').value);
+        let imbalance = parseFloat(document.getElementById('imbalanceSlider').value);
+        
+        let simData = generateData(skill, imbalance);
+        let curves = calculateCurves(simData);
+
+        const commonLayout = {
+            margin: { t: 40, r: 20, b: 40, l: 50 },
+            showlegend: false,
+            hovermode: 'closest'
+        };
+
+        // 1. ROC
+        Plotly.react('rocChart', [
+            { x: curves.roc_fpr, y: curves.roc_tpr, type: 'scatter', mode: 'lines', line: {color: 'blue', width: 2}, name: 'Modelo' },
+            { x: [0, 1], y: [0, 1], type: 'scatter', mode: 'lines', line: {color: 'gray', dash: 'dash'}, name: 'Aleatório' }
+        ], { ...commonLayout, title: 'ROC Curve', xaxis: {title: 'False Positive Rate'}, yaxis: {title: 'True Positive Rate (Recall)'} });
+
+        // 2. Precision-Recall
+        Plotly.react('prChart', [
+            { x: curves.pr_rec, y: curves.pr_prec, type: 'scatter', mode: 'lines', line: {color: 'green', width: 2}, name: 'Modelo' },
+            { x: [0, 1], y: [curves.base_rate, curves.base_rate], type: 'scatter', mode: 'lines', line: {color: 'gray', dash: 'dash'}, name: 'Base Rate' }
+        ], { ...commonLayout, title: 'Precision-Recall Curve', xaxis: {title: 'Recall (TPR)'}, yaxis: {title: 'Precision', range: [0, 1.05]} });
+
+        // 3. Cumulative Gains
+        Plotly.react('gainsChart', [
+            { x: curves.gain_pop, y: curves.gain_tpr, type: 'scatter', mode: 'lines', line: {color: 'orange', width: 2}, name: 'Modelo' },
+            { x: [0, 1], y: [0, 1], type: 'scatter', mode: 'lines', line: {color: 'gray', dash: 'dash'}, name: 'Aleatório' },
+            { x: [0, curves.base_rate, 1], y: [0, 1, 1], type: 'scatter', mode: 'lines', line: {color: 'red', dash: 'dot'}, name: 'Modelo Perfeito' }
+        ], { ...commonLayout, title: 'Cumulative Gains Curve', xaxis: {title: '% da População (Ordenada)'}, yaxis: {title: '% de Positivos Encontrados'} });
+
+        // 4. Lift
+        Plotly.react('liftChart', [
+            { x: curves.lift_pop, y: curves.lift_val, type: 'scatter', mode: 'lines', line: {color: 'purple', width: 2}, name: 'Lift' },
+            { x: [0, 1], y: [1, 1], type: 'scatter', mode: 'lines', line: {color: 'gray', dash: 'dash'}, name: 'Baseline (Lift=1)' }
+        ], { ...commonLayout, title: 'Lift Curve', xaxis: {title: '% da População (Ordenada)'}, yaxis: {title: 'Lift (Multiplicador)'} });
+    }
+
+    // Event Listeners
+    document.getElementById('skillSlider').addEventListener('input', function(e) {
+        let val = parseFloat(e.target.value);
+        let text = val < 0.5 ? 'Muito Baixo (Aleatório)' : val < 1.5 ? 'Moderado' : val < 2.5 ? 'Alto' : 'Muito Alto (Separação Perfeita)';
+        document.getElementById('skillValue').innerText = text;
+        renderCharts();
+    });
+
+    document.getElementById('imbalanceSlider').addEventListener('input', function(e) {
+        document.getElementById('imbalanceValue').innerText = Math.round(e.target.value * 100) + '% Positivos';
+        renderCharts();
+    });
+
+    // Initial render
+    renderCharts();
+</script>
+</body>
+</html>
