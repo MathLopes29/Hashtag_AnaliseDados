@@ -1,0 +1,25 @@
+Ctrl + A - Selecionar Tudo
+Ctrl + B - Texto Bold
+Ctrl + C - Copiar
+Ctrl + D - Font Set Default
+Ctrl + E - Texto Centralizado
+Ctrl + F - Encontrar
+Ctrl + G - "Go to ..."
+Ctrl + H - Trocar
+Ctrl + I - Italico
+Ctrl + J - Texto Justificado
+Ctrl + K - HiperLink
+Ctrl + L - Texto Alinhado para a Esquerda
+Ctrl + M - "Harging Indent"
+Ctrl + N - Novo Documento
+Ctrl + O - Abrir Arq.
+Ctrl + P - Print de Tela
+Ctrl + Q - Adicionar espaço após o paragrafo
+Ctrl + R - Texto alinhado para a Direita
+Ctrl + S - Salvar
+Ctrl + T - "Left Indert"
+Ctrl + U - Underline
+Ctrl + V - Colar
+Ctrl + W - Fechar Tela
+Ctrl + X - Recortar
+Ctrl + Y & Z 

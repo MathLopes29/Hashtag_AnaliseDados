@@ -1,0 +1,33 @@
+Ctrl + W - Fechar uma Pasta de Trabalho
+Ctrl + A - Abrir pasta
+Ctrl + S 
+Ctrl + C
+Ctrl + V
+Ctrl + Z
+Ctrl + Y
+Ctrl + X - Recortar
+Ctrl + N - Negrito
+Ctrl + 9 - Ocultar LINHAS
+Ctrl + 0 - Ocultar COLUNAS
+Ctrl + T - Selecionar a PLANILHA
+Ctrl + Shift + Page Down - Alternar de Planilha
+Ctrl + Shift + Space - Selecionar todos os objetos de uma planilha
+
+Alt + C - Ir para a Guia Inicial
+Alt + C,R - Escolher cor de Preenchimento
+Alt + H,A,C - Centralizar Conteudo
+Alt + C,B - Adicionar Bordas
+Alt + H,D,C - Excluir Coluna
+
+Alt + P - Layout da Página
+Alt + S - Ir para a Dados
+Alt + M - Ir para Formulas
+Alt + K - Ir para guia Exibir
+Alt + Q - Pesquisar itens
+Alt + F - Abrir Arquivos e usar o modo de exibição
+Alt + H - Abrir a guia Página Inicial e formatar texto e número e localizar
+Alt + N - Abrir a guia inserir e inserir Tabelas dinâmicas, gráficos, imagens, etc.
+Alt + A - Abrir a guia Dados
+Alt + R - Abir Revisão
+Alt + W - Abrir a guia Exibir
+Alt + Enter - Iniciar uma nova linha

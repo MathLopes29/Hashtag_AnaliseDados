@@ -1,0 +1,14 @@
+git config --global user.email mat.lopes2907@gmail.com"
+git config --global user.name "Matheus"
+
+rd .git /S/Q
+
+git init 
+
+git add . 
+
+git commit -m "first commit"
+
+git remote add origin {link} 
+
+git push -u origin master

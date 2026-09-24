@@ -1,0 +1,44 @@
+Win + Ctrl + D - Nova área de trabalho ... Win + Ctrl + Setas
+Win + . - Emoji 🤣 
+Win + T/Setas/Enter - Selecionar
+Win + R - Execultar
+Win + E - Biblioteca de Arquivos
+Win + M - Minimizar todas as Janelas
+Win + D - Ver a área de trabalho
+Win + A - Notificações
+Win + I - Configurações do Sistema
+Win (+ Shift) + Number - Abrir Programa	
+Win + - Zoom
+
+ALT + 167 = º
+ALT + 166 = ª
+ALT + 0186 = º
+ALT + 0170 = ª
+ALT + Ctrl+ [ = ª
+ALT + Ctrl+ ] = º		
+	
+Del Basckspace Backspace + Crtl
+Shift + F3 - Alterna as letras maiusculas do texto selecionado
+
+Shitf + Del - Deletar Permanentimente
+Shitf + Mouse - Arrastar Arquivo
+Crtl + Mouse - Duplicar de Arquivo
+Alt + Mouse - Atalho
+F2 - Renomiar
+
+Ctrl + Tab - Navega entre as abas abertas no navegador e entre os servidores no discord
+Crtl + Alt + Del  .... Crtl + Shift + Esc - Gerenciador de Tarefas
+Crtl + W / F4 - Fecha Janela do Google
+Crtl + Shift + T - Desfecha aba do navegador
+Ctrl + Seta - Sem Mouse
+Crtl + Home/End - Ínicio e fim do texto
+Crtl + F / E
+Crtl + Mouse - Duplicar de Arquivo
+
+Alt + F4 - Deligar PC
+
+Alt + Tab - Troca de janelas
+Win + Tab - Ver janelas abertas
+
+Alt + Prt SC - PRINT 
+
