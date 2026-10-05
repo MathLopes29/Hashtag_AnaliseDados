@@ -1,0 +1,1 @@
+gere rede neural de 4 camadas sendo duas primeiras convolucionais e as duas última densas para classificação de imagens do dataset Mnist. O código deve baixar e decompactar o dataset, separar dados de treinamento e teste e fazer um pré-processamento básico. Em seguida, o modelo deve ser definido, treinado e testado. A performance (acurácia de teste) deve ser mostrada ao final
