@@ -67,6 +67,10 @@ WHERE SalesTerritoryGroup = 'Europe' AND NOT SalesTerritoryCountry = 'Italy'
 SELECT * FROM DimProduct
 WHERE (ColorName = 'Black' OR ColorName = 'Red') AND BrandName = 'Fabrikam'
 
+-- WHERE IN : Listagem de valores que podem ser utilizados em uma validação de condições
+SELECT * FROM DimProduct
+WHERE ColorName IN ('Black', 'Red', 'White')
+
 -- 1. Selecione todos os produtos que possuem o texto 'MP3 Player' contido na nome do produto.
 SELECT * FROM DimProduct
 WHERE ProductName LIKE '%MP3 Player%'
