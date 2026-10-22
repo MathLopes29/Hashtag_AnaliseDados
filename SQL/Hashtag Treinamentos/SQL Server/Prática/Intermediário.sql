@@ -1,3 +1,20 @@
+/*
+FUNÇÕES DE ORDENAÇÃO E FILTRAGEM DOS DADOS
+As funções de ordenação e filtragem são utilizadas para organizar e restringir os resultados de uma consulta SQL com base em critérios específicos. 
+Elas permitem que você controle a forma como os dados são apresentados e quais registros são incluídos nos resultados.
+Exemplos de funções de ordenação e filtragem comuns incluem:
+
+    * WHERE, 
+    * ORDER BY, 
+    * TOP, 
+    * DISTINCT, 
+    * BETWEEN, 
+    * IN, 
+    * LIKE, 
+    * IS NULL, 
+    * IS NOT NULL
+*/
+
 -- Selecionando as TOP 100 linhas da tabela DimStore, ordenando pela coluna EmployeeCount de forma decrescente
 SELECT TOP(100) * FROM DimStore
 ORDER BY EmployeeCount DESC
@@ -28,7 +45,6 @@ WHERE BrandName = 'Fabrikam'
 SELECT * FROM DimProduct
 WHERE ColorName = 'Black'
 
-
 -- Quais clientes nasceram após o dia 31/12/1970?
 SELECT * FROM DimCustomer
 WHERE BirthDate >= '1970-12-31'
@@ -46,20 +62,20 @@ WHERE BrandName = 'Contoso' OR ColorName = 'White'
 SELECT * FROM DimEmployee
 WHERE NOT DepartmentName = 'Marketing'
 
--- 1. Selecione todas as linhas da tabela DimEmployee de funcionários do sexo feminino E do departamento de finanas.
+-- Selecione todas as linhas da tabela DimEmployee de funcionários do sexo feminino E do departamento de finanas.
 SELECT * FROM DimEmployee
 WHERE Gender = 'F' AND DepartmentName = 'Finance'
 
--- 2. Selecione todas as linhas da tabela DimProduct de produtos Contoso E da cor vermelha E que tenham um UnitPrice maior ou igual a $100.
+-- Selecione todas as linhas da tabela DimProduct de produtos Contoso E da cor vermelha E que tenham um UnitPrice maior ou igual a $100.
 SELECT * FROM DimProduct
 WHERE BrandName = 'Contoso' AND ColorName = 'Red' AND UnitPrice >= 100
 
 
--- 3. Selecione todas as linhas da tabela DimProduct com produtos da marca Litware OU da marca Fabrikam OU da cor Preta.
+-- Selecione todas as linhas da tabela DimProduct com produtos da marca Litware OU da marca Fabrikam OU da cor Preta.
 SELECT * FROM DimProduct
 WHERE BrandName = 'Litware' OR BrandName = 'Fabrikam' OR ColorName = 'Black'
 
--- 4. Selecione todas as linhas da tabela DimSalesTerritory onde o continente é a Europa mas o país NÃO é a Itália.
+-- Selecione todas as linhas da tabela DimSalesTerritory onde o continente é a Europa mas o país NÃO é a Itália.
 SELECT * FROM DimSalesTerritory
 WHERE SalesTerritoryGroup = 'Europe' AND NOT SalesTerritoryCountry = 'Italy'
 
@@ -71,30 +87,164 @@ WHERE (ColorName = 'Black' OR ColorName = 'Red') AND BrandName = 'Fabrikam'
 SELECT * FROM DimProduct
 WHERE ColorName IN ('Black', 'Red', 'White')
 
--- 1. Selecione todos os produtos que possuem o texto 'MP3 Player' contido na nome do produto.
+-- Selecione todos os produtos que possuem o texto 'MP3 Player' contido na nome do produto.
 SELECT * FROM DimProduct
 WHERE ProductName LIKE '%MP3 Player%'
 
--- 2. Selecione todos os produtos que têm a descrição do nome comeando por 'Type'.
+-- Selecione todos os produtos que têm a descrição do nome comeando por 'Type'.
 SELECT * FROM DimProduct
 WHERE ProductDescription LIKE '%Type'
 
--- 3. Selecione todos os produtos que têm a descrição do nome terminando em 'WMA'.
+-- Selecione todos os produtos que têm a descrição do nome terminando em 'WMA'.
 SELECT * FROM DimProduct
 WHERE ProductDescription LIKE 'WMA%'
 
--- 1. Selecione os funcionários que têm a data de contratação entre '01-01-2000' e '31-12-2000'.
+-- Selecione os funcionários que têm a data de contratação entre '01-01-2000' e '31-12-2000'.
 SELECT * FROM DimEmployee
 WHERE HireDate BETWEEN '2000-01-01' AND '2000-12-31'
 
+-- Selecione os produtos que têm o preço entre $50 e $100.
 SELECT * FROM DimProduct
 WHERE UnitPrice BETWEEN 50 AND 100
 
+-- Selecione os produtos que NÃO têm o preço entre $50 e $100.
 SELECT * FROM DimProduct
 WHERE UnitPrice NOT BETWEEN 50 AND 100
 
+-- Selecione os produtos que possuem dados na coluna NameProduct.
 SELECT * FROM DimProduct
 WHERE NameProduct IS NOT NULL
 
+-- Selecione os produtos que NÃO possuem dados na coluna NameProduct.
 SELECT * FROM DimProduct
 WHERE NameProduct IS NULL
+
+/*
+FUNÇÕES DE AGREGAÇÃO
+As funções de agregação são utilizadas para realizar cálculos em um conjunto de valores e retornar um único valor. 
+Elas são frequentemente usadas em conjunto com a cláusula GROUP BY para agrupar os resultados com base em uma ou mais colunas.
+Exemplos de funções de agregação comuns incluem:
+
+    * SUM,
+    * AVG,
+    * COUNT,
+    * DISTINCT COUNT,
+    * MIN,
+    * MAX
+*/
+-- SUM ou SOMA
+SELECT
+	SUM(SalesQuantity) AS 'Total Vendido',
+	SUM(ReturnQuantity) AS 'Total Devolvido'
+FROM
+	FactSales
+
+-- COUNT ou Contagem
+SELECT COUNT(ProductName) AS 'Qtd. Produtos'
+FROM DimProduct
+
+SELECT COUNT(Size) AS 'Qtd. Produtos'
+FROM DimProduct
+
+-- DISTINCT COUNT ou Contagem Distinta
+SELECT COUNT(DISTINCT BrandName) AS 'Qtd. de Marcas'
+FROM DimProduct
+
+-- MAX e MIN = Máximo e Mínimo
+SELECT
+	MAX(UnitCost) AS 'Custo Max',
+	MIN(UnitCost) AS 'Custo Min'
+FROM
+	DimProduct
+
+-- AVG ou Média
+SELECT AVG(YearlyIncome) AS 'Média Anual de Salário'
+FROM DimCustomer
+
+/*
+FUNÇÕES DE AGREGAÇÃO COM AGRUPAMENTO DE DADOS
+As funções de agregação com agrupamento de dados são utilizadas para calcular valores agregados em grupos de registros com base em uma ou mais colunas. 
+Elas permitem que você obtenha informações resumidas sobre os dados, como totais, médias e contagens, agrupadas por categorias específicas.
+Exemplos de funções de agregação com agrupamento de dados comuns incluem:
+    * GROUP BY,
+    * HAVING
+*/
+
+-- Agrupando os dados da tabela DimProduct pela coluna BrandName e trazendo a quantidade total de produtos por marca. 
+SELECT
+	BrandName AS 'Nome da Marca',
+	COUNT(*) AS 'Qtd Total'
+FROM
+	DimProduct
+GROUP BY BrandName
+
+--- Agrupando os dados da tabela DimStore pela coluna StoreType e trazendo a soma de EmployeeCount.
+SELECT
+	StoreType,
+	SUM(EmployeeCount) AS 'Qtd. Total Funcionários'
+FROM
+	DimStore
+GROUP BY StoreType
+
+-- Ordenação Dos Resultados pela Marca e trazendo o custo médio de cada marca.
+SELECT
+	BrandName,
+	AVG(UnitCost) AS 'Custo Médio'
+FROM
+	DimProduct
+GROUP BY BrandName
+
+-- Ordenação Dos Resultados pela Classe do Produto e trazendo o preço máximo de cada classe.
+SELECT
+	ClassName AS 'Classe do Produto',
+	MAX(UnitPrice) AS 'Máximo Preço'
+FROM
+	DimProduct
+GROUP BY ClassName
+
+-- Ordenação dos resultados pela Soma de Funcionários e Agrupado pelo Tipo de Loja
+SELECT
+	StoreType,
+	SUM(EmployeeCount) AS 'Qtd. Total Funcionários'
+FROM
+	DimStore
+GROUP BY StoreType
+ORDER BY SUM(EmployeeCount) DESC
+
+-- Agrupando os dados da tabela DimProduct pela coluna ColorName e trazendo a quantidade total de produtos por cor, filtrando apenas os produtos da marca Contoso.
+SELECT
+	ColorName AS 'Cor do Produto',
+	COUNT(ColorName) AS 'Qtd. Total'
+FROM
+	DimProduct
+WHERE BrandName = 'Contoso'
+GROUP BY ColorName
+
+-- Agrupando os dados da tabela Dim Product pela coluna BrandName e trazendo a quantidade total de produtos por marca, filtrando apenas os produtos com preço unitário maior que 100.
+/*
+SELECT
+	BrandName AS 'Marca',
+	COUNT(BrandName) AS 'Total Marca'
+FROM
+	DimProduct
+WHERE ClassName = 'Economy'     -- Filtra a tabela original, antes do agrupamento
+GROUP BY BrandName
+
+HAVING COUNT(BrandName) >= 200  -- Filtra a tabela depois de agrupada
+*/
+
+SELECT
+	BrandName AS 'Marca',
+	COUNT(BrandName) AS 'Total Marca'
+FROM
+	DimProduct
+WHERE UnitPrice > 100
+GROUP BY BrandName
+
+HAVING COUNT(BrandName) >= 200
+
+/*
+    Diferença entre WHERE e HAVING:
+    WHERE: Filtra os dados antes do agrupamento.
+    HAVING: Filtra os dados depois do agrupamento.
+*/

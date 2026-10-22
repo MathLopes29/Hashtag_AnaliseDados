@@ -10,6 +10,19 @@
 */
 
 
+/*
+FUNÇÕES DE PESQUISA E CONSUYLTA DE DADOS
+As funções de pesquisa e consulta de dados são utilizadas para recuperar informações específicas de um banco de dados com base em critérios definidos. Elas permitem que você filtre, ordene e selecione os dados relevantes para análise ou apresentação.
+Exemplos de funções de pesquisa e consulta comuns incluem:
+    * SELECT, 
+    * FROM, 
+    * WHERE, 
+    * JOIN, 
+    * GROUP BY, 
+    * HAVING, 
+    * ORDER BY
+*/
+
 -- Selecionando todas as linhas e colunas da tabela DimCustomer
 SELECT * FROM DimCustomer
 
