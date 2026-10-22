@@ -248,3 +248,180 @@ HAVING COUNT(BrandName) >= 200
     WHERE: Filtra os dados antes do agrupamento.
     HAVING: Filtra os dados depois do agrupamento.
 */
+
+
+/*
+	JOINS E CONEXÕES ENTRE TABELAS
+	Os JOINs são utilizados para combinar dados de duas ou mais tabelas com base em uma coluna relacionada entre elas.
+	Existem diferentes tipos de JOINs, cada um com suas características específicas:
+		* INNER JOIN: Retorna apenas os registros que possuem correspondência em ambas as tabelas.
+		* LEFT JOIN (ou LEFT OUTER JOIN): Retorna todos os registros da tabela à esquerda e os registros correspondentes da tabela à direita. Se não houver correspondência, os valores da tabela à direita serão nulos.
+		* RIGHT JOIN (ou RIGHT OUTER JOIN): Retorna todos os registros da tabela à direita e os registros correspondentes da tabela à esquerda. Se não houver correspondência, os valores da tabela à esquerda serão nulos.
+		* FULL OUTER JOIN: Retorna todos os registros de ambas as tabelas, preenchendo com valores nulos quando não houver correspondência.
+		* LEFT OUTER JOIN (ANTI JOIN): Retorna todos os registros da tabela à esquerda que não possuem correspondência na tabela à direita.
+		* RIGHT OUTER JOIN (ANTI JOIN): Retorna todos os registros da tabela à direita que não possuem correspondência na tabela à esquerda.
+		* CROSS JOIN: Retorna o produto cartesiano de ambas as tabelas, combinando cada registro da primeira tabela com todos os registros da segunda tabela.
+*/
+
+/* Produtos */
+CREATE TABLE produtos(
+id_produto int,
+nome_produto varchar(30),
+id_subcategoria int)
+
+INSERT INTO produtos(id_produto, nome_produto, id_subcategoria)
+VALUES
+	(1, 'Fone Bluetooth JBL', 5),
+	(2, 'PS4', 6),
+	(3, 'Notebook Samsung i3', 2),
+	(4, 'iPhone 11', 1),
+	(5, 'Moto G9', 1)
+
+
+/*Sub Categoria dos Produtos */
+CREATE TABLE subcategoria(
+id_subcategoria int,
+nome_subcategoria varchar(30))
+
+INSERT INTO subcategoria(id_subcategoria, nome_subcategoria)
+VALUES
+	(1, 'Celular'),
+	(2, 'Notebook'),
+	(3, 'Cámera Digital'),
+	(4, 'Televisão'),
+	(5, 'Fone de Ouvido')
+
+/* Início das Queries para a utilização dos tipos de JOIN's */
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+LEFT JOIN subcategoria /* Retorna todos os registros da tabela à esquerda e os registros correspondentes da tabela à direita */
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+
+
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+RIGHT JOIN subcategoria /* Retorna todos os registros da tabela à direita e os registros correspondentes da tabela à esquerda */
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+
+
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+INNER JOIN subcategoria /* Retorna apenas os registros que possuem correspondência em ambas as tabelas */
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+
+
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+FULL JOIN subcategoria /* Retorna todos os registros de ambas as tabelas, preenchendo com valores nulos quando não houver correspondência */
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	subcategoria.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+FULL JOIN subcategoria /* Retorna todos os registros de ambas as tabelas, preenchendo com valores nulos quando não houver correspondência */
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+
+
+/************************************************************************/
+-- LEFT (ANTI) JOIN
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+LEFT JOIN subcategoria
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+WHERE nome_subcategoria IS NULL
+
+
+/************************************************************************/
+-- RIGHT (ANTI) JOIN
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+RIGHT JOIN subcategoria
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+WHERE id_produto IS NULL
+
+
+/************************************************************************/
+-- FULL (ANTI) JOIN
+SELECT
+	produtos.id_produto,
+	produtos.nome_produto,
+	produtos.id_subcategoria,
+	subcategoria.nome_subcategoria
+FROM produtos
+FULL JOIN subcategoria
+	ON produtos.id_subcategoria = subcategoria.id_subcategoria
+WHERE id_produto IS NULL OR nome_subcategoria IS NULL
+
+/************************************************************************/
+/* Joins Multiplos */
+SELECT ProductKey, ProductName, ProductSubcategoryKey FROM DimProduct
+SELECT ProductSubcategoryKey, ProductSubcategoryName, ProductCategoryKey FROM DimProductSubcategory
+SELECT ProductCategoryKey, ProductCategoryName FROM DimProductCategory
+
+SELECT
+	ProductKey,
+	ProductName,
+	DimProduct.ProductSubcategoryKey,
+	ProductCategoryName
+FROM DimProduct
+INNER JOIN DimProductSubcategory
+	ON DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
+		INNER JOIN DimProductCategory
+			ON DimProductSubcategory.ProductCategoryKey = DimProductCategory.ProductCategoryKey
+
+
+-- UNION: Nessa consulta, o UNION retorna apenas os registros distintos, eliminando duplicatas do resultado final.
+SELECT
+	*
+FROM
+	DimCustomer
+WHERE Gender = 'F'
+UNION
+SELECT
+	*
+FROM
+	DimCustomer
+WHERE Gender = 'M'
+
+
+-- UNION ALL: Nessa consulta, o UNION ALL retorna todos os registros, incluindo duplicados.
+SELECT
+	FirstName,
+	BirthDate
+FROM
+	DimCustomer
+WHERE Gender = 'F'
+UNION ALL
+SELECT
+	FirstName,
+	BirthDate
+FROM
+	DimCustomer
+WHERE Gender = 'M'
