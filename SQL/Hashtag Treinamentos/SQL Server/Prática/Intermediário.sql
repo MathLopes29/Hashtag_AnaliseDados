@@ -7,10 +7,10 @@ ORDER BY EmployeeCount DESC
 SELECT 
 	TOP(10) ProductName,
 	UnitCost,
-	Weight
+	Weight AS Peso
 FROM
 	DimProduct
-ORDER BY UnitCost DESC, Weight DESC
+ORDER BY UnitCost DESC, Peso DESC
 
 -- Podemos filtrar os dados nas nossas tabelas utilizando o comando WHERE
 SELECT 
