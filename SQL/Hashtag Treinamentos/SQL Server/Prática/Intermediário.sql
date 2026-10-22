@@ -75,10 +75,9 @@ WHERE ColorName IN ('Black', 'Red', 'White')
 SELECT * FROM DimProduct
 WHERE ProductName LIKE '%MP3 Player%'
 
-
 -- 2. Selecione todos os produtos que têm a descrição do nome comeando por 'Type'.
 SELECT * FROM DimProduct
-WHERE ProductDescription LIKE 'Type%'
+WHERE ProductDescription LIKE '%Type'
 
 -- 3. Selecione todos os produtos que têm a descrição do nome terminando em 'WMA'.
 SELECT * FROM DimProduct
@@ -87,3 +86,15 @@ WHERE ProductDescription LIKE 'WMA%'
 -- 1. Selecione os funcionários que têm a data de contratação entre '01-01-2000' e '31-12-2000'.
 SELECT * FROM DimEmployee
 WHERE HireDate BETWEEN '2000-01-01' AND '2000-12-31'
+
+SELECT * FROM DimProduct
+WHERE UnitPrice BETWEEN 50 AND 100
+
+SELECT * FROM DimProduct
+WHERE UnitPrice NOT BETWEEN 50 AND 100
+
+SELECT * FROM DimProduct
+WHERE NameProduct IS NOT NULL
+
+SELECT * FROM DimProduct
+WHERE NameProduct IS NULL
