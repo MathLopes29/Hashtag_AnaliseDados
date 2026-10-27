@@ -425,3 +425,69 @@ SELECT
 FROM
 	DimCustomer
 WHERE Gender = 'M'
+
+-- INNER JOIN com função de agregação e filtragem de dados utilizando a cláusula HAVING
+SELECT 
+	DimDate.CalendarYear AS 'Ano',
+	SUM(DimProduct.SalesQuantity) AS 'Total de QTD Vendido'
+FROM
+	FactSales
+	INNER JOIN DimProduct ON FactSales.DataKey = DimDate.DateKey
+WHERE DimDate.CalendarMonthLabel = 'January'
+GROUP BY DimDate.CalendarYear
+-- HAVING SUM(DimProduct.SalesQuantity) > 1000
+ORDER BY SUM(DimProduct.SalesQuantity) DESC
+
+/* Exemplos Práticos de Group By com Inner Join */
+SELECT
+	ChannelName AS 'Canal de Venda',
+	SUM(SalesAmount) AS 'Total de Vendas'
+FROM
+	FactSales
+	INNER JOIN DimSalesChannel ON FactSales.SalesChannelKey = DimSalesChannel.SalesChannelKey
+GROUP BY ChannelName
+ORDER BY SUM(SalesAmount) DESC
+
+
+SELECT 
+	DimStore.StoreName as 'Nome da Loja',
+	SUM(SalesQuantity) as 'Qtd. Vendida',
+	FORMAT (SUM(ReturnQuantity), 'N0', 'pt-BR') as 'Total Devolvido'
+FROM SalesFact
+	INNER JOIN DimStore ON SalesFact.StoreKey = DimStore.StoreKey
+GROUP BY DimStore.StoreName
+-- ORDER BY SUM(ReturnQuantity) DESC
+ORDER BY DimStore.StoreName ASC
+
+
+SELECT
+	CalendarYear AS 'Ano',
+	CalendarMonthLabel AS 'Mês',
+	SUM(SalesAmount) AS 'Faturamento Total'
+FROM FactSales
+	INNER JOIN DimDate ON FactSales.DataKey = DimDate.DateKey
+GROUP BY CalendarYear, CalendarMonthLabel, CalendarMonth
+ORDER BY CalendarMonthLabel ASC
+
+
+SELECT
+	--NameProduct AS 'Nome do Produto',
+	ColorName AS 'Cor',
+	SUM(SalesQuantity) AS 'Qtd. Vendida'
+FROM FactSales
+	INNER JOIN DimProduct ON FactSales.ProductKey = DimProduct.ProductKey
+GROUP BY /* NameProduct, */ ColorName
+-- HAVING SUM(SalesQuantity) > 3000000
+ORDER BY SUM(SalesQuantity) DESC
+
+
+SELECT
+	ProductCategoryName AS 'Categoria',
+	-- ProductName AS 'Nome do Produto',
+	SUM(SalesAmount) AS 'Faturamento Total'
+FROM FactSales
+	INNER JOIN DimProduct ON FactSales.ProductKey = DimProduct.ProductKey
+	INNER JOIN DimProductSubcategory ON DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
+	INNER JOIN DimProductCategory ON DimProductSubcategory.ProductCategoryKey = DimProductCategory.ProductCategoryKey
+GROUP BY ProdcutCategoryName
+-- HAVING SUM(SalesAmount) > 1000000
