@@ -77,3 +77,26 @@ SELECT
 FROM DimProduct
 INNER JOIN DimProductSubcategory ON DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
 INNER JOIN DimProductCategory ON DimProductCategory.ProductCategoryKey = DimProductSubcategory.ProductCategoryKey
+
+
+DEFINE @VarClassic INT
+SET @VarClassic = 8
+
+SELECT
+    IF(
+        @VarClassic >= 5,
+        'Risco Alto',
+        'Risco Baixo'
+    )
+
+-- ALTERNATIVA AO CASE, UTILIZANDO IIF
+SELECT
+    CustomerKey,
+    CustomerType,
+    IIF(
+        CustomerType = 'Person',
+        'FistName',
+        'CompanyName'
+    ) AS 'Client'
+FROM
+    DimCustomer
