@@ -100,3 +100,94 @@ SELECT
     ) AS 'Client'
 FROM
     DimCustomer
+
+
+SELECT
+    CustomerKey,
+    CustomerType,
+    IIF(
+        StockTypeName = 'High',
+        'João',
+        IIF(
+            StockTypeName = 'Medium',
+            'Maria',
+            'José'
+        ) AS 'Responsável'
+
+    )
+
+
+SELECT
+    GeographyKey,
+    ContinentName,
+    CityName,
+    ISNULL(
+        CityName,
+        'Não Informado'
+    ) AS 'Cidade'
+
+
+SELECT
+    ProductKey AS 'ID Produto',
+    ProductName AS 'Nome Produto',
+    ClassName AS 'Classe',
+
+    CASE 
+        WHEN ClassName IS NULL THEN 'Não Informado'
+        ELSE ClassName
+    END AS 'Classe Produto',
+
+    CASE
+        WHEN ClassName = 'Economy' THEN (1 - 0.05) * UnitPrice
+        WHEN ClassName = 'Regular' THEN (1 - 0.07) * UnitPrice
+        ELSE (1 - 0.09) * UnitPrice
+    END AS '% Desconto'
+
+FROM DimProduct 
+
+
+SELECT 
+    BrandName AS 'Marca',
+    COUNT(+) AS 'Qtd Produtos',
+    CASE
+        WHEN COUNT(+) >= 500 THEN 'Alta'
+        WHEN COUNT(+) >= 200 THEN 'Média'
+        ELSE 'Baixa'
+    END AS 'Classificação'
+FROM DimProduct
+GROUP BY BrandName
+
+SELECT
+    StoreName AS 'Loja',
+    EmployeeCount AS 'Qtd. Funcionários',
+    CASE
+        WHEN EmployeeCount >= 50 THEN 'Acima de 50 Funcionários'
+        WHEN EmployeeCount >= 20 THEN 'Entre 20 e 50 Funcionários'
+        ELSE 'Abaixo de 20 Funcionários'
+    END AS 'Classificação'
+FROM DimStore
+
+
+SELECT
+    ProductSubCategoryName AS 'SubCategoria',
+    ROUND(AVG (Weight),2) AS 'Peso Médio',
+    CASE
+        WHEN ROUND(AVG (Weight) * 100,2) >= 1000 THEN 'Rota 2',
+        ELSE 'Rota 1'
+    END AS 'Rotas de Entrega'
+FROM DimProduct
+INNER JOIN DimProductSubCategoryName 
+    ON DimProduct.ProductSubCategoryKey = DimProductSubCategoryName.ProductSubCategoryKey
+GROUP BY ProductSubCategoryName
+
+
+SELECT
+    FirstName AS 'Nome',
+    LastName AS 'Sobrenome',
+    TotalChildren AS 'Qtd. Filhos',
+    CASE
+        WHEN Gender = 'F' AND TotalChildren > 0 THEN 'Sorteio Mãe do Ano'
+        WHEN Gender = 'M' AND TotalChildren > 0 THEN 'Sorteio Pai do Ano'
+        ELSE 'Sorteio Caminhão de Prêmios'
+    END AS 'Ação de Marketing'
+FROM DimCustomer
