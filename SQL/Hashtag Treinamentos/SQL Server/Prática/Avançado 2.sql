@@ -6,3 +6,6 @@
     FICAR DE OLHO.
 */
 
+SELECT 
+    AVG(UnitCost)
+FROM DimProduct
