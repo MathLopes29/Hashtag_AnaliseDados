@@ -9,3 +9,16 @@
 SELECT 
     AVG(UnitCost)
 FROM DimProduct
+WHERE StoreKey IN (
+    SELECT 
+        StoreKey
+    FROM
+        DimStore
+    WHERE EmployeeCount >= 100
+)
+
+# ANY e SOME
+SELECT * FROM Funcionários WHERE idade >= ANY(SELECT idade FROM Funcionários WHERE sexo = 'M')
+
+#ALL
+SELECT * FROM Funcionários WHERE idade > ALL(SELECT idade FROM Funcionários WHERE sexo = 'M')
